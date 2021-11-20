@@ -1,0 +1,4 @@
+{
+    "server": "https://raw.githubusercontent.com/LafeLabs/pi/main/symbolserver/",
+    "symbols": []
+}

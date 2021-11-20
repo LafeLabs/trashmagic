@@ -1,0 +1,44 @@
+{
+    "html": [
+        "README.md",
+        "fork.html",
+        "imageset.html",
+        "index.html",
+        "qrcode.html",
+        "readme.html",
+        "scrolleditor.html",
+        "set.html"
+    ],
+    "data": [
+        "dna.txt",
+        "imageset.txt",
+        "set.txt"
+    ],
+    "iconsymbols": [
+        "chaos.svg",
+        "delete.svg",
+        "edit.svg",
+        "fork.svg",
+        "home.svg",
+        "lightdark.svg",
+        "scroll.svg"
+    ],
+    "php": [
+        "copy.txt",
+        "deletefile.txt",
+        "dir.txt",
+        "dnagenerator.txt",
+        "editor.txt",
+        "fileloader.txt",
+        "filesaver.txt",
+        "imagesetreplicator.txt",
+        "ipaddress.txt",
+        "mkdir.txt",
+        "rdelete.txt",
+        "removephp.txt",
+        "replicator.txt",
+        "setreplicator.txt",
+        "text2php.txt",
+        "upload.txt"
+    ]
+}

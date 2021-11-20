@@ -1,0 +1,57 @@
+%\documentclass[ebook,12pt,openany]{memoir} %ebook
+
+\documentclass[ebook,12pt,openany,onesided]{memoir} %physical book
+\usepackage[utf8x]{inputenc}
+\usepackage[english]{babel}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{imakeidx} % for how to use the index see https://www.sharelatex.com/learn/Indices
+\usepackage{hyperref}
+
+\usepackage{afterpage}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+\makeindex
+
+\title{Trash Magic}
+\author{Trash Robot}
+
+\begin{document}
+\frontmatter
+%\begin{figure}
+%\centering
+%\includegraphics{cover.png}
+%\end{figure}
+
+\clearpage
+
+\clearpage
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+\maketitle
+
+%\tableofcontents
+
+%\listoffigures 
+
+%civilizations
+%
+
+\mainmatter
+
+\chapter{Civilizations}
+\input{scrolls/symbols.tex}
+
+
+%\printindex
+
+%https://www.sharelatex.com/learn/Glossaries
+
+\end{document}
