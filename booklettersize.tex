@@ -1,0 +1,58 @@
+
+\documentclass{report}
+\usepackage[utf8x]{inputenc}
+\usepackage[english]{babel}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{imakeidx} % for how to use the index see https://www.sharelatex.com/learn/Indices
+\usepackage{hyperref}
+
+\usepackage{afterpage}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+
+
+\title{Trash Magic}
+\author{Trash Robot}
+
+\begin{document}
+
+
+\clearpage
+
+\clearpage
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+\maketitle
+
+%\tableofcontents
+
+%\listoffigures 
+
+%civilizations
+%
+
+\chapter{Trash Magic}
+\input{scrolls/trashmagic.tex}
+\chapter{Magic Book}
+\input{scrolls/magicbook.tex}
+\chapter{Street Network}
+\input{scrolls/streetnetwork.tex}
+\chapter{Trash Robot}
+\input{scrolls/trashrobot.tex}
+\chapter{Action Geometry}
+\input{scrolls/actiongeometry.tex}
+
+
+%\printindex
+
+%https://www.sharelatex.com/learn/Glossaries
+
+\end{document}
