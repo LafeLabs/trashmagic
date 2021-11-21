@@ -54,6 +54,7 @@
         "trashrobot.tex"
     ],
     "iconsymbols": [
+        "anotherruler.svg",
         "chaos.svg",
         "delete.svg",
         "edit.svg",
@@ -61,7 +62,14 @@
         "hidemenu.svg",
         "home.svg",
         "lightdark.svg",
+        "protractor.png",
+        "protractor.svg",
+        "protractoroutline.svg",
+        "rulers.svg",
+        "rulersoutline.svg",
         "scroll.svg",
+        "shapeset.svg",
+        "shapesoutline.svg",
         "showmenu.svg",
         "uplink.svg",
         "www.svg"

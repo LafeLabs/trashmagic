@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.11.20)  20 NOV 2021 22:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.11.20)  20 NOV 2021 23:16
 entering extended mode
 **./book6x9.tex
 (book6x9.tex
@@ -781,7 +781,7 @@ Overfull \hbox (1.3804pt too wide) in paragraph at lines 145--168
  []
 
 [15] [16] [17] [18] [19] [20] [21] [22] [23] [24]
-<imageserver/uploadimages/image3.png, id=133, 308.65312pt x 402.75468pt>
+<imageserver/uploadimages/image3.png, id=141, 308.65312pt x 402.75468pt>
 File: imageserver/uploadimages/image3.png Graphic file (type png)
 <use imageserver/uploadimages/image3.png>
 Package pdftex.def Info: imageserver/uploadimages/image3.png  used on input lin
@@ -818,24 +818,74 @@ LaTeX Warning: Float too large for page by 5.07689pt on input line 419.
 ) [25] [26 <./imageserver/uploadimages/image3.png>] [27] [28] [29]
 (scrolls/trashrobot.tex [30
 
-]) [31] (scrolls/actiongeometry.tex) [32
+]) [31] (scrolls/actiongeometry.tex
+<imageserver/uploadimages/image4.png, id=177, 602.25pt x 602.25pt>
+File: imageserver/uploadimages/image4.png Graphic file (type png)
+<use imageserver/uploadimages/image4.png>
+Package pdftex.def Info: imageserver/uploadimages/image4.png  used on input lin
+e 5.
+(pdftex.def)             Requested size: 289.07999pt x 289.08589pt.
+<imageserver/uploadimages/image5.png, id=178, 602.25pt x 602.25pt>
+File: imageserver/uploadimages/image5.png Graphic file (type png)
+<use imageserver/uploadimages/image5.png>
+Package pdftex.def Info: imageserver/uploadimages/image5.png  used on input lin
+e 11.
+(pdftex.def)             Requested size: 289.07999pt x 289.08589pt.
+<imageserver/uploadimages/image6.png, id=179, 602.25pt x 602.25pt>
+File: imageserver/uploadimages/image6.png Graphic file (type png)
+<use imageserver/uploadimages/image6.png>
+Package pdftex.def Info: imageserver/uploadimages/image6.png  used on input lin
+e 17.
+(pdftex.def)             Requested size: 289.07999pt x 289.08589pt.
+<imageserver/uploadimages/image7.png, id=180, 602.25pt x 602.25pt>
+File: imageserver/uploadimages/image7.png Graphic file (type png)
+<use imageserver/uploadimages/image7.png>
+Package pdftex.def Info: imageserver/uploadimages/image7.png  used on input lin
+e 23.
+(pdftex.def)             Requested size: 289.07999pt x 289.08589pt.
+<imageserver/uploadimages/image8.png, id=181, 602.25pt x 602.25pt>
+File: imageserver/uploadimages/image8.png Graphic file (type png)
+<use imageserver/uploadimages/image8.png>
+Package pdftex.def Info: imageserver/uploadimages/image8.png  used on input lin
+e 29.
+(pdftex.def)             Requested size: 289.07999pt x 289.08589pt.
+<imageserver/uploadimages/image9.png, id=182, 602.25pt x 602.25pt>
+File: imageserver/uploadimages/image9.png Graphic file (type png)
+<use imageserver/uploadimages/image9.png>
+Package pdftex.def Info: imageserver/uploadimages/image9.png  used on input lin
+e 35.
+(pdftex.def)             Requested size: 289.07999pt x 289.08589pt.
+<imageserver/uploadimages/image10.png, id=183, 602.25pt x 602.25pt>
+File: imageserver/uploadimages/image10.png Graphic file (type png)
+<use imageserver/uploadimages/image10.png>
+Package pdftex.def Info: imageserver/uploadimages/image10.png  used on input li
+ne 41.
+(pdftex.def)             Requested size: 289.07999pt x 289.08589pt.
+<imageserver/uploadimages/image1.png, id=184, 296.60812pt x 537.50812pt>
+File: imageserver/uploadimages/image1.png Graphic file (type png)
+<use imageserver/uploadimages/image1.png>
+Package pdftex.def Info: imageserver/uploadimages/image1.png  used on input lin
+e 47.
+(pdftex.def)             Requested size: 289.07999pt x 523.88377pt.
 
-]
-(book6x9.aux)
 
-Package rerunfilecheck Warning: File `book6x9.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: Float too large for page by 151.71709pt on input line 49.
 
-Package rerunfilecheck Info: Checksums for `book6x9.out':
-(rerunfilecheck)             Before: FCFA04FA57E1F3E3D7C6069D4743CE41;313
-(rerunfilecheck)             After:  A5EEA0AFD9FCA4B919C187721F6D234B;535.
+) [32
+
+] [33 <./imageserver/uploadimages/image4.png>] [34 <./imageserver/uploadimages/
+image5.png>] [35 <./imageserver/uploadimages/image6.png>] [36 <./imageserver/up
+loadimages/image7.png>] [37 <./imageserver/uploadimages/image8.png>]
+[38 <./imageserver/uploadimages/image9.png>] [39 <./imageserver/uploadimages/im
+age10.png>] [40 <./imageserver/uploadimages/image1.png>] (book6x9.aux)
+Package rerunfilecheck Info: File `book6x9.out' has not changed.
+(rerunfilecheck)             Checksum: A5EEA0AFD9FCA4B919C187721F6D234B;535.
  ) 
 Here is how much of TeX's memory you used:
- 12907 strings out of 478927
- 196017 string characters out of 2852534
+ 12981 strings out of 478927
+ 198190 string characters out of 2852534
  556063 words of memory out of 3000000
- 30548 multiletter control sequences out of 15000+600000
+ 30598 multiletter control sequences out of 15000+600000
  407159 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,12n,66p,842b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -845,9 +895,9 @@ fonts/cm/cmr12.pfb><C:/Users/lafel/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/amsfonts/cm/cmr17.pfb><C:/Users/lafel/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/lafel/AppData/Local/Programs/MiKT
 eX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on book6x9.pdf (34 pages, 136839 bytes).
+Output written on book6x9.pdf (42 pages, 340952 bytes).
 PDF statistics:
- 210 PDF objects out of 1000 (max. 8388607)
- 48 named destinations out of 1000 (max. 500000)
- 30 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 278 PDF objects out of 1000 (max. 8388607)
+ 64 named destinations out of 1000 (max. 500000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 
