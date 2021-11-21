@@ -86,6 +86,19 @@
         "symbol1637467888.svg",
         "symbol1637468000.svg",
         "symbol1637468119.svg",
-        "symbol1637468135.svg"
+        "symbol1637468135.svg",
+        "symbol1637505947.svg",
+        "symbol1637507746.svg",
+        "symbol1637507805.svg",
+        "symbol1637507935.svg",
+        "symbol1637507952.svg",
+        "symbol1637507972.svg",
+        "symbol1637507997.svg",
+        "symbol1637508240.svg",
+        "symbol1637508444.svg",
+        "symbol1637508558.svg",
+        "symbol1637508611.svg",
+        "symbol1637508647.svg",
+        "symbol1637509337.svg"
     ]
 }
