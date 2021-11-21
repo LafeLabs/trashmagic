@@ -38,15 +38,20 @@
     ],
     "scrolls": [
         "actiongeometry",
+        "actiongeometry.tex",
         "civilizations",
         "home",
         "home.tex",
         "magicbook",
+        "magicbook.tex",
         "organicmedia",
         "streetconvert.tex",
         "streetnetwork",
         "streetnetwork.tex",
-        "trashmagic"
+        "trashmagic",
+        "trashmagic.tex",
+        "trashrobot",
+        "trashrobot.tex"
     ],
     "iconsymbols": [
         "chaos.svg",
