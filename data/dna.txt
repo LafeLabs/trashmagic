@@ -37,12 +37,16 @@
         "user.txt"
     ],
     "scrolls": [
+        "actiongeometry",
         "civilizations",
         "home",
         "home.tex",
+        "magicbook",
         "organicmedia",
-        "symbols",
-        "symbols.tex"
+        "streetconvert.tex",
+        "streetnetwork",
+        "streetnetwork.tex",
+        "trashmagic"
     ],
     "iconsymbols": [
         "chaos.svg",
