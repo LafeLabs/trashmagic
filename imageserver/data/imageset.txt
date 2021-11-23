@@ -1,6 +1,9 @@
 {
     "server": "http://localhost/",
     "images": [
+        "circles6.png",
+        "community.png",
+        "cover.png",
         "image1.png",
         "image10.png",
         "image11.png",
@@ -10,6 +13,7 @@
         "image15.png",
         "image16.png",
         "image17.png",
+        "image18.png",
         "image2.png",
         "image3.png",
         "image4.png",
@@ -17,6 +21,21 @@
         "image6.png",
         "image7.png",
         "image8.png",
-        "image9.png"
+        "image9.png",
+        "magicbook.png",
+        "magicsymbols.png",
+        "pi.png",
+        "qubert.png",
+        "street.png",
+        "streets.png",
+        "trashacademy.png",
+        "trashfactory.png",
+        "trashfeed.png",
+        "trashgraph.png",
+        "trashlabs.png",
+        "trashrobot.png",
+        "trashstation.png",
+        "travels.png",
+        "watershed.png"
     ]
 }
