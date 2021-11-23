@@ -37,23 +37,15 @@
         "user.txt"
     ],
     "scrolls": [
-        "actiongeometry",
-        "actiongeometry.tex",
-        "civilizations",
         "home",
-        "home.tex",
         "magic",
         "magicbook",
-        "magicbook.tex",
         "magicsymbols",
-        "organicmedia",
-        "streetconvert.tex",
-        "streetnetwork",
-        "streetnetwork.tex",
+        "trashfactory",
+        "trashfeed",
         "trashmagic",
-        "trashmagic.tex",
         "trashrobot",
-        "trashrobot.tex"
+        "trashstation"
     ],
     "iconsymbols": [
         "anotherruler.svg",

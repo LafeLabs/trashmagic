@@ -1,22 +1,14 @@
 {
     "server": "http://10.0.0.26/geometron/",
     "scrolls": [
-        "actiongeometry",
-        "actiongeometry.tex",
-        "civilizations",
         "home",
-        "home.tex",
         "magic",
         "magicbook",
-        "magicbook.tex",
         "magicsymbols",
-        "organicmedia",
-        "streetconvert.tex",
-        "streetnetwork",
-        "streetnetwork.tex",
+        "trashfactory",
+        "trashfeed",
         "trashmagic",
-        "trashmagic.tex",
         "trashrobot",
-        "trashrobot.tex"
+        "trashstation"
     ]
 }
