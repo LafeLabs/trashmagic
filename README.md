@@ -1,10 +1,11 @@
 [home](scrolls/home)
 
-# Trash Magic 
+![](symbolserver/symbolfeed/cover.svg)
+![](symbolserver/symbolfeed/trashrobot.svg)
+![](symbolserver/symbolfeed/trashrobotavatar.svg)
+![](symbolserver/symbolfeed/magic.svg)
+![](symbolserver/symbolfeed/magicsymbols.svg)
 
-## Action Coloring Book
-
-## By Trash Robot
 
  - Hand bound and hand drawn zine.
  - Printed lulu press hard copy
