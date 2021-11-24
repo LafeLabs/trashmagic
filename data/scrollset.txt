@@ -1,14 +1,22 @@
 {
     "server": "http://10.0.0.26/geometron/",
     "scrolls": [
+        "board",
         "home",
         "magic",
         "magicbook",
         "magicsymbols",
+        "pi",
+        "streets",
+        "trashacademy",
+        "trashcore",
         "trashfactory",
         "trashfeed",
+        "trashlabs",
         "trashmagic",
         "trashrobot",
-        "trashstation"
+        "trashstation",
+        "watershed",
+        "web"
     ]
 }
