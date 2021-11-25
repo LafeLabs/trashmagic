@@ -52,6 +52,7 @@
         "trashmagic",
         "trashrobot",
         "trashstation",
+        "videos",
         "watershed",
         "web"
     ],
