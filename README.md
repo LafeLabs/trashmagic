@@ -4,7 +4,7 @@
 
 ## TRASH ROBOT
 
-[pdf for download](https://github.com/LafeLabs/trashmagic/raw/main/booklettersizebooklet.pdf)
+## [CLICK HERE TO DOWNLOAD PDF](https://github.com/LafeLabs/trashmagic/raw/main/booklettersizebooklet.pdf)
 
 ## Create the book
 
@@ -36,8 +36,31 @@ The TRASH ROBOT avatar is just a rectangle with googley eyes and a black rectang
 
 This is the open brand of TRASH ROBOT.  Rainbows, googley eyes, and the block font with repeated rainbow colors.  This is simple, easy to copy, easy to recognize, and impossible to trademark.  No one owns this.  It belongs to us all.  We will be repeating this motif again and again in many media as we go along.
 
-## Page 2: Magic
+## Page 2: MAGIC
 
+We define magic to be the replication of the desire to replicate a thing.   Magical things are things which impart in people the desire to copy those things, and which contain the information required to help make that happen.  
+
+Rather than belabor the theory or general examples of this, we merely contemplate replication as an idea, and sketch it out with circles pointing out to more circles.  We aim to build media which *fully* replicates.  Not just replicating a message or meme, but replicating the entire system including all physical parts both physical and digital.
+
+Color in the replicator symbols as you see fit, add things to the circles based on your own ideas.
+
+Page 3: MAGIC SYMBOLS
+
+What symbols have resonance for you? What are the symbols you live by or want to live by?  
+
+Page 4: TRASHCORE
+
+Trash Robot is just the jumping off point.  We will build a whole fashion/brand aesthetic and use it to spread all the ideas here.  TRASHCORE.  Cut felt sewn onto black cotton flannel.  Block letters, rainbow and googly eyes.
+
+Pages 5-7 TRASH MAGIC
+
+TRASH MAGIC is the creation of things from trash which people have both the desire and ability to replicate.  We use the geometric programming language of Geometron to construct things and media which describe things as well as those things themselves, and the media which helps to replicate things.
+
+In TRASH MAGIC  we are building a whole new civilization in which we abolish all mining and oil and gas, and all global supply chains and build things entirely from the waste of the old world we find in our local environment.  
+
+TRASH MAGIC represents a flow between various elements: the TRASH FACTORY of products we provide to our community, the TRASH STATION where we distribute things, the TRASH ACADEMY where we teach TRASH MAGIC, the TRASH LABS where we develop new methods, and the TRASH FEED, the waste stream from which we get our materials.  
+
+## Pages
 
 ![](symbolserver/symbolfeed/trashrobotavatar.svg)
 ![](imageserver/uploadimages/cover.png)
