@@ -1,5 +1,5 @@
 {
-    "server": "https://raw.githubusercontent.com/LafeLabs/pi/main/symbolserver/",
+    "server": "https://raw.githubusercontent.com/LafeLabs/trashmagic/main/symbolserver/data/symbolset.txt/",
     "symbols": [
         "artbox.svg",
         "bag.svg",
@@ -25,6 +25,7 @@
         "symbol1637685274.svg",
         "symbol1637685621.svg",
         "symbol1637693529.svg",
+        "symbol1637802002.svg",
         "trashcycle.svg",
         "trashgraph.svg",
         "trashmagiccan.svg",
