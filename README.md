@@ -20,12 +20,23 @@ Punch holes on each dot with a thumb tack, with cardboard in the back of the boo
 
 Either staple down the spine or stitch by hand using a needle and thread with a back stitch.  Tie knots at both ends of thread, cut off extra thread.  
 
+[back stitch on wikipedia](https://en.wikipedia.org/wiki/Backstitch)
+
+
+
 You have now created another book!
 
 ## Page 1: Trash Robot
 
 Now draw your first TRASH ROBOT.  See this example:
 
+![](https://i.imgur.com/MkjWcsk.jpg)
+
+The TRASH ROBOT avatar is just a rectangle with googley eyes and a black rectangle for a mouth, with 6 stripes colored in the simple rainbow sequence of red, orange, yellow, green, blue, purple. Notice the block letters which are based on starting with a square in your mind and just removing small simple amounts of the square to generate each letter.
+
+This is the open brand of TRASH ROBOT.  Rainbows, googley eyes, and the block font with repeated rainbow colors.  This is simple, easy to copy, easy to recognize, and impossible to trademark.  No one owns this.  It belongs to us all.  We will be repeating this motif again and again in many media as we go along.
+
+## Page 2: Magic
 
 
 ![](symbolserver/symbolfeed/trashrobotavatar.svg)
