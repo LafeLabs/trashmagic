@@ -22,7 +22,7 @@ Either staple down the spine or stitch by hand using a needle and thread with a 
 
 [back stitch on wikipedia](https://en.wikipedia.org/wiki/Backstitch)
 
-
+[stitch the spine tiktok](https://www.tiktok.com/@trash_robot/video/7034566631510543663)
 
 You have now created another book!
 
