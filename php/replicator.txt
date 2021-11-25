@@ -22,7 +22,7 @@ mkdir("imageserver");
 copy("https://raw.githubusercontent.com/LafeLabs/trashmagic/main/php/replicator.txt","replicator.php");
 
 
-copy("https://raw.githubusercontent.com/LafeLabs/pi/main/servers/symbolserver/php/replicator.txt","symbolserver/replicator.php");
+copy("https://raw.githubusercontent.com/LafeLabs/trashmagic/main/symbolserver/php/replicator.txt","symbolserver/replicator.php");
 copy("https://raw.githubusercontent.com/LafeLabs/pi/main/servers/imageserver/php/replicator.txt","imageserver/replicator.php");
 
 
