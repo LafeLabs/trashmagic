@@ -26,7 +26,13 @@ Either staple down the spine or stitch by hand using a needle and thread with a 
 
 You have now created another book!
 
-## Page 1: Trash Robot
+
+![](imageserver/uploadimages/cover.png)
+
+![](imageserver/uploadimages/trashrobot.png)
+
+
+**TRASH ROBOT**
 
 Now draw your first TRASH ROBOT.  See this example:
 
@@ -36,7 +42,9 @@ The TRASH ROBOT avatar is just a rectangle with googley eyes and a black rectang
 
 This is the open brand of TRASH ROBOT.  Rainbows, googley eyes, and the block font with repeated rainbow colors.  This is simple, easy to copy, easy to recognize, and impossible to trademark.  No one owns this.  It belongs to us all.  We will be repeating this motif again and again in many media as we go along.
 
-## Page 2: MAGIC
+**MAGIC**
+![](imageserver/uploadimages/image12.png)
+![](imageserver/uploadimages/magicsymbols.png)
 
 We define magic to be the replication of the desire to replicate a thing.   Magical things are things which impart in people the desire to copy those things, and which contain the information required to help make that happen.  
 
@@ -44,17 +52,25 @@ Rather than belabor the theory or general examples of this, we merely contemplat
 
 Color in the replicator symbols as you see fit, add things to the circles based on your own ideas.
 
-Page 3: MAGIC SYMBOLS
+**MAGIC SYMBOLS**
 
 What symbols have resonance for you? What are the symbols you live by or want to live by?  
 
-Page 4: TRASHCORE
+![](imageserver/uploadimages/trashcore.png)
+
+**TRASHCORE**
 
 Trash Robot is just the jumping off point.  We will build a whole fashion/brand aesthetic and use it to spread all the ideas here.  TRASHCORE.  Cut felt sewn onto black cotton flannel.  Block letters, rainbow and googly eyes.
 
+
+![](imageserver/uploadimages/image13.png)
+![](imageserver/uploadimages/image14.png)
+![](imageserver/uploadimages/trashgraph.png)
+![](imageserver/uploadimages/trashfactory.png)
+
 Pages 5-7 TRASH MAGIC
 
-TRASH MAGIC is the creation of things from trash which people have both the desire and ability to replicate.  We use the geometric programming language of Geometron to construct things and media which describe things as well as those things themselves, and the media which helps to replicate things.
+**TRASH MAGIC** is the creation of things from trash which people have both the desire and ability to replicate.  We use the geometric programming language of Geometron to construct things and media which describe things as well as those things themselves, and the media which helps to replicate things.
 
 In TRASH MAGIC  we are building a whole new civilization in which we abolish all mining and oil and gas, and all global supply chains and build things entirely from the waste of the old world we find in our local environment.  
 
@@ -75,21 +91,17 @@ WEB refers to the elements of our system which are on the Open Web.  We have ins
 STREETS refers to the situation in the world of streets of this physical document, be it a web server or a physical book.  What is the interstate corridor? What are the local US highways? State highways? Major city or town streets? Parking lots and shopping centers. Document it all here.
 
 WATERSHED refers to where we are in the space of flowing water from sky to sea.
+Document the whole system: streams, creeks, rivers, bays, oceans, sewers, fresh water.
+
+TRAVELS documents the path of this book through the physical world.  Keep passing the book along! Document where it goes.  add more pages as needed.
+
+EVENTS document where we are setting up TRASH MAGIC to share.  We can keep trying to find events, documenting when we show up, and spreading these ides so others do the same.
 
 
+The SHAPE SET can get traced, cut out, laminated, and used to make bigger or smaller shapes which can be traced onto cardboard and cut out at any scale.  These are used to construct all other shapes and designs, and are used to make all of the elements of ACTION GEOMETRY.
 
 ## Pages
 
-![](symbolserver/symbolfeed/trashrobotavatar.svg)
-![](imageserver/uploadimages/cover.png)
-![](imageserver/uploadimages/trashrobot.png)
-![](imageserver/uploadimages/image12.png)
-![](imageserver/uploadimages/magicsymbols.png)
-![](imageserver/uploadimages/trashcore.png)
-![](imageserver/uploadimages/image13.png)
-![](imageserver/uploadimages/image14.png)
-![](imageserver/uploadimages/trashgraph.png)
-![](imageserver/uploadimages/trashfactory.png)
 ![](imageserver/uploadimages/trashfeed.png)
 ![](imageserver/uploadimages/community.png)
 ![](imageserver/uploadimages/bulletinboard.png)
