@@ -60,6 +60,24 @@ In TRASH MAGIC  we are building a whole new civilization in which we abolish all
 
 TRASH MAGIC represents a flow between various elements: the TRASH FACTORY of products we provide to our community, the TRASH STATION where we distribute things, the TRASH ACADEMY where we teach TRASH MAGIC, the TRASH LABS where we develop new methods, and the TRASH FEED, the waste stream from which we get our materials.  
 
+Each page gets filled in with the appropriate information for your situation. 
+
+The BULLETIN BOARD is a page which can be used to post any kind of message to the community. You can advertise whatever you want to share here.  COMMUNITY RESOURCES is generally a place for mutual aid either needed by the community or available.  
+
+The scroll with the 4 triangles in a triangle represents the [BOOK OF GEOMETRON](https://github.com/lafelabs/bookofgeometron/).  All the graphics in this work are created using the geometric programming language of GEOMETRON. 
+
+The scroll with an infinite sequence of scrolls represents the idea of the self-replicating text.  This physical book as well as the digital versions all represent this kind of media.  
+
+MAGIC BOOK refers to self-replicating books. This page can be used to document the digital side of this, the self-replicating web document which includes the Raspberry Pi with solar panels, etc.  This is a very self-referential page, which can have information about binding, printing, code, hardware or software--anything which replicates any kind of book.
+
+WEB refers to the elements of our system which are on the Open Web.  We have instances of all our documents out on the web.  This can be paid hosted on purchased domains, free webhosts, local network web hosts, or Github repositories.  In all cases, we post relevant information here: IP addresses, web addresses, github info, etc.
+
+STREETS refers to the situation in the world of streets of this physical document, be it a web server or a physical book.  What is the interstate corridor? What are the local US highways? State highways? Major city or town streets? Parking lots and shopping centers. Document it all here.
+
+WATERSHED refers to where we are in the space of flowing water from sky to sea.
+
+
+
 ## Pages
 
 ![](symbolserver/symbolfeed/trashrobotavatar.svg)
