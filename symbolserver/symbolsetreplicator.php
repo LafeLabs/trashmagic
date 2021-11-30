@@ -13,7 +13,7 @@ $symbols = $remotesymbolset->symbols;
 
 foreach($symbols as $value){
 
-    copy($server."symbolfeed/".$value,"symbolfeed/copy-".$value);
+    copy($server."symbolfeed/".$value,"symbolfeed/".$value);
 
 }
 
