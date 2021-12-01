@@ -1,6 +1,10 @@
+## [QUBERT](scrolls/qubert)
+
 ## [HOME](scrolls/home)    
     
 # Raspberry Pi
+
+![](https://i.imgur.com/MA4BFJS.png)
 
 ## Basic Kit
 
@@ -165,3 +169,6 @@ sudo pip3 install --upgrade pip
 reboot
 sudo pip3 install jupyter
 ```
+
+
+## [ARTBOX](scrolls/artbox)
