@@ -38,6 +38,7 @@
     ],
     "scrolls": [
         "board",
+        "communityresources",
         "home",
         "magic",
         "magicbook",
@@ -50,6 +51,8 @@
         "trashfeed",
         "trashlabs",
         "trashmagic",
+        "trashmagicgraph",
+        "trashmagicmap",
         "trashrobot",
         "trashstation",
         "videos",
