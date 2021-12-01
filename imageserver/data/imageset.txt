@@ -1,9 +1,16 @@
 {
     "server": "http://localhost/",
     "images": [
+        "artbox.png",
+        "bag.png",
+        "bulletinboard.png",
         "circles6.png",
         "community.png",
         "cover.png",
+        "dodecagon.png",
+        "events.png",
+        "flag.png",
+        "geometronscroll.png",
         "image1.png",
         "image10.png",
         "image11.png",
@@ -24,11 +31,14 @@
         "image9.png",
         "magicbook.png",
         "magicsymbols.png",
+        "penroseflower2.png",
         "pi.png",
         "qubert.png",
+        "shapes.png",
         "street.png",
         "streets.png",
         "trashacademy.png",
+        "trashcore.png",
         "trashfactory.png",
         "trashfeed.png",
         "trashgraph.png",
@@ -36,6 +46,7 @@
         "trashrobot.png",
         "trashstation.png",
         "travels.png",
-        "watershed.png"
+        "watershed.png",
+        "web.png"
     ]
 }

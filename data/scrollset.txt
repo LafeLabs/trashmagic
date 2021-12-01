@@ -1,5 +1,5 @@
 {
-    "server": "http://10.0.0.26/geometron/",
+    "server": "https://raw.githubusercontent.com/LafeLabs/trashmagic/main/",
     "scrolls": [
         "board",
         "home",
@@ -14,6 +14,8 @@
         "trashfeed",
         "trashlabs",
         "trashmagic",
+        "trashmagicgraph",
+        "trashmagicmap",
         "trashrobot",
         "trashstation",
         "videos",
