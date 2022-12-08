@@ -28,6 +28,7 @@ EGO DEATH:
 <a href = "index.html">index.html</a>
 <a href = "dnagenerator.php">dnagenerator.php</a>
 <a href = "text2php.php">text2php.php</a>
+<a href = "user.php">user.php</a>
 
 <?php
     $topfiles = scandir(getcwd());
@@ -65,22 +66,22 @@ EGO DEATH:
         
     }
 
-    $jsfiles = scandir(getcwd()."/jscode");
-
-    foreach($jsfiles as $value){
-        if($value[0] != "."){
-            echo "<div class = \"javascript file\">jscode/";
-            echo $value;
-            echo "</div>\n";
-        }
-    }
-
 
     $phpfiles = scandir(getcwd()."/php");
 
     foreach($phpfiles as $value){
         if($value[0] != "."){
             echo "<div class = \"php file\">php/";
+            echo $value;
+            echo "</div>\n";
+        }
+    }
+
+    $jsfiles = scandir(getcwd()."/jscode");
+
+    foreach($jsfiles as $value){
+        if($value[0] != "."){
+            echo "<div class = \"javascript file\">jscode/";
             echo $value;
             echo "</div>\n";
         }

@@ -89,17 +89,16 @@
         <textarea id = "textio"></textarea>
     </div>
     <div id = "mapscroll">
-        <a href = "index.html">
-            <img src = "iconsymbols/home.svg"/>
-        </a>
         <a href= "mapdelete.html">
             <img src = "iconsymbols/delete.svg"/>
         </a>
         <a id = "mapuserlink" href= "user.php?map=maps/home">
-            <img src = "iconsymbols/map.svg"/>
+            <img src = "iconsymbols/home.svg"/>
         </a>
-        
-        <div id = "savelinkbutton" class= "button" style= "text-align:center;border:solid">SAVE LINK</div>
+        <a href= "mapset.html">
+            <img src = "iconsymbols/chaos.svg"/>
+        </a>
+
         <table>
             <tr>
                 <td>new map:</td>
@@ -115,29 +114,29 @@
         </ul>
     </div>
     <div id = "feedscroll">
-        <a href = "textfeed.html">
-            <img class = "button" src = "iconsymbols/feed.svg"/>
-        </a>
+        <input id = "imageinput"/>
         <form id = "uploadform" style = "margin-top:10px" action="upload.php" method="post" enctype="multipart/form-data">
                 Select image to upload:
             <input type="file" name="fileToUpload" id="fileToUpload">
             <input type="submit" value="Upload Image" name="submit">
         </form>
-        
-             <!--
-                images and symbols 
-             -->
+        <p>
+            <a href ="imagefeed.html">imagefeed.html</a>
+        </p>
+        <div id = "srcscroll">
+            <!--image feed goes here-->
+        </div>
     </div>
-    <div id = "textscroll" class = "no-mathjax">        <a href = "textfeed.html">
-            <img class = "button" src = "iconsymbols/feed.svg"/>
-        </a>
-</div>
+    <div id = "textscroll" class = "no-mathjax">       
+      <input id = "textfeedinput"/>
+      <div id = "subtextscroll">
+          
+      </div>
+    </div>
     <div id = "linkscroll">        
-        <a href = "textfeed.html">
-            <img class = "button" src = "iconsymbols/feed.svg"/>
-        </a>
-
         <h3 id = "linkbox"></h3>
+        <input id = "hrefinput"/>
+        <div id = "hrefscroll"></div>
     </div>
     <div id = "rotatezoombox">
         <table id = "rotatezoomtable">
@@ -531,6 +530,7 @@ mcrotate.on("panleft panright panup pandown tap press", function(ev) {
 });    
 
 
+
 uploadImages = [];
 var httpc = new XMLHttpRequest();
     httpc.onreadystatechange = function() {
@@ -580,76 +580,32 @@ var httpc10 = new XMLHttpRequest();
     if (this.readyState == 4 && this.status == 200) {
 
         textfeed = JSON.parse(this.responseText);
-        loadtextfeed();
         //un comment for math
         //MathJax.Hub.Typeset();
-        loadlinkfeed();
-        for(var index = textfeed.src.length - 1;index >= 0;index--) {
-            var newimg = document.createElement("IMG");
-            newimg.src = textfeed.src[index];
-            newimg.classList.add("uploadimage");
-            newimg.classList.add("button");
-            document.getElementById("feedscroll").appendChild(newimg);
-            newimg.onclick = function() {
-                mainmap.array[mainmap.linkindex].src = this.src;
-                document.getElementById("imginput").value = this.src;
-                mainmap.draw();
-            }
-            
-        }
-
+        redrawsrc();
+        redrawtext();
+        redrawhref();
     }
 };
 httpc10.open("GET", "fileloader.php?filename=data/textfeed.txt", true);
 httpc10.send();
 
-function loadtextfeed(){
-    text = textfeed.text;
-    for(var index = text.length - 1;index >= 0;index--){
-        var newbox = document.createElement("div");
-        newbox.className = "button";
-        newbox.innerHTML = text[index];
-        newbox.onclick = function(){
-            //replace current text with this text and update map
-            mainmap.array[mainmap.linkindex].text = this.innerHTML;
-            mainmap.draw();
-            document.getElementById("textinput").value = mainmap.array[mainmap.linkindex].text;
 
-        }
-        document.getElementById("textscroll").appendChild(newbox);
-    }
-}
-
-function loadlinkfeed(){
-    href = textfeed.href;
-    for(var index = href.length - 1;index >= 0;index--){
-        var newbox = document.createElement("div");
-        newbox.className = "button";
-        newbox.innerHTML = href[index];
-        newbox.onclick = function(){
-            //replace current href with this href and update map
-            mainmap.array[mainmap.linkindex].href = this.innerHTML;
-            mainmap.draw();
-            document.getElementById("linkbox").innerHTML = this.innerHTML;
-            document.getElementById("linkinput").value = mainmap.array[mainmap.linkindex].href;
-
-        }
-        document.getElementById("linkscroll").appendChild(newbox);
-    }
-}
-
-
+mode = "image";
 document.getElementById("textbutton").onclick = function(){
+    mode = "text";
     document.getElementById("feedscroll").style.display = "none";
     document.getElementById("linkscroll").style.display = "none";
     document.getElementById("textscroll").style.display = "block";
 }
 document.getElementById("imagebutton").onclick = function(){
+    mode = "image";
     document.getElementById("feedscroll").style.display = "block";
     document.getElementById("linkscroll").style.display = "none";
     document.getElementById("textscroll").style.display = "none";
 }
 document.getElementById("linkbutton").onclick = function(){
+    mode = "link";
     document.getElementById("feedscroll").style.display = "none";
     document.getElementById("linkscroll").style.display = "block";
     document.getElementById("textscroll").style.display = "none";
@@ -780,15 +736,272 @@ document.getElementById("hmodebutton").onclick = function(){
     }
 }
 
+function savefeed(){
+    
+    var httpc = new XMLHttpRequest();
+    httpc.open("POST", "filesaver.php", true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    httpc.send("data="+encodeURIComponent(JSON.stringify(textfeed,null,"  "))+"&filename=data/textfeed.txt");//send text to filesaver.php   
+
+}
 
 
-document.getElementById("savelinkbutton").onclick = function(){
-    var element = {};
-    element.src = "";
-    element.glyph = "";
-    element.text = currentFile;
-    element.href = "user.php?map=" + currentFile;
-  
+document.getElementById("imageinput").value = "";
+document.getElementById("imageinput").onchange = function(){
+    textfeed.src.push(this.value);
+    redrawsrc();
+    savefeed();
+}
+
+document.getElementById("hrefinput").value = "";
+document.getElementById("hrefinput").onchange = function(){
+    textfeed.href.push(this.value);
+    redrawhref();
+    savefeed();
+}
+document.getElementById("textfeedinput").value = "";
+document.getElementById("textfeedinput").onchange = function(){
+    textfeed.text.push(this.value);
+    redrawtext();
+    savefeed();
+}
+
+
+
+
+function redrawtext(){
+    
+    document.getElementById("subtextscroll").innerHTML = "";
+    text = textfeed.text;
+    for(var index = text.length - 1;index >=0;index--){
+        var newbox = document.createElement("div");
+        newbox.className = "box";
+        var newspan = document.createElement("span");
+        newspan.innerHTML = text[index];
+        newspan.onclick = function(){
+            //replace current text with this text and update map
+            mainmap.array[mainmap.linkindex].text = this.innerHTML;
+            mainmap.draw();
+            document.getElementById("textinput").value = mainmap.array[mainmap.linkindex].text;
+
+        }
+        newbox.appendChild(newspan);
+        var newbutton = document.createElement("IMG");
+        newbutton.src = "iconsymbols/delete.svg";
+        newbutton.className = "button";
+        newbutton.id = "text" + index.toString();
+        newbutton.onclick = function(){
+            //alert(this.id.substring(4));
+            var thisindex = this.id.substring(4);
+            var localtext = textfeed.text;
+            textfeed.text = [];
+            for(var textindex = 0;textindex < localtext.length;textindex++){
+                if(textindex != thisindex){
+                    textfeed.text.push(localtext[textindex]);
+                }
+            }
+            redrawtext();
+            savefeed();
+        }
+        newbox.prepend(newbutton);
+        document.getElementById("subtextscroll").appendChild(newbox);
+    }
+    //un comment for math
+    //MathJax.Hub.Typeset();
+
+}
+
+function redrawsrc(){
+    document.getElementById("srcscroll").innerHTML = "";
+    var src = textfeed.src;
+    for(var index = src.length - 1;index >= 0;index--){
+        var newbox = document.createElement("div");
+        newbox.className = "box";
+        
+        var newimg = document.createElement("img");
+        newimg.onclick = function() {
+            mainmap.array[mainmap.linkindex].src = this.src;
+            document.getElementById("imginput").value = this.src;
+            mainmap.draw();
+        }
+        newimg.src = src[index];
+        
+        var newbutton = document.createElement("IMG");
+        newbutton.src = "iconsymbols/delete.svg";
+        newbutton.className = "button";
+        newbutton.id = "src" + index.toString();
+        newbutton.onclick = function(){
+            //alert(this.id.substring(4));
+            var thisindex = this.id.substring(3);
+            var localsrc = textfeed.src;
+            textfeed.src = [];
+            for(var srcindex = 0;srcindex < localsrc.length;srcindex++){
+                if(srcindex != thisindex){
+                    textfeed.src.push(localsrc[srcindex]);
+                }
+            }
+            redrawsrc();
+            savefeed();
+        }
+        newbox.appendChild(newbutton);
+        newbox.appendChild(newimg);
+        
+        document.getElementById("srcscroll").appendChild(newbox);
+    }
+    
+}
+function redrawhref(){
+    document.getElementById("hrefscroll").innerHTML = "";
+    var href = textfeed.href;
+    for(var index = href.length - 1;index >= 0 ;index--){
+        var newbox = document.createElement("div");
+        newbox.className = "box";
+        
+        var newa = document.createElement("A");
+//        newa.href = href[index];
+        newa.innerHTML = href[index];
+        newa.onclick = function(){
+            mainmap.array[mainmap.linkindex].href = this.innerHTML;
+            mainmap.draw();
+            document.getElementById("linkbox").innerHTML = this.innerHTML;
+            document.getElementById("linkinput").value = mainmap.array[mainmap.linkindex].href;
+        }
+        newbox.appendChild(newa);
+        
+        var newbutton = document.createElement("IMG");
+        newbutton.src = "iconsymbols/delete.svg";
+        newbutton.className = "button";
+        newbutton.id = "href" + index.toString();
+        newbutton.onclick = function(){
+            //alert(this.id.substring(4));
+            var thisindex = this.id.substring(4);
+            var localhref = textfeed.href;
+            textfeed.href = [];
+            for(var hrefindex = 0;hrefindex < localhref.length;hrefindex++){
+                if(hrefindex != thisindex){
+                    textfeed.href.push(localhref[hrefindex]);
+                }
+            }
+            redrawhref();
+            savefeed();
+        }
+        newbox.prepend(newbutton);
+        document.getElementById("hrefscroll").appendChild(newbox);
+    }
+    
+}
+
+uploadImages = [];
+var httpc = new XMLHttpRequest();
+    httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        uploadImages = JSON.parse(this.responseText);
+        for(var index = uploadImages.length - 1;index >= 0;index--) {
+            var newuploadbox = document.createElement("DIV");
+            newuploadbox.classList.add("uploadbox");
+            var newimg = document.createElement("IMG");
+            newimg.src = "uploadimages/" + uploadImages[index];
+            newimg.classList.add("uploadimage");
+            newimg.classList.add("button");
+            newuploadbox.appendChild(newimg);
+            document.getElementById("feedscroll").appendChild(newuploadbox);
+            newimg.onclick = function() {
+                var localurl = "uploadimages" + this.src.split("uploadimages")[1];
+                mainmap.array[mainmap.linkindex].src = localurl;
+                mainmap.draw();
+                document.getElementById("imginput").value = mainmap.array[mainmap.linkindex].src;
+    
+            }
+            var newimg = document.createElement("IMG");
+            newimg.src = "iconsymbols/delete.svg";
+            newuploadbox.appendChild(newimg);
+            newimg.classList.add("button");
+            newimg.classList.add("deletebutton");
+            newimg.onclick = function(){
+                var imageurl =this.parentElement.getElementsByClassName("uploadimage")[0].src; 
+                var imagename = "uploadimages/" + imageurl.split("uploadimages/")[1];
+                var httpc = new XMLHttpRequest();
+                var url = "deletefile.php";         
+                httpc.open("POST", url, true);
+                httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+                httpc.send("filename=" + imagename);//send text to deletefile.php
+                this.parentElement.parentElement.removeChild(this.parentElement);
+            }
+        }
+    }
+};
+
+
+mapset = {};
+
+var httpc = new XMLHttpRequest();
+    httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        mapset = JSON.parse(this.responseText);
+        if(mapset.server.charAt(mapset.server.length-1) != "/"){
+            mapset.server = mapset.server + "/"; 
+        }
+        var httpc9 = new XMLHttpRequest();
+        httpc9.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+
+                maps = JSON.parse(this.responseText);
+                mapset.maps = maps;
+                
+                var httpc11 = new XMLHttpRequest();
+                httpc11.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+        
+                        images = JSON.parse(this.responseText);
+                        mapset.images = images;
+                        
+                        
+                        var httpc13 = new XMLHttpRequest();
+                        httpc13.onreadystatechange = function() {
+                            if (this.readyState == 4 && this.status == 200) {
+                
+                                scrolls = JSON.parse(this.responseText);
+                                mapset.scrolls = scrolls;
+                                
+                        
+                                document.getElementById("textio").value = JSON.stringify(mapset,null,"    ");
+                                savejson();
+                                
+                                
+                            };
+                        }
+                        
+                        httpc13.open("GET", "dir.php?filename=scrolls", true);
+                        httpc13.send();
+
+                        
+                        
+                    };
+                }
+                
+                httpc11.open("GET", "dir.php?filename=uploadimages", true);
+                httpc11.send();
+
+                
+
+            };
+        }
+        
+        httpc9.open("GET", "dir.php?filename=maps", true);
+        httpc9.send();
+        
+    }
+};
+httpc.open("GET", "fileloader.php?filename=data/mapset.txt", true);
+httpc.send();
+
+
+function savejson(){
+    var url = "filesaver.php";        
+    var httpc2 = new XMLHttpRequest();
+    httpc2.open("POST", url, true);
+    httpc2.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    httpc2.send("data="+encodeURIComponent(JSON.stringify(mapset,null,"    "))+"&filename=data/mapset.txt");//send text to filesaver.php
 }
 
 </script>
@@ -876,7 +1089,7 @@ input,table,select{
 }
 
 .deletebutton{
-    width:50px;
+    width:1.5em;
 }
 .uploadbox{
     border:solid;
@@ -884,6 +1097,11 @@ input,table,select{
     border-radius:10px;
     margin-top:1em;
 }
+    #feedscroll img{
+        max-width:50%;
+        cursor:pointer;
+    }
+
 @media only screen and (orientation: portrait) {
     #inputbox img{
         width:100px;
@@ -978,9 +1196,6 @@ input,table,select{
     #linkscroll img{
         width:70px;
     }
-    #feedscroll img{
-        width:70px;
-    }
 
     #textscroll{
         width:50%;
@@ -1053,6 +1268,21 @@ input,table,select{
     margin:auto;
 }
 .box{
+}
+#textscroll .button{
+    width:1.5em;
+}
+#hrefscroll .button{
+    width:1.5em;
+}
+#hrefscroll a{
+    cursor:pointer;
+}
+#srcscroll .button{
+    width:1.5em;
+}
+#textscroll span{
+    cursor:pointer;
 }
 </style>
 </body>

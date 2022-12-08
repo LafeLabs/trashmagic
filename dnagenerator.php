@@ -13,9 +13,11 @@ dna.txt is a json formatted file which points to all the files in this system, w
     $files = scandir(getcwd());
     $phpfiles = scandir(getcwd()."/php");
     $datafiles = scandir(getcwd()."/data");
-    $iconfiles = scandir(getcwd()."/iconsymbols");
+    $webfiles = scandir(getcwd()."/web");
     $scrollfiles = scandir(getcwd()."/scrolls");
-    
+    $mapfiles = scandir(getcwd()."/maps");
+    $iconfiles = scandir(getcwd()."/iconsymbols");    
+    $jsfiles = scandir(getcwd()."/jscode");
     
     $htmlfiles = [];
     foreach($files as $value){
@@ -39,6 +41,12 @@ dna.txt is a json formatted file which points to all the files in this system, w
         }
     }
 
+    $dna->javascript = [];
+    foreach($jsfiles as $value){
+        if($value[0] != "."){
+            array_push($dna->javascript,$value);
+        }
+    }
     
     $dna->php = [];
     foreach($phpfiles as $value){
@@ -46,7 +54,7 @@ dna.txt is a json formatted file which points to all the files in this system, w
             array_push($dna->php,$value);
         }
     }
-
+    
     $dna->scrolls = [];
     foreach($scrollfiles as $value){
         if($value[0] != "."){
@@ -54,14 +62,28 @@ dna.txt is a json formatted file which points to all the files in this system, w
         }
     }
 
+    $dna->maps = [];
+    foreach($mapfiles as $value){
+        if($value[0] != "."){
+            array_push($dna->maps,$value);
+        }
+    }
+
+    $dna->web = [];
+    foreach($webfiles as $value){
+        if(substr($value,-5) == ".html" || substr($value,-4) == ".css" || substr($value,-3) == ".js" || substr($value,-4) == ".php" || substr($value,-4) == ".txt"){
+            array_push($dna->web,$value);
+        }
+    }
+    
     $dna->iconsymbols = [];
     foreach($iconfiles as $value){
         if($value[0] != "."){
             array_push($dna->iconsymbols,$value);
         }
     }
-
-
+    
+    
     echo json_encode($dna,JSON_PRETTY_PRINT);
 
     $file = fopen("data/dna.txt","w");// create new file with this name

@@ -13,19 +13,21 @@ $dna = json_decode($dnaraw);
 
 mkdir("data");
 mkdir("php");
+mkdir("images");
+mkdir("media");
+mkdir("web");
 mkdir("scrolls");
+mkdir("jscode");
 mkdir("iconsymbols");
+mkdir("maps");
+mkdir("symbolfeed");
 
-mkdir("symbolserver");
-mkdir("imageserver");
+mkdir("media/zines");
+mkdir("media/books");
+mkdir("media/music");
+mkdir("media/trashmagic");
 
 copy("https://raw.githubusercontent.com/LafeLabs/trashmagic/main/php/replicator.txt","replicator.php");
-
-
-copy("https://raw.githubusercontent.com/LafeLabs/trashmagic/main/symbolserver/php/replicator.txt","symbolserver/replicator.php");
-copy("https://raw.githubusercontent.com/LafeLabs/pi/main/servers/imageserver/php/replicator.txt","imageserver/replicator.php");
-
-
 
 foreach($dna->html as $value){
     
@@ -33,16 +35,17 @@ foreach($dna->html as $value){
 
 }
 
-foreach($dna->iconsymbols as $value){
-    
-    copy($baseurl."iconsymbols/".$value,"iconsymbols/".$value);
-
-}
 
 foreach($dna->data as $value){
     
     copy($baseurl."data/".$value,"data/".$value);
     
+}
+
+foreach($dna->scrolls as $value){
+        
+    copy($baseurl."scrolls/".$value,"scrolls/".$value);
+
 }
 
 foreach($dna->php as $value){
@@ -52,8 +55,28 @@ foreach($dna->php as $value){
 
 }
 
-foreach($dna->scrolls as $value){
-    copy($baseurl."scrolls/".$value,"scrolls/".$value);
+
+foreach($dna->web as $value){
+    
+    copy($baseurl."web/".$value,"web/".$value);
+    
+}
+    
+foreach($dna->maps as $value){
+        
+    copy($baseurl."maps/".$value,"maps/".$value);
+
+}
+    
+    
+foreach($dna->javascript as $value){
+    copy($baseurl."jscode/".$value,"jscode/".$value);
+}
+
+foreach($dna->iconsymbols as $value){
+    
+    copy($baseurl."iconsymbols/".$value,"iconsymbols/".$value);
+
 }
 
 

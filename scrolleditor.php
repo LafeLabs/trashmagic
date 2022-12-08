@@ -15,26 +15,25 @@
     </head>
 <body>
 <div id = "prototype">
-## [HOME](scrolls/home)    
-    
+## [HOME](scrolls/home)
+
 # name
  
- double line break for paragraph break, *italic*, **bold**, [link](index.html). 
+double line break for paragraph break, *italic*, **bold**, [link](index.html). Delete all this.
  
- ![image alt text](iconsymbols/chaos.svg)
+![image alt text](https://raw.githubusercontent.com/LafeLabs/hypercube/main/iconsymbols/image.svg)
  
 </div>
     
 <textarea id = "maintextarea"></textarea>
-    <a id = "userlink" href = "user.php?scroll=scrolls/home">
-        <img src = "iconsymbols/home.svg"/>
-    </a>
-    <a href = "scrolldelete.html">
-        <img src = "iconsymbols/delete.svg"/>
-    </a>
-    <img id = "modebutton" class = "button" src= "iconsymbols/lightdark.svg"/>
-
-    <img id = "menubutton" class = "button" src= "iconsymbols/hidemenu.svg"/>
+<div id = "linksbox">
+    <a id = "userlink" href = "user.php?scroll=scrolls/home">READ SCROLL</a>
+    <a href = "scrolldelete.html">DELETE SCROLLS</a>
+    <a href = "scrollset.html">SCROLL SET REPLICATOR</a>
+    <span id = "menubutton" class = "button">SHOW SCROLL LIST</span>
+    <span id = "modebutton" class = "button">MODE</span>
+    
+</div>
     
 <div id = "feedscroll">
     <table>
@@ -166,7 +165,7 @@ if(document.getElementById("scrolldiv").innerHTML.length > 0 && document.getElem
 }
 
 if(document.getElementById("scrolldiv").innerHTML.length == 0 && document.getElementById("fromdiv").innerHTML.length == 0){
-    currentfile = "README.md";
+    currentfile = "scrolls/home";
     var httpc = new XMLHttpRequest();
     httpc.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
@@ -363,6 +362,42 @@ document.getElementById("menubutton").onclick = function(){
     }
 }
 
+
+scrollset = {};
+
+var httpc = new XMLHttpRequest();
+    httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        scrollset = JSON.parse(this.responseText);
+        if(scrollset.server.charAt(scrollset.server.length-1) != "/"){
+            scrollset.server = scrollset.server + "/"; 
+        }
+        var httpc9 = new XMLHttpRequest();
+        httpc9.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+
+                scrolls = JSON.parse(this.responseText);
+                scrollset.scrolls = scrolls;
+                savejson();
+
+            };
+        }
+        
+        httpc9.open("GET", "dir.php?filename=scrolls", true);
+        httpc9.send();
+        
+    }
+};
+httpc.open("GET", "fileloader.php?filename=data/scrollset.txt", true);
+httpc.send();
+
+function savejson(){
+    var url = "filesaver.php";        
+    var httpc2 = new XMLHttpRequest();
+    httpc2.open("POST", url, true);
+    httpc2.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    httpc2.send("data="+encodeURIComponent(JSON.stringify(scrollset,null,"    "))+"&filename=data/scrollset.txt");//send text to filesaver.php
+}
 </script>
 <style>
 #prototype{
@@ -370,6 +405,11 @@ document.getElementById("menubutton").onclick = function(){
 }
 body{
     overflow:hidden;
+}
+#linksbox a,span{
+    color:#ff2cb4;
+    border:solid;
+    border-color:#ff2cb4;
 }
 .scrollbutton{
     cursor:pointer;

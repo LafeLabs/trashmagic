@@ -1,133 +1,86 @@
-[home](scrolls/home)
+# [TRASH MAGIC](https://github.com/LafeLabs/trashmagic)
 
-# TRASH MAGIC ACTION COLORING BOOK
+## [http://localhost/](http://localhost/)
 
-## TRASH ROBOT
+## *self-replicating media*
 
-## [CLICK HERE TO DOWNLOAD PDF](https://github.com/LafeLabs/trashmagic/raw/main/booklettersizebooklet.pdf)
+The easiest way to get a Trash Magic server is to pick up a free one from someone who makes them.  And the best way to support people making more servers is to donate an old unused laptop to them so they can install a server on it.
 
-## Create the book
+Find any old computer that someone is getting rid of, it could be mac, pc or linux(but not Chromebook).  
 
-Print that document two sided, be sure to flip on short edge rather than long edge if that is an option with your printer.
+You will need a thumb drive.  Follow the instructions below to install Ubuntu and wipe all the old data on the hard drive.
 
-[print and fold and bind tiktok](https://www.tiktok.com/@trash_robot/video/7034551659426712879)
+[https://ubuntu.com instructions](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview)
 
-Stack all the pages in order, and fold in half so that the booklet is 8.5 inches by 5.5 inches, and so that the front cover is on the outside, which says the title of the book.
+Once Ubuntu is installed, open a command line and type:
 
-Draw dots every half inch, using your eyeball to judge how far in from the edge to make it. Exact dimensions don't matter, just make it about that distance and as even as you can.  
+```
+sudo apt update
+sudo apt install apache2 -y
+sudo apt install php libapache2-mod-php -y
+cd /var/www/html
+sudo rm index.html
+sudo apt install curl
+sudo curl -o replicator.php https://raw.githubusercontent.com/LafeLabs/trashmagic/main/php/replicator.txt
+cd ..
+sudo chmod -R 0777 *
+cd html
+php replicator.php
+sudo chmod -R 0777 *
+```
+Check the IP address by hovering over the wifi icon, put that into the browser on another machine on the same local wifi network to see and edit the server.  Or open a browser on the pi and point it to [http://localhost](http://localhost).
 
-Punch holes on each dot with a thumb tack, with cardboard in the back of the booklet so the tack has somewhere to push into other than your leg.  
+Now to connect this pi to the outside world you want to forward port 80 traffic to your router to the pi.  To do that, look at your router and see if there is information on how to log on, including login and password and the router IP address. If you can't find that information, try looking up your router make and model in a search and trying to figure out how to log on from there. Then click around and find the port forwarding or do a search for port forwarding and your router type, and forward port 80 traffic.  
 
-Either staple down the spine or stitch by hand using a needle and thread with a back stitch.  Tie knots at both ends of thread, cut off extra thread.  
+Next, you want to buy a domain name linked to a physical location near where your server is, ending in something other than .com like .net, .org, .xyz or .art.  Edit the DNS entry for your domain to have an "A record" which points to your home IP address which you can get from [www.whatismyip.com](https://www.whatismyip.com/).  Contact other Trash Magic Operators with information on your server so they can link to it.
 
-[back stitch on wikipedia](https://en.wikipedia.org/wiki/Backstitch)
+When your server is live, put files for books in "/var/www/html/media/books", zines in "/var/www/html/media/zines", and images of trash magic objects to share on the network in "/var/www/html/media/trashmagic".  Write the domain on trash and place the trash in the physical route you will walk with your cart of physical media(which could just be a bike basket or backpack).  Photograph the trash magic media which points to the domain which points to the server and put those photographs in the trashmagic folder as described above. When you make your local rounds as a Server Operator in the neighborhood, take pictures of others' trash magic along and post to the trash magic feed.
 
-[stitch the spine tiktok](https://www.tiktok.com/@trash_robot/video/7034566631510543663)
+Create web pages for places, people and things on the route of the Operator.
 
-You have now created another book!
+This is what the server home page looks like:
 
+![](https://raw.githubusercontent.com/LafeLabs/trashmagicserver/main/media/trashmagic/server-screenshot.png)
 
-![](imageserver/uploadimages/cover.png)
+Here is the folder with the sub-folders you drag/drop media into on the Ubuntu Trash Magic Server:
 
-![](imageserver/uploadimages/trashrobot.png)
+![](https://raw.githubusercontent.com/LafeLabs/trashmagicserver/main/media/trashmagic/drop-folder-ubuntu-screenshot.png)
 
+Put images in "trashmagic", zines in "zines" and books in "books".  Use a thumb drive to carry a copy of the whole set of files to clone from one Trash Magic Server to another when you are in physical proximity.  Carry around 2 thumb drives, one with the Ubuntu install drive described in the installation instructions at the Ubuntu page linked above and one with all your media.  Then anywhere you go you can create a new server and load media onto it, and if you find an existing server you can use your thumb drive to get all their files you want via sneakernet. 
 
-**TRASH ROBOT**
+![](https://raw.githubusercontent.com/LafeLabs/trashmagicserver/main/media/trashmagic/qrcode-screenshot.png)
 
-Now draw your first TRASH ROBOT.  See this example:
+### Replicate the Github using localhost
 
-![](https://i.imgur.com/MkjWcsk.jpg)
-
-The TRASH ROBOT avatar is just a rectangle with googley eyes and a black rectangle for a mouth, with 6 stripes colored in the simple rainbow sequence of red, orange, yellow, green, blue, purple. Notice the block letters which are based on starting with a square in your mind and just removing small simple amounts of the square to generate each letter.
-
-This is the open brand of TRASH ROBOT.  Rainbows, googley eyes, and the block font with repeated rainbow colors.  This is simple, easy to copy, easy to recognize, and impossible to trademark.  No one owns this.  It belongs to us all.  We will be repeating this motif again and again in many media as we go along.
-
-**MAGIC**
-![](imageserver/uploadimages/image12.png)
-![](imageserver/uploadimages/magicsymbols.png)
-
-We define magic to be the replication of the desire to replicate a thing.   Magical things are things which impart in people the desire to copy those things, and which contain the information required to help make that happen.  
-
-Rather than belabor the theory or general examples of this, we merely contemplate replication as an idea, and sketch it out with circles pointing out to more circles.  We aim to build media which *fully* replicates.  Not just replicating a message or meme, but replicating the entire system including all physical parts both physical and digital.
-
-Color in the replicator symbols as you see fit, add things to the circles based on your own ideas.
-
-**MAGIC SYMBOLS**
-
-What symbols have resonance for you? What are the symbols you live by or want to live by?  
-
-![](imageserver/uploadimages/trashcore.png)
-
-**TRASHCORE**
-
-Trash Robot is just the jumping off point.  We will build a whole fashion/brand aesthetic and use it to spread all the ideas here.  TRASHCORE.  Cut felt sewn onto black cotton flannel.  Block letters, rainbow and googly eyes.
-
-
-![](imageserver/uploadimages/image13.png)
-![](imageserver/uploadimages/image14.png)
-![](imageserver/uploadimages/trashgraph.png)
-![](imageserver/uploadimages/trashfactory.png)
-
-Pages 5-7 TRASH MAGIC
-
-**TRASH MAGIC** is the creation of things from trash which people have both the desire and ability to replicate.  We use the geometric programming language of Geometron to construct things and media which describe things as well as those things themselves, and the media which helps to replicate things.
-
-In TRASH MAGIC  we are building a whole new civilization in which we abolish all mining and oil and gas, and all global supply chains and build things entirely from the waste of the old world we find in our local environment.  
-
-TRASH MAGIC represents a flow between various elements: the TRASH FACTORY of products we provide to our community, the TRASH STATION where we distribute things, the TRASH ACADEMY where we teach TRASH MAGIC, the TRASH LABS where we develop new methods, and the TRASH FEED, the waste stream from which we get our materials.  
-
-Each page gets filled in with the appropriate information for your situation. 
-
-The BULLETIN BOARD is a page which can be used to post any kind of message to the community. You can advertise whatever you want to share here.  COMMUNITY RESOURCES is generally a place for mutual aid either needed by the community or available.  
-
-The scroll with the 4 triangles in a triangle represents the [BOOK OF GEOMETRON](https://github.com/lafelabs/bookofgeometron/).  All the graphics in this work are created using the geometric programming language of GEOMETRON. 
-
-The scroll with an infinite sequence of scrolls represents the idea of the self-replicating text.  This physical book as well as the digital versions all represent this kind of media.  
-
-MAGIC BOOK refers to self-replicating books. This page can be used to document the digital side of this, the self-replicating web document which includes the Raspberry Pi with solar panels, etc.  This is a very self-referential page, which can have information about binding, printing, code, hardware or software--anything which replicates any kind of book.
-
-WEB refers to the elements of our system which are on the Open Web.  We have instances of all our documents out on the web.  This can be paid hosted on purchased domains, free webhosts, local network web hosts, or Github repositories.  In all cases, we post relevant information here: IP addresses, web addresses, github info, etc.
-
-STREETS refers to the situation in the world of streets of this physical document, be it a web server or a physical book.  What is the interstate corridor? What are the local US highways? State highways? Major city or town streets? Parking lots and shopping centers. Document it all here.
-
-WATERSHED refers to where we are in the space of flowing water from sky to sea.
-Document the whole system: streams, creeks, rivers, bays, oceans, sewers, fresh water.
-
-TRAVELS documents the path of this book through the physical world.  Keep passing the book along! Document where it goes.  add more pages as needed.
-
-EVENTS document where we are setting up TRASH MAGIC to share.  We can keep trying to find events, documenting when we show up, and spreading these ides so others do the same.
+ - install PHP on your machine
+ - create a new github repository on a CC0 PUBLIC DOMAIN license and clone it on your machine
+ - copy the file [php/replicator.txt](php/replicator.txt) into a file called replicator.php in the new repo directory
+ - run `php replicator.php` on your machine, wait for all the code to copy
+ - push all that code up to your github repo
+ - in the same directory, type `sudo php -S localhost:80`
+ - go to [http://localhost](http://localhost) and you should get back to this screen, edit all elements of the system
+ - use [editor.php](editor.php) to edit the file php/replicator.txt so that the two urls are the global url for *your* repo for both dna and replicator
+ - after you've edited the code, click [text2php.php](text2php.php) to convert that to php
+ - push your code to your github repo
+ - use the new replicator code on your github repo to replicate out that instance to all other servers(linux, windows, mac, android) and forks
+ - when you figure this out, make youtube videos showing other people how to copy the whole system, tell someone about those videos so that we can all link to them
 
 
-The SHAPE SET can get traced, cut out, laminated, and used to make bigger or smaller shapes which can be traced onto cardboard and cut out at any scale.  These are used to construct all other shapes and designs, and are used to make all of the elements of ACTION GEOMETRY.
+### Socials
 
-## Pages
+ - [tiktok:@trash_robot](https://www.tiktok.com/@trash_robot)
+ - [instagram:@lafelabs](https://www.instagram.com/lafelabs/)
+ - [mastodon:@trashrobot@kolektiva.social](https://kolektiva.social/@trashrobot)
+ - [github:@lafelabs](https://github.com/LafeLabs/)
 
-![](imageserver/uploadimages/trashfeed.png)
-![](imageserver/uploadimages/community.png)
-![](imageserver/uploadimages/bulletinboard.png)
-![](imageserver/uploadimages/trashstation.png)
-![](imageserver/uploadimages/trashacademy.png)
-![](imageserver/uploadimages/trashlabs.png)
-![](imageserver/uploadimages/geometronscroll.png)
-![](imageserver/uploadimages/image17.png)
-![](imageserver/uploadimages/magicbook.png)
-![](imageserver/uploadimages/web.png)
-![](imageserver/uploadimages/streets.png)
-![](imageserver/uploadimages/watershed.png)
-![](imageserver/uploadimages/travels.png)
-![](imageserver/uploadimages/events.png)
-![](imageserver/uploadimages/shapes.png)
-![](imageserver/uploadimages/circles6.png)
-![](imageserver/uploadimages/image4.png)
-![](imageserver/uploadimages/image5.png)
-![](imageserver/uploadimages/image6.png)
-![](imageserver/uploadimages/image7.png)
-![](imageserver/uploadimages/image18.png)		
-![](imageserver/uploadimages/qubert.png)
-![](imageserver/uploadimages/pi.png)
-![](imageserver/uploadimages/artbox.png)
-![](imageserver/uploadimages/image9.png)
-![](imageserver/uploadimages/flag.png)
-![](imageserver/uploadimages/bag.png)
-![](imageserver/uploadimages/image10.png)
-![](imageserver/uploadimages/image1.png)
+# Trash Robot Books
+ 
+ - [First Book of Geometron](https://www.trashrobot.org/bookofgeometron/)
+ - [Geometron Magic](https://www.trashrobot.org/geometronmagic/)
+ - [Trash Magic Books](https://www.trashrobot.org/user.php?scroll=scrolls/trashmagicbooks)
+
+# Live Trash Magic Servers
+
+ - [www.sloanslake.art](http://www.sloanslake.art)
+ - [zinez.xyz](http://zinez.xyz/)
+
