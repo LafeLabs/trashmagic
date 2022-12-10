@@ -110,6 +110,12 @@ EGO DEATH:
             echo $newfile;
             echo "</div>\n";
         }
+        if(substr($newfile,-4) == ".css"){
+            echo "<div class = \"css file\">";
+            echo $newfile;
+            echo "</div>\n";
+        }
+
         if(substr($newfile,-3) == ".py"){
             echo "<div class = \"python file\">";
             echo $newfile;

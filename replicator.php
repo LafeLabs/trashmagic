@@ -28,6 +28,10 @@ mkdir("media/music");
 mkdir("media/fashion");
 mkdir("media/market");
 mkdir("media/trashmagic");
+mkdir("media/cardboard");
+mkdir("media/arduino");
+mkdir("media/jupyter");
+
 
 copy("https://raw.githubusercontent.com/LafeLabs/trashmagic/main/php/replicator.txt","replicator.php");
 

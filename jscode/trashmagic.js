@@ -24,6 +24,34 @@ function listfiles(domelement,folder){
     
 }
 
+function rlistfiles(domelement,folder){
+    files = [];
+    var httpcimages = new XMLHttpRequest();
+    httpcimages.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            files = JSON.parse(this.responseText);
+            var locallinks = [];
+            var oldlinks = domelement.getElementsByTagName("A");
+            for(var index = 0;index < oldlinks.length;index++){
+                locallinks.push(oldlinks[index]);
+            }
+            for(var index = 0;index < files.length;index++){
+                var newa = document.createElement("A");
+                newa.href = files[index];
+                newa.innerHTML = files[index];
+                domelement.appendChild(newa);
+                locallinks.push(newa);
+            }
+            rainbow(locallinks);
+        }
+    };
+    httpcimages.open("GET", "rdir.php?filename=" + folder, true);
+    httpcimages.send();
+    
+}
+
+
+
 function listimages(domelement,folder){
 
     images = [];

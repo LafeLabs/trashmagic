@@ -27,7 +27,14 @@ sudo chmod -R 0777 *
 cd html
 php replicator.php
 sudo chmod -R 0777 *
+sudo apt-get install arduino
+sudo apt-get install python3-scipy
+sudo pip3 install --upgrade pip
+reboot
+sudo pip3 install jupyter
 ```
+
+
 Check the IP address by hovering over the wifi icon, put that into the browser on another machine on the same local wifi network to see and edit the server.  Or open a browser on the pi and point it to [http://localhost](http://localhost).
 
 Now to connect this pi to the outside world you want to forward port 80 traffic to your router to the pi.  To do that, look at your router and see if there is information on how to log on, including login and password and the router IP address. If you can't find that information, try looking up your router make and model in a search and trying to figure out how to log on from there. Then click around and find the port forwarding or do a search for port forwarding and your router type, and forward port 80 traffic.  
