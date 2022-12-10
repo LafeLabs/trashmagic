@@ -33,6 +33,7 @@
         "imagefeed.html",
         "images.html",
         "index.html",
+        "jupyter.html",
         "keyboard.html",
         "maker.html",
         "mapbook.html",

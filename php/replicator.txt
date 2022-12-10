@@ -31,6 +31,7 @@ mkdir("media/trashmagic");
 mkdir("media/cardboard");
 mkdir("media/arduino");
 mkdir("media/jupyter");
+mkdir("media/measurement");
 
 
 copy("https://raw.githubusercontent.com/LafeLabs/trashmagic/main/php/replicator.txt","replicator.php");
