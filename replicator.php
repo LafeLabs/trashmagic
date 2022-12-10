@@ -25,6 +25,8 @@ mkdir("symbolfeed");
 mkdir("media/zines");
 mkdir("media/books");
 mkdir("media/music");
+mkdir("media/fashion");
+mkdir("media/market");
 mkdir("media/trashmagic");
 
 copy("https://raw.githubusercontent.com/LafeLabs/trashmagic/main/php/replicator.txt","replicator.php");
