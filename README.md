@@ -29,8 +29,7 @@ php replicator.php
 sudo chmod -R 0777 *
 sudo apt-get install arduino
 sudo apt-get install python3-scipy
-sudo pip3 install --upgrade pip
-reboot
+sudo apt install python3-pip
 sudo pip3 install jupyter
 ```
 
