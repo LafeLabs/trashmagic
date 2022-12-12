@@ -31,6 +31,7 @@ mkdir("media/trashmagic");
 mkdir("media/cardboard");
 mkdir("media/arduino");
 mkdir("media/jupyter");
+mkdir("media/videos");
 mkdir("media/measurement");
 
 
