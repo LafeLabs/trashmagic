@@ -50,7 +50,61 @@ function rlistfiles(domelement,folder){
     
 }
 
+function googleyeyes(n){
+    var square = 1;
+    if(innerWidth > innerHeight){
+        square = innerHeight;
+    }
+    else{
+        square = innerWidth;
+    }
+    for(var index = 0;index < n;index++){
+        var eye = document.createElement("DIV");
+        eye.style.position = "absolute";
+        eye.style.borderRadius = "50%";
+        eye.style.border = "solid";
+        eye.style.backgroundColor = "white";
+        eye.style.zIndex = "-1";
+        var pupil = document.createElement("DIV");
+        pupil.style.position = "absolute";
+        pupil.style.borderRadius = "50%";
+        pupil.style.border = "solid";
+        pupil.style.backgroundColor = "black";
+        pupil.style.zIndex = "0";
+        eyesize = Math.round(0.2*Math.random()*square);
+        if(eyesize < 20){
+            eyesize = 20;
+        }
+        eyeleft = Math.round(Math.random()*innerWidth);
+        eyetop = Math.round(Math.random()*innerHeight);
 
+        eye.style.width = eyesize.toString() + "px";
+        eye.style.height = eyesize.toString() + "px";
+        if(eyetop > innerHeight - eyesize - 30){
+            eyetop = innerHeight - eyesize - 30;
+        }
+        if(eyeleft > innerWidth - eyesize - 30){
+            eyeleft = innerWidth - eyesize - 30;
+        }
+
+        eye.style.top = eyetop.toString() + "px";
+        eye.style.left = eyeleft.toString() + "px";
+
+
+        pupil.style.width = (0.2*eyesize).toString() + "px";
+        pupil.style.height = (0.2*eyesize).toString() + "px";
+
+        pupilleft = Math.round(Math.random()*eyesize);
+        pupiltop = Math.round(Math.random()*eyesize);
+        pupil.style.left = pupilleft.toString() + "px";
+        pupil.style.top = pupiltop.toString() + "px";
+
+        eye.appendChild(pupil);
+        
+        document.body.appendChild(eye);
+
+    }
+}
 
 function listimages(domelement,folder){
 

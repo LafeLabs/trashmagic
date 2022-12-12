@@ -1,3 +1,6 @@
+body{
+    background-color:black;
+}
 #mainscroll{
     position:absolute;
     left:0px;
@@ -5,9 +8,9 @@
     bottom:0px;
     top:0px;
     overflow:scroll;
-    background-color:black;
     color:#00ff00;
     font-family:courier;
+    z-index:0;
 }
 h1{
     text-align:center;
