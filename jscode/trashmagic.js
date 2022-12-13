@@ -91,11 +91,11 @@ function googleyeyes(n){
         eye.style.left = eyeleft.toString() + "px";
 
 
-        pupil.style.width = (0.2*eyesize).toString() + "px";
-        pupil.style.height = (0.2*eyesize).toString() + "px";
+        pupil.style.width = (0.3*eyesize).toString() + "px";
+        pupil.style.height = (0.3*eyesize).toString() + "px";
 
-        pupilleft = Math.round(Math.random()*eyesize);
-        pupiltop = Math.round(Math.random()*eyesize);
+        pupilleft = Math.round(0.7*Math.random()*eyesize);
+        pupiltop = Math.round(0.7*Math.random()*eyesize);
         pupil.style.left = pupilleft.toString() + "px";
         pupil.style.top = pupiltop.toString() + "px";
 
