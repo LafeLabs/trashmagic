@@ -237,9 +237,11 @@
         "board.txt",
         "index.html",
         "newpage.html",
+        "oscarthegrouch.html",
         "place.html",
         "place.txt",
         "places.html",
+        "trashrobot.html",
         "underthebridge.html"
     ],
     "iconsymbols": [
