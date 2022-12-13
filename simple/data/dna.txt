@@ -1,0 +1,73 @@
+{
+    "html": [
+        "README.md",
+        "books.html",
+        "cardboard.html",
+        "carts.html",
+        "community.html",
+        "domains.html",
+        "elements.html",
+        "fashion.html",
+        "fork.html",
+        "geometron.html",
+        "hackers.html",
+        "homepages.html",
+        "index.html",
+        "jupyter.html",
+        "maker.html",
+        "market.html",
+        "media.html",
+        "mediadestroyer.html",
+        "music.html",
+        "operators.html",
+        "places.html",
+        "podcasts.html",
+        "qrcode-page.html",
+        "qrcode.html",
+        "readme.html",
+        "servers.html",
+        "set.html",
+        "trashmagic.css",
+        "trashmagic.html",
+        "trashrobot.html",
+        "videos.html",
+        "webdestroyer.html",
+        "webeditor.html",
+        "webpages.html",
+        "zines.html"
+    ],
+    "data": [
+        "dna.txt"
+    ],
+    "javascript": [
+        "geometron.js",
+        "trashmagic.js"
+    ],
+    "php": [
+        "copy.txt",
+        "deletefile.txt",
+        "dir.txt",
+        "dnagenerator.txt",
+        "editor.txt",
+        "fileloader.txt",
+        "filesaver.txt",
+        "mkdir.txt",
+        "rdelete.txt",
+        "rdir.txt",
+        "replicator.txt",
+        "text2php.txt",
+        "uploadimage.txt",
+        "uploadmedia.txt",
+        "uploadsymbol.txt"
+    ],
+    "web": [
+        "board.html",
+        "board.txt",
+        "index.html",
+        "newpage.html",
+        "place.html",
+        "place.txt",
+        "places.html",
+        "underthebridge.html"
+    ]
+}
