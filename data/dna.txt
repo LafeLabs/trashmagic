@@ -242,6 +242,7 @@
         "place.txt",
         "places.html",
         "trashrobot.html",
+        "tutorial.html",
         "underthebridge.html"
     ],
     "iconsymbols": [
