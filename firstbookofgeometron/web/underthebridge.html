@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA4A8AAO/vAADqrwAA6q8AAOqvAADqrwAA6q8AAOqvAADqrwAA7+8AAMAHAADf9wAAwAcAAPu/AAD4PwAA" rel="icon" type="image/x-icon" />
+
+    <!--Stop Google:-->
+    <META NAME="robots" CONTENT="noindex,nofollow">
+   <title>TRASH MAGIC WEB PAGE</title>    
+   <script src = "../jscode/trashmagic.js"></script>
+   
+   <script src = "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+   
+</head>
+<body>    
+
+<div id = "qrcode"></div>
+
+<div id = "mainscroll">
+    <h1 id = "title">UNDER THE BRIDGE</h1>
+<p>
+
+You are under a bridge.  There is a cardboard sign here.  Leave a message on the message board below or the cardboard sign. As above, so below.
+
+</p>
+
+    <a href = "places.html">PLACES</a>
+    <textarea id = "board"></textarea>
+
+</div>
+
+<script>
+
+titles = document.getElementsByTagName("H1");
+for(var index = 0;index < titles.length;index++){
+    rainbowstring(titles[index]);    
+}
+
+rainbow(document.getElementsByTagName("A"));
+
+board = "";
+
+var httpc2 = new XMLHttpRequest();
+httpc2.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        board = this.responseText;
+        document.getElementById("board").value = board;
+    }
+};
+
+httpc2.open("GET", "../fileloader.php?filename=web/place.txt", true);
+httpc2.send();
+
+document.getElementById("board").onkeyup = function() {
+        wall = this.value;
+        var httpc = new XMLHttpRequest();
+        var url = "../filesaver.php";        
+        httpc.open("POST", url, true);
+        httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+        httpc.send("data="+encodeURIComponent(wall)+"&filename=web/place.txt");//send text to filesaver.php        
+}
+
+globalurl = window.location.href;
+codesquaresize = 100;
+
+qrcode = new QRCode(document.getElementById("qrcode"), {
+	text: globalurl,
+	width: codesquaresize,
+	height: codesquaresize,
+	colorDark : "#000000",
+	colorLight : "#ffffff",
+	correctLevel : QRCode.CorrectLevel.H
+});
+
+
+</script>
+<style>
+#qrcode{
+    position:absolute;
+    border-color:white;
+    border-width:10px;
+    background-color:white;
+    left:10px;
+    top:10px;
+    width:120px;
+    height:120px;
+    z-index:1;
+}
+#qrcode img{
+}
+#mainscroll{
+    position:absolute;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    top:0px;
+    overflow:scroll;
+    background-color:black;
+    color:#00ff00;
+    font-family:courier;
+}
+#board{
+    width:90%;
+    height:30em;
+    color:black;
+    display:block;
+    width:80%;
+    left:10%;
+    margin:auto;
+    margin-top:1em;
+    margin-bottom:1em;
+    border-radius:0.5em;
+    background-color:#9f8767;
+    color:black;
+    font-family:Comic Sans MS;
+    overflow:scroll;
+
+}
+#mainscroll div{
+    margin:auto;
+    display:block;
+}
+h1{
+    text-align:center;
+    font-size:4em;
+    font-family:helvetica;
+}
+p{
+    text-align:justify;
+    padding:1em 1em 1em 1em;
+    font-size:1.5em;
+    border:solid;
+    border-color:white;
+    border-width:10px;
+    border-radius:1em;
+    background-color:#0000ff;
+    color:white;
+    width:80%;
+    margin:auto;
+}
+a{
+    text-align:center;
+    font-family:helvetica;
+    font-size:3em;
+    width:80%;
+    margin:auto;
+    display:block;
+    border:solid;
+    border-radius:0.5em;
+    border-width:0.5em;
+    color:black;
+    margin-top:1em;
+}
+img{
+    display:block;
+    max-width:50%;
+    margin:auto;
+    margin-top:2em;
+}
+</style>
+</body>
+</html>
+
+
