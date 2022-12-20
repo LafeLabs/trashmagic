@@ -242,6 +242,7 @@
         "place.html",
         "place.txt",
         "places.html",
+        "platonic-solids.html",
         "trashrobot.html",
         "tutorial.html",
         "underthebridge.html"
