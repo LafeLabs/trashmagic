@@ -171,12 +171,13 @@ Golden Rectangle cutout to construct icosahedra:
 
 Print the above .svg image, then select the rectangle which has a size you want to use for making icoahedra and cut out that rectangle and the zig zag in the middle so that it can be used to generate a cardboard pattern which is replicated into more and more cardboard, creating an endless feed of cardboard icosahedra of all sizes with media printed on them which point back to this set of self-replicating digital media elements.  
 
-When we communicate the idea of replicating icosahedra from cardboard, this leads to discussions of geodesic domes built from trash, which will form the beginning of our trash arcologies that we aim to build in cities across the globe.  If you can build a cardboard icosahedron, you can build one from sticks and boards, and if you can build that you can build a dome from trash and so on.  
+When we communicate the idea of replicating icosahedra from cardboard, this leads to discussions of [geodesic domes](https://en.wikipedia.org/wiki/Geodesic_dome) built from trash, which will form the beginning of our trash [arcologies](https://en.wikipedia.org/wiki/Arcology) that we aim to build in cities across the globe.  If you can build a cardboard [icosahedron](https://en.wikipedia.org/wiki/Icosahedron), you can build one from sticks and boards, and if you can build that you can build a dome from trash and so on.  
 
-The cardboard Golden Rectangles also communicate the core of our philosophy: self-replicating geometry constructed from trash.  They can be used for media of all kinds, with paper glued to them in layers, flowing from person to person and place to place as a the medium in a trash magic economy.  
+The cardboard [Golden Rectangles](https://en.wikipedia.org/wiki/Golden_rectangle) also communicate the core of our philosophy: self-replicating geometry constructed from trash.  They can be used for media of all kinds, with paper glued to them in layers, flowing from person to person and place to place as a the medium in a trash magic economy.  
 
 ![](https://github.com/LafeLabs/trashmagic/blob/main/media/trashmagic/icosahedron.svg) 
 
+It is highly recommended that you watch [Donald In MathemagicLand](https://www.youtube.com/watch?v=U_ZHsk0-eF0&t=561s) on youtube, it's a very old and also very innacurate Disney math education film which talks a great deal about the [Golden Ratio](https://en.wikipedia.org/wiki/Golden_ratio).
 
 
 
