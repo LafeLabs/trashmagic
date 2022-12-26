@@ -96,12 +96,12 @@ Put images in "trashmagic", zines in "zines" and books in "books".  Use a thumb 
 # [Trash Robot](https://www.trashrobot.org) Books
  
  
-  - [https://www.lulu.com/shop/trash-robot/geometron-magic/paperback/product-y6p96w.html](BUY GEOMETRON MAGIC)
-  - [https://raw.githubusercontent.com/LafeLabs/pibrary/main/geometronmagic/main-large.pdf](DOWNLOAD GEOMETRON MAGIC)
-  - [https://www.lulu.com/shop/lafe-spietz/geometron/paperback/product-qqk98g.html](BUY GEOMETRON I)
-  - [https://github.com/LafeLabs/bookofgeometron/raw/main/main-bigpaper.pdf](DOWNLOAD GEOMETRON I)
-  - [https://www.lulu.com/en/us/shop/lafe-spietz/trash-magic-manifesto-and-action-coloring-book/paperback/product-1km4deev.html](BUY TRASH MAGIC MANIFESTO)
-  - [https://lafelabs.github.io/Trash_Magic_Manifesto.pdf](DOWNLOAD TRASH MAGIC MANIFESTO)
+  - [BUY GEOMETRON MAGIC](https://www.lulu.com/shop/trash-robot/geometron-magic/paperback/product-y6p96w.html)
+  - [DOWNLOAD GEOMETRON MAGIC](https://raw.githubusercontent.com/LafeLabs/pibrary/main/geometronmagic/main-large.pdf)
+  - [BUY GEOMETRON I](https://www.lulu.com/shop/lafe-spietz/geometron/paperback/product-qqk98g.html)
+  - [DOWNLOAD GEOMETRON I](https://github.com/LafeLabs/bookofgeometron/raw/main/main-bigpaper.pdf)
+  - [BUY TRASH MAGIC MANIFESTO](https://www.lulu.com/en/us/shop/lafe-spietz/trash-magic-manifesto-and-action-coloring-book/paperback/product-1km4deev.html)
+  - [DOWNLOAD TRASH MAGIC MANIFESTO](https://lafelabs.github.io/Trash_Magic_Manifesto.pdf)
   - [FIRST BOOK OF GEOMETRON SCROLLS](https://www.trashrobot.org/bookofgeometron/)
   - [GEOMETRON MAGIC SCROLLS](https://www.trashrobot.org/geometronmagic/)
  
