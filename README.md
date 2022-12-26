@@ -90,3 +90,34 @@ Put images in "trashmagic", zines in "zines" and books in "books".  Use a thumb 
  - [www.sloanslake.art](http://www.sloanslake.art)
  - [zinez.xyz](http://zinez.xyz/)
 
+Sloans Lake is the location of a trash magic instance.  See map below:
+
+![](https://raw.githubusercontent.com/LafeLabs/trashmagic/main/media/trashmagic/map-lake-denver.png)
+
+
+## [link to Openstreetmaps at Sloans lake](https://www.openstreetmap.org/#map=19/39.75151/-105.04626)
+
+
+Server in the field at Slaons Lake
+
+![](https://github.com/LafeLabs/trashmagic/blob/main/media/trashmagic/lake-server.png)
+
+
+Location of above image:
+
+![](https://github.com/LafeLabs/trashmagic/blob/main/media/trashmagic/lake-map.png)
+
+
+Server in the field at the [Edgewater Dunkin Donuts](http://sloanslake.art/web/dunkin.html):
+
+![](https://github.com/LafeLabs/trashmagic/blob/main/media/trashmagic/dunkin.png)
+
+
+Golden Rectangle cutout to construct icosahedra:
+
+![](https://github.com/LafeLabs/trashmagic/blob/main/media/trashmagic/golden-rectangle.svg)
+
+
+
+
+
