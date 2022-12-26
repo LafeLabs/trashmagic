@@ -1,4 +1,11 @@
-# [TRASH MAGIC](https://github.com/LafeLabs/trashmagic)
+![](https://raw.githubusercontent.com/LafeLabs/trashmagicserver/main/media/trashmagic/qrcode-github.png)
+
+
+# [TRASH MAGIC GITHUB](https://github.com/LafeLabs/trashmagic)
+
+# [WWW.SLOANSLAKE.ART](http://www.sloanslake.art)
+
+# [WWW.TRASHROBOT.ORG](https://www.trashrobot.org)
 
 ## [http://localhost/](http://localhost/)
 
@@ -38,9 +45,14 @@ Check the IP address by hovering over the wifi icon, put that into the browser o
 
 Now to connect this pi to the outside world you want to forward port 80 traffic to your router to the pi.  To do that, look at your router and see if there is information on how to log on, including login and password and the router IP address. If you can't find that information, try looking up your router make and model in a search and trying to figure out how to log on from there. Then click around and find the port forwarding or do a search for port forwarding and your router type, and forward port 80 traffic.  
 
+People in the network buy domains which represent public shared spaces.  Do not buy .com domains. Do not allow pages to be indexed by Google.  Do not reference a private business or individual person in a name.  We choose domains based on local places which might be bodies of water, streets, parks, neighborhoods, intersections, transit stations, parking lots, truck stops, rest stops, highways, trails, bridges, tunnels, or libraries.
+
+
 Next, you want to buy a domain name linked to a physical location near where your server is, ending in something other than .com like .net, .org, .xyz or .art.  Edit the DNS entry for your domain to have an "A record" which points to your home IP address which you can get from [www.whatismyip.com](https://www.whatismyip.com/).  Contact other Trash Magic Operators with information on your server so they can link to it.
 
-When your server is live, put files for books in "/var/www/html/media/books", zines in "/var/www/html/media/zines", and images of trash magic objects to share on the network in "/var/www/html/media/trashmagic".  Write the domain on trash and place the trash in the physical route you will walk with your cart of physical media(which could just be a bike basket or backpack).  Photograph the trash magic media which points to the domain which points to the server and put those photographs in the trashmagic folder as described above. When you make your local rounds as a Server Operator in the neighborhood, take pictures of others' trash magic along and post to the trash magic feed.
+When your server is live, put files for books in "/var/www/html/media/books", zines in "/var/www/html/media/zines", and images of trash magic objects to share on the network in "/var/www/html/media/trashmagic".  
+
+Write the domain on trash and place the trash in the physical route you will walk with your cart of physical media(which could just be a bike basket or backpack).  Photograph the trash magic media which points to the domain which points to the server and put those photographs in the trashmagic folder as described above. When you make your local rounds as a Server Operator in the neighborhood, take pictures of others' trash magic along and post to the trash magic feed.
 
 Create web pages for places, people and things on the route of the Operator.
 
@@ -52,7 +64,7 @@ Here is the folder with the sub-folders you drag/drop media into on the Ubuntu T
 
 ![](https://raw.githubusercontent.com/LafeLabs/trashmagicserver/main/media/trashmagic/drop-folder-ubuntu-screenshot.png)
 
-Put images in "trashmagic", zines in "zines" and books in "books".  Use a thumb drive to carry a copy of the whole set of files to clone from one Trash Magic Server to another when you are in physical proximity.  Carry around 2 thumb drives, one with the Ubuntu install drive described in the installation instructions at the Ubuntu page linked above and one with all your media.  Then anywhere you go you can create a new server and load media onto it, and if you find an existing server you can use your thumb drive to get all their files you want via sneakernet. 
+Put images in "trashmagic", zines in "zines" and books in "books".  Use a thumb drive to carry a copy of the whole set of files to clone from one Trash Magic Server to another when you are in physical proximity.  Carry around 2 thumb drives, one with the Ubuntu install drive described in the installation instructions at the Ubuntu page linked above and one with all your media.  Then anywhere you go you can create a new server and load media onto it, and if you find an existing server you can use your thumb drive to get all their files you want via [sneakernet](https://en.wikipedia.org/wiki/Sneakernet). 
 
 ![](https://raw.githubusercontent.com/LafeLabs/trashmagicserver/main/media/trashmagic/qrcode-screenshot.png)
 
@@ -79,11 +91,18 @@ Put images in "trashmagic", zines in "zines" and books in "books".  Use a thumb 
  - [mastodon:@trashrobot@kolektiva.social](https://kolektiva.social/@trashrobot)
  - [github:@lafelabs](https://github.com/LafeLabs/)
 
-# Trash Robot Books
+# [Trash Robot](https://www.trashrobot.org) Books
  
- - [First Book of Geometron](https://www.trashrobot.org/bookofgeometron/)
- - [Geometron Magic](https://www.trashrobot.org/geometronmagic/)
- - [Trash Magic Books](https://www.trashrobot.org/user.php?scroll=scrolls/trashmagicbooks)
+ 
+  - [https://www.lulu.com/shop/trash-robot/geometron-magic/paperback/product-y6p96w.html](BUY GEOMETRON MAGIC)
+  - [https://raw.githubusercontent.com/LafeLabs/pibrary/main/geometronmagic/main-large.pdf](DOWNLOAD GEOMETRON MAGIC)
+  - [https://www.lulu.com/shop/lafe-spietz/geometron/paperback/product-qqk98g.html](BUY GEOMETRON I)
+  - [https://github.com/LafeLabs/bookofgeometron/raw/main/main-bigpaper.pdf](DOWNLOAD GEOMETRON I)
+  - [https://www.lulu.com/en/us/shop/lafe-spietz/trash-magic-manifesto-and-action-coloring-book/paperback/product-1km4deev.html](BUY TRASH MAGIC MANIFESTO)
+  - [https://lafelabs.github.io/Trash_Magic_Manifesto.pdf](DOWNLOAD TRASH MAGIC MANIFESTO)
+  - [First Book of Geometron](https://www.trashrobot.org/bookofgeometron/)
+  - [Geometron Magic](https://www.trashrobot.org/geometronmagic/)
+  - [Trash Magic Books](https://www.trashrobot.org/user.php?scroll=scrolls/trashmagicbooks)
 
 # Live Trash Magic Servers
 
