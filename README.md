@@ -113,9 +113,49 @@ Server in the field at the [Edgewater Dunkin Donuts](http://sloanslake.art/web/d
 ![](https://github.com/LafeLabs/trashmagic/blob/main/media/trashmagic/dunkin.png)
 
 
+
+TRASH ROBOT is an Operator of the Sloans Lake node on the TRASH MAGIC NETWORK.
+
+![](https://github.com/LafeLabs/trashmagic/raw/main/media/trashmagic/operator.png)
+
+You can replicate the FREE PANTS by copying the letters from trash and sewing them on black sweatpants you find in the trash:
+
+![](https://raw.githubusercontent.com/LafeLabs/trashmagic/main/media/trashmagic/freepants1.png)
+
+![](https://raw.githubusercontent.com/LafeLabs/trashmagic/main/media/trashmagic/freepants2.png)
+
+
+This is the home server which hosts sloanslake.art:
+
+![](https://raw.githubusercontent.com/LafeLabs/trashmagic/main/media/trashmagic/server.png)
+
+Here is the flag for the SLOANS LAKE TRASH MAGIC NETWORK NODE:
+
+![](https://raw.githubusercontent.com/LafeLabs/trashmagic/main/media/trashmagic/flag.png)
+
+Here it is on the trash magic cart which has a printer robot on it and a mobile server with solar panel:
+
+![](https://raw.githubusercontent.com/LafeLabs/trashmagic/main/media/trashmagic/cart.png)
+
+![](https://raw.githubusercontent.com/LafeLabs/trashmagic/main/media/trashmagic/cart2.png)
+
+The icosahedron, made from 3 golden rectangles, represents the Water element in the GEOMETRON/TRASH MAGIC cosmology.
+
+![](https://raw.githubusercontent.com/LafeLabs/trashmagic/main/media/trashmagic/water-element1.png)
+
+![](https://raw.githubusercontent.com/LafeLabs/trashmagic/main/media/trashmagic/water-element2.png)
+
 Golden Rectangle cutout to construct icosahedra:
 
-![](https://github.com/LafeLabs/trashmagic/blob/main/media/trashmagic/golden-rectangle.svg)
+![](https://github.com/LafeLabs/trashmagic/blob/main/media/trashmagic/golden-rectangle.svg) 
+
+Print the above .svg image, then select the rectangle which has a size you want to use for making icoahedra and cut out that rectangle and the zig zag in the middle so that it can be used to generate a cardboard pattern which is replicated into more and more cardboard, creating an endless feed of cardboard icosahedra of all sizes with media printed on them which point back to this set of self-replicating digital media elements.  
+
+When we communicate the idea of replicating icosahedra from cardboard, this leads to discussions of geodesic domes built from trash, which will form the beginning of our trash arcologies that we aim to build in cities across the globe.  If you can build a cardboard icosahedron, you can build one from sticks and boards, and if you can build that you can build a dome from trash and so on.  
+
+The cardboard Golden Rectangles also communicate the core of our philosophy: self-replicating geometry constructed from trash.  They can be used for media of all kinds, with paper glued to them in layers, flowing from person to person and place to place as a the medium in a trash magic economy.  
+
+![](https://github.com/LafeLabs/trashmagic/blob/main/media/trashmagic/icosahedron.svg) 
 
 
 
