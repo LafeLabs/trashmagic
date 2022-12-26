@@ -1,4 +1,6 @@
-![](https://raw.githubusercontent.com/LafeLabs/trashmagicserver/main/media/trashmagic/qrcode-github.png)
+![](https://raw.githubusercontent.com/LafeLabs/trashmagic/main/media/trashmagic/qrcode-github.png)
+
+![](https://raw.githubusercontent.com/LafeLabs/trashmagic/main/media/trashmagic/qrcode-github-array.png)
 
 
 # [TRASH MAGIC GITHUB](https://github.com/LafeLabs/trashmagic)
@@ -66,7 +68,6 @@ Here is the folder with the sub-folders you drag/drop media into on the Ubuntu T
 
 Put images in "trashmagic", zines in "zines" and books in "books".  Use a thumb drive to carry a copy of the whole set of files to clone from one Trash Magic Server to another when you are in physical proximity.  Carry around 2 thumb drives, one with the Ubuntu install drive described in the installation instructions at the Ubuntu page linked above and one with all your media.  Then anywhere you go you can create a new server and load media onto it, and if you find an existing server you can use your thumb drive to get all their files you want via [sneakernet](https://en.wikipedia.org/wiki/Sneakernet). 
 
-![](https://raw.githubusercontent.com/LafeLabs/trashmagicserver/main/media/trashmagic/qrcode-screenshot.png)
 
 ### Replicate the Github using localhost
 
@@ -100,16 +101,15 @@ Put images in "trashmagic", zines in "zines" and books in "books".  Use a thumb 
   - [https://github.com/LafeLabs/bookofgeometron/raw/main/main-bigpaper.pdf](DOWNLOAD GEOMETRON I)
   - [https://www.lulu.com/en/us/shop/lafe-spietz/trash-magic-manifesto-and-action-coloring-book/paperback/product-1km4deev.html](BUY TRASH MAGIC MANIFESTO)
   - [https://lafelabs.github.io/Trash_Magic_Manifesto.pdf](DOWNLOAD TRASH MAGIC MANIFESTO)
-  - [First Book of Geometron](https://www.trashrobot.org/bookofgeometron/)
-  - [Geometron Magic](https://www.trashrobot.org/geometronmagic/)
-  - [Trash Magic Books](https://www.trashrobot.org/user.php?scroll=scrolls/trashmagicbooks)
-
+  - [FIRST BOOK OF GEOMETRON SCROLLS](https://www.trashrobot.org/bookofgeometron/)
+  - [GEOMETRON MAGIC SCROLLS](https://www.trashrobot.org/geometronmagic/)
+ 
 # Live Trash Magic Servers
 
  - [www.sloanslake.art](http://www.sloanslake.art)
  - [zinez.xyz](http://zinez.xyz/)
 
-Sloans Lake is the location of a trash magic instance.  See map below:
+Sloan's Lake is the location of a trash magic instance.  See map below:
 
 ![](https://raw.githubusercontent.com/LafeLabs/trashmagic/main/media/trashmagic/map-lake-denver.png)
 
@@ -117,7 +117,7 @@ Sloans Lake is the location of a trash magic instance.  See map below:
 ## [link to Openstreetmaps at Sloans lake](https://www.openstreetmap.org/#map=19/39.75151/-105.04626)
 
 
-Server in the field at Slaons Lake
+Server in the field at Sloan's Lake
 
 ![](https://github.com/LafeLabs/trashmagic/blob/main/media/trashmagic/lake-server.png)
 
