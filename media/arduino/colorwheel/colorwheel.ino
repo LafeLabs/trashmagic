@@ -8,7 +8,7 @@ int blue = 0;
 float z = 0.0;
 float H = 0.0;
 
-int deltat = 10;
+int deltat = 5;
 
 void setup() {
   Serial.begin(9600);
