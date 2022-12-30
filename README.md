@@ -11,6 +11,8 @@
 
 # [SPORE REPLICATOR TIKTOK](https://www.tiktok.com/@trash_robot/video/7181898229229866283?is_from_webapp=1&sender_device=pc&web_id=7022420292371351045)
 
+# [TRASH MAGIC server tour YOUTUBE](https://www.youtube.com/watch?v=C9mwezTm2ew)
+
 ## [http://localhost/](http://localhost/)
 
 ## *self-replicating media*
