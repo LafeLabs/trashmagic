@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <!--
 
-destroy files in the /web/ directory
+destroy files 
 
     
     -->
@@ -46,14 +46,14 @@ httpcUpload.onreadystatechange = function() {
         loadimagefeed();
     }
 };
-httpcUpload.open("GET", "dir.php?filename=web", true);
+httpcUpload.open("GET", "dir.php", true);
 httpcUpload.send();
 
 
 function loadimagefeed(){
 
     for(var index = 0;index < uploadImages.length;index++) {
-        if(uploadImages[index].includes(".") && uploadImages[index] != "index.html"){
+        if(uploadImages[index].includes(".") && uploadImages[index] != "index.html" && uploadImages[index].substring(uploadImages[index].length - 5) == ".html"){
             var newuploadbox = document.createElement("DIV");
             newuploadbox.classList.add("imagebox");
     
@@ -71,7 +71,7 @@ function loadimagefeed(){
             newspan.classList.add("button");
             newspan.classList.add("deletebutton");
             newspan.onclick = function(){
-                var filename = "web/" + this.parentElement.getElementsByClassName("filelabel")[0].innerHTML; 
+                var filename = this.parentElement.getElementsByClassName("filelabel")[0].innerHTML; 
                 var httpc = new XMLHttpRequest();
                 var url = "deletefile.php";         
                 httpc.open("POST", url, true);

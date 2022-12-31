@@ -3,6 +3,7 @@
         "README.md",
         "fork.html",
         "index.html",
+        "newpage.html",
         "webdestroyer.html",
         "webeditor.html"
     ],
