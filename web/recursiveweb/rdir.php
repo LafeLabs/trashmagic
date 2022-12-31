@@ -6,7 +6,7 @@ if(isset($_GET["filename"])){
 }
 else{
 
-$filename = "media";
+$filename = getcwd();
     
 }
 
@@ -22,7 +22,9 @@ function getFiles(string $directory, array $allFiles = []): array
         if( is_dir($fullPath) )
             $allFiles += getFiles($fullPath, $allFiles);
         else
-            $allFiles[] = $directory."/".$file;
+            //$allFiles[] = $directory."/".$file;
+            $localdirectory = explode(getcwd(),$directory)[1];
+            $allFiles[] = $localdirectory."/".$file;
     }
 
     return $allFiles;
