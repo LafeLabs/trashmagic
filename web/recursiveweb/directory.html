@@ -39,20 +39,11 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 <body>    
 <div id = "mainscroll">
     
-    <h1 id = "title">TRASH MAGIC RECURSIVE WEB</h1>
+    <h1 id = "title">DIRECTORY</h1>
 
 <p>
-    The purpose of Trash Magic is to create a civilization of free things entirely built from trash.  We will build things from trash, share them freely, and share how to build them with others so that they can replicate.  We call this replication from person to person of the knowhow and desire to make things "magic".  
+All the files in the Recursive Web.  
 </p>
-
-<a href = "../">UP A LEVEL</a>
-<a href = "fork.html">FORK</a>
-<a href = "webeditor.html">WEB PAGE EDITOR</a>
-<a href = "editor.php">SYSTEM CODE EDITOR</a>
-<a href = "webdestroyer.html">WEB DESTROYER</a>
-<a href = "dnagenerator.php">DNA GENERATOR</a>
-<a href = "directory.html">DIRECTORY</a>
-<a href = "newpage.html">NEW PAGE</a>
 
 
 </div>
@@ -69,7 +60,30 @@ for(var index = 0;index < titles.length;index++){
 rainbow(document.getElementsByTagName("A"));
 
 
+mainscroll = document.getElementById("mainscroll");
+files = [];
+var httpcimages = new XMLHttpRequest();
+httpcimages.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        files = JSON.parse(this.responseText);
+        var locallinks = [];
+        for(var index = 0;index < files.length;index++){
+            if(files[index].substring(files[index].length-5) == ".html"){
+                var newa = document.createElement("A");
+                newa.href = files[index];
+                newa.innerHTML = files[index];
+                mainscroll.appendChild(newa);
+                locallinks.push(newa);
+                
+            }
+        }
+        rainbow(locallinks);
+    }
+};
+httpcimages.open("GET", "dir.php", true);
+httpcimages.send();
 </script>
+
 </body>
 </html>
 

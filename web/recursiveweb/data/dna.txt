@@ -1,6 +1,7 @@
 {
     "html": [
         "README.md",
+        "directory.html",
         "fork.html",
         "index.html",
         "newpage.html",
