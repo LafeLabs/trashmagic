@@ -4,7 +4,6 @@
         "directory.html",
         "fork.html",
         "index.html",
-        "newpage.html",
         "webdestroyer.html",
         "webeditor.html"
     ],
