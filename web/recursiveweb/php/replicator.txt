@@ -41,6 +41,11 @@ foreach($dna->php as $value){
 
 }
 
+foreach($dna->css as $value){
+ 
+    copy($baseurl."css/".$value,"css/".$value);
+
+}
 
 
     
