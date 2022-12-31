@@ -1,15 +1,20 @@
 {
     "html": [
-        "index.html"
+        "README.md",
+        "fork.html",
+        "index.html",
+        "webdestroyer.html",
+        "webeditor.html"
     ],
     "data": [
         "dna.txt"
     ],
     "javascript": [
-        "trashmagic.css"
+        "trashmagic.js"
     ],
     "css": [
-        "trashmagic.js"
+        "foo.css",
+        "trashmagic.css"
     ],
     "php": [
         "copy.txt",

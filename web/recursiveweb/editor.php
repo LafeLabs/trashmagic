@@ -90,6 +90,16 @@ EGO DEATH:
         }
     }
 
+    $cssfiles = scandir(getcwd()."/css");
+
+    foreach($cssfiles as $value){
+        if($value[0] != "."){
+            echo "<div class = \"css file\">css/";
+            echo $value;
+            echo "</div>\n";
+        }
+    }
+
 
     $datafiles = scandir(getcwd()."/data");
 

@@ -39,14 +39,14 @@ dna.txt is a json formatted file which points to all the files in this system, w
     }
 
     $dna->javascript = [];
-    foreach($cssfiles as $value){
+    foreach($jsfiles as $value){
         if($value[0] != "."){
             array_push($dna->javascript,$value);
         }
     }
 
     $dna->css = [];
-    foreach($jsfiles as $value){
+    foreach($cssfiles as $value){
         if($value[0] != "."){
             array_push($dna->css,$value);
         }
