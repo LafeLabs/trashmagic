@@ -4,6 +4,8 @@
         "directory.html",
         "fork.html",
         "index.html",
+        "qrcode-page.html",
+        "qrcode.html",
         "webdestroyer.html",
         "webeditor.html"
     ],
