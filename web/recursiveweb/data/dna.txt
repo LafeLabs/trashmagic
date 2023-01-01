@@ -3,6 +3,7 @@
         "README.md",
         "directory.html",
         "fork.html",
+        "forkdestroyer.html",
         "index.html",
         "qrcode-page.html",
         "qrcode.html",
