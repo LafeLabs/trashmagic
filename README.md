@@ -88,6 +88,105 @@ Put images in "trashmagic", zines in "zines" and books in "books".  Use a thumb 
  - use the new replicator code on your github repo to replicate out that instance to all other servers(linux, windows, mac, android) and forks
  - when you figure this out, make youtube videos showing other people how to copy the whole system, tell someone about those videos so that we can all link to them
 
+### TRASH MAGIC DUMP replication
+
+A TRASH MAGIC DUMP is an Internet connection controlled by a TRASH MAGIC OPERATOR, which can be set up to host multiple TRASH SERVERS and [RECURSIVE WEB](https://github.com/LafeLabs/trashmagic/tree/main/web/recursiveweb) instances.  
+
+If you are an Operator with multiple TRASH MAGIC servers and you want to set up a dump, first choose one of the servers to act as a DUMP DIRECTOR.  To convert it to DUMP DIRECTOR you want to first stop and disable the Apache web server, since we're going to use another server instead.  A DUMP DIRECTOR is an [NGINX SERVER](https://www.nginx.com/) set up using [DOCKER ](https://www.docker.com/) and the GUI tool from [nginxproxymanager](https://nginxproxymanager.com/setup/#running-the-app). 
+
+To stop and disable Apache from the command line type:
+
+```
+sudo update-rc.d apache2 disable
+sudo service apache2 stop
+```
+
+follow the instructions to install Docker on whatever system you're running. 
+[Here are some Raspberry Pi instructions](https://pimylifeup.com/raspberry-pi-docker/), which are as follows:
+
+```
+sudo apt update
+sudo apt update
+curl -sSL https://get.docker.com | sh
+sudo usermod -aG docker pi
+sudo reboot
+```
+then see that docker is in the list of groups by typing 
+```
+groups
+```
+test the installation with 
+```
+docker run hello-world
+```
+Now create a file in the home directory called docker-compose.yml, and copy paste the following code into it and save it:
+
+```
+version: "3"
+services:
+  app:
+    image: 'jc21/nginx-proxy-manager:latest'
+    restart: unless-stopped
+    ports:
+      # These ports are in format <host-port>:<container-port>
+      - '80:80' # Public HTTP Port
+      - '443:443' # Public HTTPS Port
+      - '81:81' # Admin Web Port
+      # Add any other Stream port you want to expose
+      # - '21:21' # FTP
+
+    # Uncomment the next line if you uncomment anything in the section
+    # environment:
+      # Uncomment this if you want to change the location of 
+      # the SQLite DB file within the container
+      # DB_SQLITE_FILE: "/data/database.sqlite"
+
+      # Uncomment this if IPv6 is not enabled on your host
+      # DISABLE_IPV6: 'true'
+
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
+```
+Then run docker on this with 
+
+```
+docker compose up -d
+```
+
+(note there is a critical typo in the tutorial above it says docker-compose instead of "docker compose").
+
+When this is set up, either go to [http://localhost:81] on the DUMP DIRECTOR or point a browser on another machine on the network to [ip address of DUMP DIRECTOR]:81 to get to the control panel.  Create a proxy host for each of the various domains you are pointing to your home network. You need a separate entry for [domain].[tld] than you do for www.[domain].[tld].  You can forward to any TRASH SERVER on the local network by IP address this way.  After they're set up, edit the entries to add ssl "let's encrypt" certificates.  Also be sure to add forwarding of the service "https" on your home router on port 443(you've already got port 80 from the above TRASH MAGIC SERVER setup).
+
+Domains which operators purchase which are linked to physical spaces on the STREET and WATERSHED network are pointed to subdirectories of /var/www/html on one of the trash servers, allowing one server to hold many RECURSIVE WEB instances.  If several domains are forwarding to the same physical trash server in different subdirectories, we can route the incoming traffic correctly using apache virtual hosts. 
+
+
+To do this, go to /etc/apache2/sites-available and run 
+
+```
+sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/example.net.conf
+```
+Then 
+```
+sudo nano /etc/apache2/sites-available/example.net.conf
+```
+and edit as follows:
+
+```
+    DocumentRoot /var/www/html/southplattedotnet
+    ServerName southplatte.net
+    ServerAlias www.southplatte.net
+```
+And save with control X
+
+Then use [a2ensite](https://manpages.ubuntu.com/manpages/trusty/man8/a2ensite.8.html) to enable the virtual host and [systemctl](https://man7.org/linux/man-pages/man1/systemctl.1.html) to reload apache:
+
+```
+sudo a2ensite southplatte.net.conf
+sudo systemctl reload apache2
+```
+
+With a dump set up like this, an operator can add any number of physical trash servers as well as any number of trash magic servers of all kinds on many domains all at one DUMP.  The TRASH MAGIC OPERATOR lives or works at a DUMP, which is a place they control the network connection and can set up hosting and can also store stuff for the TRASH MAGIC physical media feed, creating art and products from trash and distributing it along the WATERSHED and STREET networks.
 
 ### Socials
 
@@ -113,6 +212,9 @@ Put images in "trashmagic", zines in "zines" and books in "books".  Use a thumb 
 
  - [www.sloanslake.art](http://www.sloanslake.art)
  - [zinez.xyz](http://zinez.xyz/)
+ - [www.southbroadway.net](https://www.southbroadway.net)
+ - [www.southplatte.net](https://www.southbplatte.net)
+ 
 
 Sloan's Lake is the location of a trash magic instance.  See map below:
 
