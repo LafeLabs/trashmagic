@@ -188,6 +188,14 @@ sudo systemctl reload apache2
 
 With a dump set up like this, an operator can add any number of physical trash servers as well as any number of trash magic servers of all kinds on many domains all at one DUMP.  The TRASH MAGIC OPERATOR lives or works at a DUMP, which is a place they control the network connection and can set up hosting and can also store stuff for the TRASH MAGIC physical media feed, creating art and products from trash and distributing it along the WATERSHED and STREET networks.
 
+To to a new server with the RECRURSIVE WEB, use fork.html and put in the external replicator link the following global replicator url:
+
+```
+https://raw.githubusercontent.com/LafeLabs/trashmagic/main/web/recursiveweb/php/replicator.txt
+```
+and enter the name of the new page and click through to create it and edit it and fork it.
+
+
 ### Socials
 
  - [tiktok:@trash_robot](https://www.tiktok.com/@trash_robot)
