@@ -36,6 +36,10 @@ LANGUGE IS HOW THE MIND PARSES REALITY
         <td>external replicator url</td>
         <td><input/></td>
     </tr>
+    <tr>
+        <td class ="button" id = "rewebbutton">RECURSIVE WEB REPLICATOR</td>
+        <td></td>
+    </tr>
 </table>
 
 <ul id = "mainlist">
@@ -76,22 +80,27 @@ httpc2.send();
 
 inputs = document.getElementById("newtable").getElementsByTagName("input");    
 
+dirlink = document.getElementById("dirlink");
 inputs[0].onchange = function() {
-    var newa = document.getElementById("dirlink");
-    newa.innerHTML = "mkdir.php?dir=" + this.value;
-    newa.href = "mkdir.php?dir=" + this.value;
+    dirlink.innerHTML = "mkdir.php?dir=" + this.value;
+    dirlink.href = "mkdir.php?dir=" + this.value;
 }
 
 inputs[0].value = "";    
 inputs[1].value = "";
 
 inputs[1].onchange = function(){
-    var newa = document.getElementById("dirlink");
-    newa.innerHTML += "&replicator=" + this.value; 
-    newa.href += "&replicator=" + this.value; 
+    dirlink.innerHTML += "&replicator=" + this.value; 
+    dirlink.href += "&replicator=" + this.value; 
 }
 
+document.getElementById("rewebbutton").onclick = function(){
+    rewebreplicator = "https://raw.githubusercontent.com/LafeLabs/trashmagic/main/web/recursiveweb/php/replicator.txt";
+    inputs[1].value = rewebreplicator;
+    dirlink.innerHTML += "&replicator=" + rewebreplicator; 
+    dirlink.href += "&replicator=" + rewebreplicator; 
 
+}
 
 function addDeleteButtons(){
     dirlist = document.getElementById("mainlist").getElementsByTagName("LI");
@@ -127,6 +136,7 @@ document.getElementById("deleteonbutton").onclick = function(){
 
 </script>
 <style>
+
     body{
         font-size:2em;
         background-color:black;
