@@ -106,7 +106,7 @@ follow the instructions to install Docker on whatever system you're running.
 
 ```
 sudo apt update
-sudo apt update
+sudo apt upgrade
 curl -sSL https://get.docker.com | sh
 sudo usermod -aG docker pi
 sudo reboot
