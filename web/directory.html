@@ -39,33 +39,11 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 <body>    
 <div id = "mainscroll">
     
-    <h1>TRASH ROBOT</h1>
+    <h1 id = "title">DIRECTORY</h1>
 
 <p>
-TRASH ROBOT is the creator of the GEOMETRON language, the RECURSIVE WEB, the TRASH MAGIC NETWORK, SERVERS, and DUMPS.  
+All the files in the Recursive Web.  
 </p>
-
-<a href = "index.html">HOME</a>
-
-<h1>SOCIALS</h1>
-
-<a href= "https://www.patreon.com/trashrobot">PATREON</a>
-<a href = "https://venmo.com/u/upcyclerobotics">VENMO</a>
-<a href = "https://www.tiktok.com/@trash_robot">TIKTOK</a>
-<a href = "https://www.instagram.com/lafelabs/">INSTAGRAM</a>
-<a href = "https://github.com/LafeLabs/">GITHUB</a>
-<a href = "https://kolektiva.social/@trashrobot">MASTODON</a>
-<a href = "mailto:operator@sloanslake.art">EMAIL</a>
-
-<h1>BOOKS</h1>
-
-<a href = "https://www.lulu.com/shop/trash-robot/geometron-magic/paperback/product-y6p96w.html">BUY GEOMETRON MAGIC</a>
-<a href = "https://raw.githubusercontent.com/LafeLabs/pibrary/main/geometronmagic/main-large.pdf">DOWNLOAD GEOMETRON MAGIC</a>
-<a href = "https://www.lulu.com/shop/lafe-spietz/geometron/paperback/product-qqk98g.html">BUY GEOMETRON I</a>
-<a href = "https://github.com/LafeLabs/bookofgeometron/raw/main/main-bigpaper.pdf">DOWNLOAD GEOMETRON I</a>
-<a href = "https://www.lulu.com/en/us/shop/lafe-spietz/trash-magic-manifesto-and-action-coloring-book/paperback/product-1km4deev.html?page=1&pageSize=4">BUY TRASH MAGIC MANIFESTO</a>
-<a href = "https://lafelabs.github.io/Trash_Magic_Manifesto.pdf">DOWNLOAD TRASH MAGIC MANIFESTO</a>
-
 
 
 </div>
@@ -82,7 +60,30 @@ for(var index = 0;index < titles.length;index++){
 rainbow(document.getElementsByTagName("A"));
 
 
+mainscroll = document.getElementById("mainscroll");
+files = [];
+var httpcimages = new XMLHttpRequest();
+httpcimages.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        files = JSON.parse(this.responseText);
+        var locallinks = [];
+        for(var index = 0;index < files.length;index++){
+            if(files[index].substring(files[index].length-5) == ".html"){
+                var newa = document.createElement("A");
+                newa.href = files[index];
+                newa.innerHTML = files[index];
+                mainscroll.appendChild(newa);
+                locallinks.push(newa);
+                
+            }
+        }
+        rainbow(locallinks);
+    }
+};
+httpcimages.open("GET", "rdir.php", true);
+httpcimages.send();
 </script>
+
 </body>
 </html>
 

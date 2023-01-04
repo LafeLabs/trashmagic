@@ -175,7 +175,7 @@ sudo nano /etc/apache2/sites-available/example.net.conf
 and edit as follows:
 
 ```
-    DocumentRoot /var/www/html/southplattedotnet
+    DocumentRoot /var/www/html/web/southplattedotnet
     ServerName southplatte.net
     ServerAlias www.southplatte.net
 ```
@@ -190,7 +190,10 @@ sudo systemctl reload apache2
 
 With a dump set up like this, an operator can add any number of physical trash servers as well as any number of trash magic servers of all kinds on many domains all at one DUMP.  The TRASH MAGIC OPERATOR lives or works at a DUMP, which is a place they control the network connection and can set up hosting and can also store stuff for the TRASH MAGIC physical media feed, creating art and products from trash and distributing it along the WATERSHED and STREET networks.
 
-To to a new server with the RECRURSIVE WEB, use fork.html and put in the external replicator link the following global replicator url:
+To create a new server with the RECRURSIVE WEB, go to the local web on a TRASH MAGIC server and create a fork
+
+use web/fork.html and put in the external replicator link the following global replicator url:
+
 
 ```
 https://raw.githubusercontent.com/LafeLabs/trashmagic/main/web/recursiveweb/php/replicator.txt
