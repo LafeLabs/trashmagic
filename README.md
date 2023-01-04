@@ -190,15 +190,25 @@ sudo systemctl reload apache2
 
 With a dump set up like this, an operator can add any number of physical trash servers as well as any number of trash magic servers of all kinds on many domains all at one DUMP.  The TRASH MAGIC OPERATOR lives or works at a DUMP, which is a place they control the network connection and can set up hosting and can also store stuff for the TRASH MAGIC physical media feed, creating art and products from trash and distributing it along the WATERSHED and STREET networks.
 
-To create a new server with the RECRURSIVE WEB, go to the local web on a TRASH MAGIC server and create a fork
+To create a new server with the RECRURSIVE WEB, go to the local web on a TRASH MAGIC server and create a fork with the name of your domain like southbroadwaydotnet/. Use the apache virtual hosts above to forward traffic to that location, and use nginxproxymanager to forward traffic from that domain to whatever trash magic server holds this recursive web page.
 
-use web/fork.html and put in the external replicator link the following global replicator url:
+THE RECURSIVE WEB IS MADE OF WORLDS AND QUESTS. YOU CONSTRUCT, REPLICATE AND DESTROY WORLDS AND QUESTS TO BUILD TRASH MAGIC.
 
 
-```
-https://raw.githubusercontent.com/LafeLabs/trashmagic/main/web/recursiveweb/php/replicator.txt
-```
-and enter the name of the new page and click through to create it and edit it and fork it.
+### QUESTS
+
+build a trash magic server, publish a zine on it. Become a zine publisher for your neighborhood, with each zine pointing to the domain which points to the server where you publish the zines.
+    
+build a second trash magic server and convert it to a DUMP DIRECTOR so you can host multiple locations of the recursive web.  Build recursive web pages and recruit more trash magicians to create more worlds and quests.
+
+create self-replicating Platonic Solids from trash and replicate them out on the street. keep changing the design and location of the solids until they replicate freely.  change how you engage them into commerical social media, trying to make the constructions go viral until they do.  when they do, deliberately evolve the system to consume trash in the most efficient manner and to make constructions which can be used for modular assembly of larger more complex technolgy.   
+
+create self-replicating tensegrity constructions from sticks and other narrow and straight objects from trash found in the environment.  If you can make a tetrahedron, you can make an octahedron and if you can make that you can make an icosahedron and if you can make that you can build up whole arcologies of trash.  Start with just self-relpicating sticks in tripods and evolve upward as it starts to self-replicate.  These skeletron constructions can be integrated into the shopping cart ecosystem of the STREET.
+
+
+### WORLDS
+
+worlds are shared. some are fantasy and some are material.  we divide the world roughly into the WATERSHED and the STREET.  The WATERSHED consists of the flows of water through the world, and the STREET is all the shared human spaces like streets, parking lots, parks, libraries, shopping centers, and public buildings of all kinds.  The worlds we build are all to set context for the quests, which take place in worlds.  These can overlap, with any quest being doable in any world.
 
 
 ### Socials
