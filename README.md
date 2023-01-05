@@ -2,6 +2,7 @@
 
 ![](https://raw.githubusercontent.com/LafeLabs/trashmagic/main/media/trashmagic/qrcode-github-array.png)
 
+![](https://raw.githubusercontent.com/LafeLabs/trashmagic/main/media/trashmagic/southplattedotnet.png)
 
 # [TRASH MAGIC GITHUB](https://github.com/LafeLabs/trashmagic)
 
