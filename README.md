@@ -8,6 +8,11 @@
 
 # [WWW.SLOANSLAKE.ART](http://www.sloanslake.art)
 
+# [WWW.SOUTHPLATTE.NET](https://www.southplatte.net)
+
+# [WWW.SOUTHBROADWAY.NET](https://www.southbroadway.net)
+
+
 # [WWW.TRASHROBOT.ORG](https://www.trashrobot.org)
 
 # [SPORE REPLICATOR TIKTOK](https://www.tiktok.com/@trash_robot/video/7181898229229866283?is_from_webapp=1&sender_device=pc&web_id=7022420292371351045)
