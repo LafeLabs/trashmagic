@@ -4,6 +4,15 @@
 
 ![](https://raw.githubusercontent.com/LafeLabs/trashmagic/main/media/trashmagic/southplattedotnet.png)
 
+![](https://github.com/LafeLabs/trashmagic/blob/main/media/trashmagic/recursiveweb.png?raw=true)
+
+![](https://github.com/LafeLabs/trashmagic/blob/main/media/trashmagic/recursiveweb.png?raw=true)
+
+![](https://github.com/LafeLabs/trashmagic/blob/main/media/trashmagic/recursivewebtext.png?raw=true)
+
+![](https://github.com/LafeLabs/trashmagic/blob/main/media/trashmagic/recursivewebreplicator.png?raw=true)
+
+
 # [TRASH MAGIC GITHUB](https://github.com/LafeLabs/trashmagic)
 
 # [WWW.SLOANSLAKE.ART](http://www.sloanslake.art)
