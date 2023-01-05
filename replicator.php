@@ -37,6 +37,8 @@ mkdir("media/measurement");
 
 copy("https://raw.githubusercontent.com/LafeLabs/trashmagic/main/php/replicator.txt","replicator.php");
 
+copy("https://raw.githubusercontent.com/LafeLabs/trashmagic/main/web/php/replicator.txt","web/replicator.php");
+
 foreach($dna->html as $value){
     
     copy($baseurl.$value,$value);
@@ -66,7 +68,7 @@ foreach($dna->php as $value){
 
 foreach($dna->web as $value){
     
-    copy($baseurl."web/".$value,"web/".$value);
+//    copy($baseurl."web/".$value,"web/".$value);
     
 }
     
