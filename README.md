@@ -224,6 +224,8 @@ To create a new server with the RECRURSIVE WEB, go to the local web on a TRASH M
 THE RECURSIVE WEB IS MADE OF WORLDS AND QUESTS. YOU CONSTRUCT, REPLICATE AND DESTROY WORLDS AND QUESTS TO BUILD TRASH MAGIC.
 
 
+To run apache on the same DUMP DIRECTOR machine that is running nginxproxymanager, change the port of apache from 80 to 8080, and forward whatever domains you want to host on that machine to that port and to the IP address of the machine(not localhost).  Set up the /var/www/html/web/placenamedotxyz folder as you would for another recursive web trash magic server as described above.
+
 ### QUESTS
 
 build a trash magic server, publish a zine on it. Become a zine publisher for your neighborhood, with each zine pointing to the domain which points to the server where you publish the zines.
