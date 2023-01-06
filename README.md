@@ -17,6 +17,8 @@
 
 ![](https://github.com/LafeLabs/trashmagic/blob/main/media/trashmagic/recursivewebreplicator.png?raw=true)
 
+![](https://github.com/LafeLabs/trashmagic/blob/main/media/trashmagic/southplattecolfaxportal.png?raw=true)
+
 
 # [TRASH MAGIC GITHUB](https://github.com/LafeLabs/trashmagic)
 
