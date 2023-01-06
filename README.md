@@ -10,6 +10,11 @@
 
 ![](https://github.com/LafeLabs/trashmagic/blob/main/media/trashmagic/recursivewebtext.png?raw=true)
 
+![](https://github.com/LafeLabs/trashmagic/blob/main/media/trashmagic/stars.png?raw=true)
+
+![](https://github.com/LafeLabs/trashmagic/blob/main/media/trashmagic/magicdumpsign.png?raw=true)
+
+
 ![](https://github.com/LafeLabs/trashmagic/blob/main/media/trashmagic/recursivewebreplicator.png?raw=true)
 
 
