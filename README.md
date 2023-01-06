@@ -28,6 +28,11 @@
 
 # [WWW.SOUTHBROADWAY.NET](https://www.southbroadway.net)
 
+# [WWW.PROSPECTPARK.XYZ](https://www.prospectpark.xyz)
+
+# [WWW.TRASHPHYSICS.ORG](https://www.trashphysics.org)
+
+# [WWW.QUANTUMART.ORG](https://www.quantumart.org)
 
 # [WWW.TRASHROBOT.ORG](https://www.trashrobot.org)
 
