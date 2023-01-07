@@ -44,6 +44,10 @@
 
 # [TRASH MAGIC server tour YOUTUBE](https://www.youtube.com/watch?v=C9mwezTm2ew)
 
+# [PODCAST EPISODE ON SELF-REPLICATING GEOMETRIC MEDIA](https://anchor.fm/trashrobot/episodes/Reading-from-Chapter-11-of-Geometron-Magic-e1t6obc)
+
+# [TIKTOK WHICH REPLICATES THE PODCAST EPISODE](https://www.tiktok.com/@trash_robot/video/7185984120986701102)
+
 ## [http://localhost/](http://localhost/)
 
 ## *self-replicating media*
@@ -224,7 +228,7 @@ To create a new server with the RECRURSIVE WEB, go to the local web on a TRASH M
 THE RECURSIVE WEB IS MADE OF WORLDS AND QUESTS. YOU CONSTRUCT, REPLICATE AND DESTROY WORLDS AND QUESTS TO BUILD TRASH MAGIC.
 
 
-To run apache on the same DUMP DIRECTOR machine that is running nginxproxymanager, change the port of apache from 80 to 8080, and forward whatever domains you want to host on that machine to that port and to the IP address of the machine(not localhost).  Set up the /var/www/html/web/placenamedotxyz folder as you would for another recursive web trash magic server as described above.
+To run apache on the same DUMP DIRECTOR machine that is running nginxproxymanager, change the port of apache from 80 to 8080, and forward whatever domains you want to host on that machine to that port and to the IP address of the machine(not localhost).  Set up the /var/www/html/web/placenamedotxyz folder as you would for another recursive web trash magic server as described above.  Each .conf file in /etc/apache2/sites-enabled should have the port set to 8080, including 000default.conf.  ALSO change the port in the file /etc/apache2/ports.conf, changing from "listen 80" to "listen 8080".
 
 ### QUESTS
 
