@@ -217,7 +217,7 @@ And save with control X
 Then use [a2ensite](https://manpages.ubuntu.com/manpages/trusty/man8/a2ensite.8.html) to enable the virtual host and [systemctl](https://man7.org/linux/man-pages/man1/systemctl.1.html) to reload apache:
 
 ```
-sudo a2ensite southplatte.net.conf
+sudo a2ensite southplatte.net
 sudo systemctl reload apache2
 ```
 
@@ -228,7 +228,7 @@ To create a new server with the RECRURSIVE WEB, go to the local web on a TRASH M
 THE RECURSIVE WEB IS MADE OF WORLDS AND QUESTS. YOU CONSTRUCT, REPLICATE AND DESTROY WORLDS AND QUESTS TO BUILD TRASH MAGIC.
 
 
-To run apache on the same DUMP DIRECTOR machine that is running nginxproxymanager, change the port of apache from 80 to 8080, and forward whatever domains you want to host on that machine to that port and to the IP address of the machine(not localhost).  Set up the /var/www/html/web/placenamedotxyz folder as you would for another recursive web trash magic server as described above.  Each .conf file in /etc/apache2/sites-enabled should have the port set to 8080, including 000default.conf.  ALSO change the port in the file /etc/apache2/ports.conf, changing from "listen 80" to "listen 8080".
+To run apache on the same DUMP DIRECTOR machine that is running nginxproxymanager, change the port of apache from 80 to 8080, and forward whatever domains you want to host on that machine to that port and to the IP address of the machine(not localhost).  Set up the /var/www/html/web/placenamedotxyz folder as you would for another recursive web trash magic server as described above.  Each .conf file in /etc/apache2/sites-available should have the port set to 8080, including 000default.conf.  ALSO change the port in the file /etc/apache2/ports.conf, changing from "listen 80" to "listen 8080".
 
 ### QUESTS
 
