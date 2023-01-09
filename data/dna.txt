@@ -19,6 +19,7 @@
         "fashion.html",
         "font.html",
         "fork.html",
+        "forkdestroyer.html",
         "geometron.html",
         "globalimagefeed.html",
         "go.html",

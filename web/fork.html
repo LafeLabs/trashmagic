@@ -28,6 +28,10 @@ LANGUGE IS HOW THE MIND PARSES REALITY
         <a href = "../">UP</a>
         <a href = "index.html">HOME</a>
         <a href = "forkdestroyer.html">FORK DESTROYER</a>
+        <a id = "tmmainbutton">LOAD MAIN TRASH MAGIC REPLICATOR</a>
+        <a id = "rewebbutton" class=  "button">LOAD RECURSIVE WEB REPLICATOR</a>        
+        <a id = "pibrarybutton" class=  "button">LOAD PIBRARY REPLICATOR</a>
+        
 </div>
 <table id = "newtable">
     <tr>
@@ -96,6 +100,32 @@ for(var index = 0;index < titles.length;index++){
 
 rainbowstring(document.getElementById("label1"));
 rainbowstring(document.getElementById("label2"));
+
+dirlink = document.getElementById("dirlink");
+
+replicator = "https://raw.githubusercontent.com/LafeLabs/trashmagic/main/web/php/replicator.txt";
+
+
+document.getElementById("tmmainbutton").onclick  = function(){
+    replicator = "https://raw.githubusercontent.com/LafeLabs/trashmagic/main/php/replicator.txt";
+    inputs[1].value = replicator;
+    dirlink.innerHTML += "&replicator=" + replicator; 
+    dirlink.href += "&replicator=" + replicator; 
+}
+
+document.getElementById("rewebbutton").onclick  = function(){
+    rewebreplicator = "https://raw.githubusercontent.com/LafeLabs/trashmagic/main/web/php/replicator.txt";
+    inputs[1].value = rewebreplicator;
+    dirlink.innerHTML += "&replicator=" + rewebreplicator; 
+    dirlink.href += "&replicator=" + rewebreplicator; 
+}
+
+document.getElementById("pibrarybutton").onclick  = function(){
+    rewebreplicator = "https://raw.githubusercontent.com/LafeLabs/pibrary/main/php/replicator.txt";
+    inputs[1].value = rewebreplicator;
+    dirlink.innerHTML += "&replicator=" + rewebreplicator; 
+    dirlink.href += "&replicator=" + rewebreplicator; 
+}
 
 </script>
 <style>
