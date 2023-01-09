@@ -13,7 +13,6 @@
         "platonic-solids.html",
         "qrcode-page.html",
         "qrcode.html",
-        "replicators.html",
         "trashrobot.html",
         "tutorial.html",
         "underthebridge.html",
