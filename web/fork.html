@@ -31,11 +31,10 @@ LANGUGE IS HOW THE MIND PARSES REALITY
 </div>
 <table id = "newtable">
     <tr>
-        <td>new fork name:</td>
+        <td id = "label1">NEW FORK NAME:</td>
         <td><input/><a id = "dirlink"></a></td>
-    </tr>
-    <tr id = "replicatorline">
-        <td>external replicator url</td>
+
+        <td id = "label2">EXTERNAL REPLICATOR URL:</td>
         <td><input/></td>
     </tr>
 </table>
@@ -95,6 +94,9 @@ for(var index = 0;index < titles.length;index++){
     rainbowstring(titles[index]);    
 }
 
+rainbowstring(document.getElementById("label1"));
+rainbowstring(document.getElementById("label2"));
+
 </script>
 <style>
     #mainscroll{
@@ -138,6 +140,7 @@ for(var index = 0;index < titles.length;index++){
         color:#00ff00;
         background-color:black;
         font-family:courier;
+        font-size:18px;
     }
     table{
         font-family:courier;
@@ -172,6 +175,7 @@ for(var index = 0;index < titles.length;index++){
         position:absolute;
         left:5px;
         bottom:5px;
+        font-size:2em;
     }
 </style>
 </body>
