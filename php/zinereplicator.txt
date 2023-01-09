@@ -6,7 +6,7 @@ if(isset($_GET["zinefolderurl"])){
     $filesraw = file_get_contents($zinefolderurl."files.txt");
     $files = json_decode($filesraw);
     foreach($files as $value){
-        copy($zinefolderurl.$value,"media/zines/".$file);
+        copy($zinefolderurl.$value,"media/zines/".$value);
     }
     echo json_encode($files,JSON_PRETTY_PRINT);
 
