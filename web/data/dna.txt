@@ -5,6 +5,7 @@
         "directory.html",
         "fork.html",
         "forkdestroyer.html",
+        "freepants.html",
         "index.html",
         "newpage.html",
         "oscarthegrouch.html",
