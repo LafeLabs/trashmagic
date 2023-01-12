@@ -1,0 +1,17 @@
+{
+    "server": "https://raw.githubusercontent.com/LafeLabs/pibrary/main/trashphysics/",
+    "scrolls": [
+        "academia",
+        "cosmology",
+        "electricalshop",
+        "funding",
+        "history",
+        "home",
+        "library",
+        "machineshop",
+        "mic",
+        "program",
+        "socialmedia",
+        "whatisphysics"
+    ]
+}

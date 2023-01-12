@@ -1,0 +1,7 @@
+{
+    "server": "https://raw.githubusercontent.com/LafeLabs/pibrary/main/quantumshitpost/",
+    "scrolls": [
+        "home",
+        "links"
+    ]
+}

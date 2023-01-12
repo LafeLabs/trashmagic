@@ -1,0 +1,32 @@
+{
+    "server": "https://raw.githubusercontent.com/LafeLabs/pibrary/main/pibrary/",
+    "scrolls": [
+        "benefit",
+        "chaosbooks",
+        "code",
+        "content",
+        "creators",
+        "donatebooks",
+        "elements",
+        "freebooks",
+        "github",
+        "grantproposal",
+        "home",
+        "iconset",
+        "introduction",
+        "latex",
+        "libraries",
+        "links",
+        "math",
+        "people",
+        "power",
+        "raspberrypi",
+        "replicators",
+        "sets",
+        "solar",
+        "support",
+        "trashmagic",
+        "web",
+        "wireless"
+    ]
+}

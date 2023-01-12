@@ -1,0 +1,14 @@
+{
+    "server": "http://10.0.0.27/street/",
+    "scrolls": [
+        "ART",
+        "GOODS",
+        "MUSIC",
+        "SERVICES",
+        "flags",
+        "home",
+        "icons",
+        "links",
+        "signs"
+    ]
+}

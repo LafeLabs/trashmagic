@@ -1,0 +1,14 @@
+{
+    "server": "https://raw.githubusercontent.com/LafeLabs/pibrary/main/actionmagic/",
+    "scrolls": [
+        "ACTIONGEOMETRY",
+        "BOOKMAGIC",
+        "CYBERMAGIC",
+        "GEOMETRON",
+        "ICONMAGIC",
+        "SETMAGIC",
+        "SYMBOLMAGIC",
+        "TRASHMAGIC",
+        "home"
+    ]
+}

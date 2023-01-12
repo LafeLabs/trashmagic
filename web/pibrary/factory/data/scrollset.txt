@@ -1,0 +1,29 @@
+{
+    "server": "https://raw.githubusercontent.com/LafeLabs/pibrary/main/factory/",
+    "scrolls": [
+        "android",
+        "artbox",
+        "bags",
+        "brain",
+        "coinfactory",
+        "controller",
+        "flags",
+        "geometronprinterchapter",
+        "goldentriangle",
+        "home",
+        "links",
+        "mechanicals",
+        "penrose",
+        "pimobile",
+        "piremote",
+        "protractor",
+        "pyramids",
+        "robot",
+        "robotcode",
+        "ruler",
+        "shapeset",
+        "shield",
+        "solarpower",
+        "windows"
+    ]
+}
