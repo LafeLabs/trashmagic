@@ -233,6 +233,39 @@ THE RECURSIVE WEB IS MADE OF WORLDS AND QUESTS. YOU CONSTRUCT, REPLICATE AND DES
 
 To run apache on the same DUMP DIRECTOR machine that is running nginxproxymanager, change the port of apache from 80 to 8080, and forward whatever domains you want to host on that machine to that port and to the IP address of the machine(not localhost).  Set up the /var/www/html/web/placenamedotxyz folder as you would for another recursive web trash magic server as described above.  Each .conf file in /etc/apache2/sites-available should have the port set to 8080, including 000default.conf.  ALSO change the port in the file /etc/apache2/ports.conf, changing from "listen 80" to "listen 8080".
 
+
+### Subdomain
+
+to make a subdomain like [https://art.sloanslake.art](art.sloanslake.art) one repeats the process above.  This subdomain needs its own entry in the DNS A records from whoever manages the domain you own.  
+
+You first add another entry to "@" and "www" which is whatever the first word is, e.g. "art" with art.sloanslake.art which points to your home IP address.
+
+Then go to the NGINX proxy manager at [ip address of dump director]
+:81 and add an entry for art.sloanslake.art, forwarding to either port 80 on a trash server other than the Dump Director machine or port 8080 if the page is on the Dump Director.
+
+Fork one of your servers to create a page for the new subdomain.
+
+As with the other pages, copy the conf file from another page
+
+```
+cd /etc/apache2/sites-available
+sudo cp sloanslake.art.conf art.sloanslake.art.conf
+sudo nano art.sloanslake.art.conf
+
+```
+
+Then edit that file so that it has forwarding to the appropriate folder for the fork you made above.  When the forwarding of the DNS is set up, the forwarding in nginx proxy manager is set up, and the .conf file is set up, start it with 
+
+```
+sudo a2ensite art.sloanslake.art
+sudo systemctl reload apache2
+```
+
+Then when it's all set up, enable https with lets encrypt by way of nginx proxy manager.
+
+
+
+
 ### QUESTS
 
 build a trash magic server, publish a zine on it. Become a zine publisher for your neighborhood, with each zine pointing to the domain which points to the server where you publish the zines.
