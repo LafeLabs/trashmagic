@@ -1,13 +1,23 @@
 {
     "html": [
         "README.md",
+        "board.html",
         "directory.html",
         "fork.html",
         "forkdestroyer.html",
         "index.html",
+        "journey.html",
+        "newpage.html",
+        "oscarthegrouch.html",
+        "place.html",
+        "places.html",
+        "platonic-solids.html",
         "qrcode-page.html",
         "qrcode.html",
+        "quests.html",
         "trashrobot.html",
+        "tutorial.html",
+        "underthebridge.html",
         "webdestroyer.html",
         "webeditor.html"
     ],
