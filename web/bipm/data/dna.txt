@@ -1,0 +1,44 @@
+{
+    "html": [
+        "README.md",
+        "directory.html",
+        "fork.html",
+        "forkdestroyer.html",
+        "index.html",
+        "measure.html",
+        "measure.py",
+        "plot.html",
+        "qrcode-page.html",
+        "qrcode.html",
+        "temperature-circuitplayground.py",
+        "thermodynamics.html",
+        "trashrobot.html",
+        "webdestroyer.html",
+        "webeditor.html"
+    ],
+    "data": [
+        "dna.txt",
+        "sensordata.txt"
+    ],
+    "javascript": [
+        "trashmagic.js"
+    ],
+    "css": [
+        "foo.css",
+        "trashmagic.css"
+    ],
+    "php": [
+        "copy.txt",
+        "deletefile.txt",
+        "dir.txt",
+        "dnagenerator.txt",
+        "editor.txt",
+        "fileloader.txt",
+        "filesaver.txt",
+        "mkdir.txt",
+        "rdelete.txt",
+        "rdir.txt",
+        "replicator.txt",
+        "text2php.txt"
+    ]
+}
