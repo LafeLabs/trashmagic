@@ -43,6 +43,8 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 
     <h1>TRASH MAGIC ZINE DISTRO</h1>
 
+<a href = "https://github.com/LafeLabs/trashmagic/tree/main/web/distro">DISTRO REPLICATOR</a>
+
 <p>
     The purpose of Trash Magic is to create a civilization of free things entirely built from trash.  We will build things from trash, share them freely, and share how to build them with others so that they can replicate.  We call this replication from person to person of the knowhow and desire to make things "magic".  
 </p>
@@ -50,16 +52,23 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 <p>THE RECURSIVE WEB IS MADE OF WORLDS AND QUESTS. YOU CONSTRUCT, REPLICATE AND DESTROY WORLDS AND QUESTS TO BUILD TRASH MAGIC.</p>
 
 <p>
-    Zine distros in the recursive web are self-replicating.  The distro contains programs which copy the set of files which are the digital zines.  We also print them and put them in physical spaces linked from the digital spaces, and which link back to the digital spaces which describe how to replicate the whole set including the web servers made from trash.  
+    Zine distros in the recursive web are self-replicating.  print zines and put them in physical spaces which you document on the web page which is on the trash server which a domain points to which is on the zine which is about the space where the zine is.  EVERYTHING IS RECURSIVE!  
 </p>
+
+<img src ="https://raw.githubusercontent.com/LafeLabs/trashmagic/main/media/trashmagic/zinedistro.png"/>
+
+<img src= "https://raw.githubusercontent.com/LafeLabs/trashmagic/main/media/trashmagic/qrcode-pages/distro.png"/>
+
 
 <a href = "webeditor.html">WEB PAGE EDITOR</a>
 <a href = "readme.html">README</a>
 <a href = "editor.php">SYSTEM CODE EDITOR</a>
 <a href = "dnagenerator.php">DNA GENERATOR</a>
+<a href = "freepants.html">FREE PANTS</a>
 <a href = "qrcode.html">QRCODE</a> 
 
-<img src= "https://raw.githubusercontent.com/LafeLabs/trashmagic/main/media/trashmagic/qrcode-pages/distro.png"/>
+
+<h1>ZINES</h1>
 
 </div>
 <script>
@@ -76,22 +85,6 @@ rainbow(document.getElementsByTagName("A"));
 
 listfiles(document.getElementById("mainscroll"),"zines");
 
-files = [];
-var httpcimages = new XMLHttpRequest();
-httpcimages.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        files = JSON.parse(this.responseText);
-        var url = "filesaver.php";        
-        var httpc99 = new XMLHttpRequest();
-        httpc99.open("POST", url, true);
-        httpc99.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        httpc99.send("data="+encodeURIComponent(JSON.stringify(files,null,"    "))+"&filename=zines/files.txt");//send text to filesaver.php
-
-
-    }
-};
-httpcimages.open("GET", "dir.php?filename=zines", true);
-httpcimages.send();
 
 </script>
 </body>

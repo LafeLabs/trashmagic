@@ -1,5 +1,0 @@
-[
-    "APL_Information_Guides_Zine__012821.pdf",
-    "How_to_Join_the_APL_Zine_Collection.pdf",
-    "files.txt"
-]

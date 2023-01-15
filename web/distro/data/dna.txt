@@ -23,8 +23,7 @@
         "tutorial.html",
         "underthebridge.html",
         "webdestroyer.html",
-        "webeditor.html",
-        "zineserverurl.txt"
+        "webeditor.html"
     ],
     "data": [
         "dna.txt"
@@ -41,7 +40,6 @@
         "rdelete.txt",
         "rdir.txt",
         "replicator.txt",
-        "text2php.txt",
-        "zinereplicator.txt"
+        "text2php.txt"
     ]
 }
