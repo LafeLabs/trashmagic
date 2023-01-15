@@ -1,8 +1,19 @@
 # [HOME](index.html)
 
-# Recursive Web
+# [TRASH MAGIC](https://github.com/LafeLabs/trashmagic/)
 
-## [Trash Physics zine distro](http://distro.trashphysics.org)
+# [TRASH MAGIC RECURSIVE WEB](https://github.com/LafeLabs/trashmagic/tree/main/web)
+
+# [TRASH MAGIC ZINE DISTRO](https://github.com/LafeLabs/trashmagic/tree/main/web/distro)
+
+The purpose of Trash Magic is to create a civilization of free things entirely built from trash.  We will build things from trash, share them freely, and share how to build them with others so that they can replicate.  We call this replication from person to person of the knowhow and desire to make things "magic".  
+
+THE RECURSIVE WEB IS MADE OF WORLDS AND QUESTS. YOU CONSTRUCT, REPLICATE AND DESTROY WORLDS AND QUESTS TO BUILD TRASH MAGIC.
+
+    Zine distros in the recursive web are self-replicating.  print zines and put them in physical spaces which you document on the web page which is on the trash server which a domain points to which is on the zine which is about the space where the zine is.  EVERYTHING IS RECURSIVE!  Exchange USB thumb drives in the same physical spaces as you exchange physical zines, and use them to move zine files from one trash server to the next.  Distros include zines on how to make another trash magic server and replicate the whole system.
+
+
+the quests of the zine operators are to get people to add zines to the zine distros which bring about full trash magic.  this includes technical documentation, art, culture, organizing, science, magic, politics, agriculture, philosophy, and mathematics we require to bring the entire world into trash magic.
 
 ## [GITHUB README](https://github.com/LafeLabs/trashmagic/tree/main/web/distro)
 
