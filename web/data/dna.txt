@@ -18,6 +18,7 @@
         "readmeeditor.html",
         "replicators.html",
         "trashmagic.css",
+        "trashmagic.js",
         "trashrobot.html",
         "tutorial.html",
         "underthebridge.html",
