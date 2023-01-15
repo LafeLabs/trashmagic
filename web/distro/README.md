@@ -32,4 +32,8 @@ This will clone the trash magic recursive web to your server.
 
 Now go into the DNS records of a domain you have access to or ask someone else to it for a domain they have access to and add an "A record" with entries "@" and "www" for that domain to the home IP address of wherever the server is located.  Set up port forwarding on ports 80 and 443 on the router for that local network.  To add subdomains, use virtual hosts on apache(check [top level trash magic readme](https://github.com/LafeLabs/trashmagic/blob/main/README.md) or ask for help).
 
-![](https://github.com/LafeLabs/trashmagic/blob/main/media/trashmagic/qrcode-pages/distro.png)
+![](https://raw.githubusercontent.com/LafeLabs/trashmagic/main/media/trashmagic/qrcode-pages/distro.png)
+
+
+Or just use this on local wifi networks.  Distro can replicate by use of thumb drives.  put a zine folder on the thumb drive and 
+
