@@ -6,6 +6,8 @@
 
 ## [GITHUB README](https://github.com/LafeLabs/trashmagic/tree/main/web/distro)
 
+![](https://raw.githubusercontent.com/LafeLabs/trashmagic/main/media/trashmagic/zinedistro.png)
+
 Find any old computer that someone is getting rid of, it could be mac, pc or linux(but not Chromebook).  
 
 You will need a thumb drive.  Follow the instructions below to install Ubuntu and wipe all the old data on the hard drive.
