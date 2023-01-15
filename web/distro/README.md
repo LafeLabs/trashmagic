@@ -2,6 +2,10 @@
 
 # Recursive Web
 
+## [Trash Physics zine distro](http://distro.trashphysics.org)
+
+## [GITHUB README](https://github.com/LafeLabs/trashmagic/tree/main/web/distro)
+
 Find any old computer that someone is getting rid of, it could be mac, pc or linux(but not Chromebook).  
 
 You will need a thumb drive.  Follow the instructions below to install Ubuntu and wipe all the old data on the hard drive.
@@ -17,12 +21,11 @@ sudo apt install php libapache2-mod-php -y
 cd /var/www/html
 sudo rm index.html
 sudo apt install curl
-sudo curl -o replicator.php https://raw.githubusercontent.com/LafeLabs/trashmagic/main/web/php/replicator.txt
+sudo curl -o replicator.php https://raw.githubusercontent.com/LafeLabs/trashmagic/main/web/distro/php/replicator.txt
 cd ..
 sudo chmod -R 0777 *
 cd html
 php replicator.php
-sudo chmod -R 0777 *
 ```
 
 This will clone the trash magic recursive web to your server. 

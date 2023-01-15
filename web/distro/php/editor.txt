@@ -69,6 +69,9 @@ EGO DEATH:
         if(substr($value,-4) == ".css"){
             echo "\n<div class = \"css file\">".$value."</div>\n";
         }
+        if(substr($value,-4) == ".txt"){
+            echo "\n<div class = \"txt file\">".$value."</div>\n";
+        }
         
     }
 
