@@ -44,10 +44,9 @@ php replicator.php
 
 This will clone the trash magic recursive web to your server. 
 
-Now go into the DNS records of a domain you have access to or ask someone else to it for a domain they have access to and add an "A record" with entries "@" and "www" for that domain to the home IP address of wherever the server is located.  Set up port forwarding on ports 80 and 443 on the router for that local network.  These can be subdomains so that one domain can map to an arbitrary number of distros. 
+Now go into the DNS records of a domain you have access to or ask someone else to it for a domain they have access to and add an "A record" with entries "@" and "www" for that domain to the home IP address of wherever the server is located.  Set up port forwarding on ports 80 and 443 on the router for that local network.  These can be subdomains so that one domain can map to an arbitrary number of distros.  We will use this combination of physical and digital zines to spread trash magic, eventually filling all public spaces along the WATERSHEDS and STREETS of the world so that all people can live for free off of trash.
+
+Or just use this on local wifi networks.  Distro can replicate by use of thumb drives.  put a zine folder on the thumb drive and copy from server to server from exchange to exchange and place to place across the world.  
 
 ![](https://raw.githubusercontent.com/LafeLabs/trashmagic/main/media/trashmagic/qrcode-pages/distro.png)
-
-
-Or just use this on local wifi networks.  Distro can replicate by use of thumb drives.  put a zine folder on the thumb drive and 
 
