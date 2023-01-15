@@ -8,6 +8,8 @@
 
 # [TRASH MAGIC ZINE DISTRO](https://github.com/LafeLabs/trashmagic/tree/main/web/distro)
 
+# [DISTRO.TRASHPHYSICS.ORG](http://distro.trashphysics.org/)
+
 The purpose of Trash Magic is to create a civilization of free things entirely built from trash.  We will build things from trash, share them freely, and share how to build them with others so that they can replicate.  We call this replication from person to person of the knowhow and desire to make things "magic".  
 
 THE RECURSIVE WEB IS MADE OF WORLDS AND QUESTS. YOU CONSTRUCT, REPLICATE AND DESTROY WORLDS AND QUESTS TO BUILD TRASH MAGIC.
