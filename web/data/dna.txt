@@ -14,7 +14,10 @@
         "platonic-solids.html",
         "qrcode-page.html",
         "qrcode.html",
+        "readme.html",
+        "readmeeditor.html",
         "replicators.html",
+        "trashmagic.css",
         "trashrobot.html",
         "tutorial.html",
         "underthebridge.html",
@@ -23,13 +26,6 @@
     ],
     "data": [
         "dna.txt"
-    ],
-    "javascript": [
-        "trashmagic.js"
-    ],
-    "css": [
-        "foo.css",
-        "trashmagic.css"
     ],
     "php": [
         "copy.txt",

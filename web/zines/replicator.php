@@ -13,9 +13,9 @@ $dna = json_decode($dnaraw);
 
 mkdir("data");
 mkdir("php");
-//mkdir("jscode");
-//mkdir("css");
-
+mkdir("jscode");
+mkdir("css");
+mkdir("zines")
 
 
 copy("https://raw.githubusercontent.com/LafeLabs/trashmagic/main/web/php/replicator.txt","replicator.php");
@@ -41,7 +41,6 @@ foreach($dna->php as $value){
 
 }
 
-/*
 foreach($dna->css as $value){
  
     copy($baseurl."css/".$value,"css/".$value);
@@ -53,7 +52,6 @@ foreach($dna->css as $value){
 foreach($dna->javascript as $value){
     copy($baseurl."jscode/".$value,"jscode/".$value);
 }
-*/
 
 
 ?>

@@ -1,34 +1,31 @@
 {
     "html": [
         "README.md",
-        "biological.html",
-        "chemical.html",
-        "darkmatter.html",
+        "board.html",
         "directory.html",
         "fork.html",
         "forkdestroyer.html",
+        "freepants.html",
         "index.html",
-        "lowtemperature.html",
-        "measure.html",
-        "measure.py",
-        "mechanical.html",
-        "nuclear.html",
-        "plot.html",
-        "power.html",
+        "newpage.html",
+        "oscarthegrouch.html",
+        "place.html",
+        "places.html",
+        "platonic-solids.html",
         "qrcode-page.html",
         "qrcode.html",
         "readme.html",
         "readmeeditor.html",
-        "structural.html",
-        "temperature-circuitplayground.py",
-        "thermodynamics.html",
+        "replicators.html",
         "trashrobot.html",
+        "tutorial.html",
+        "underthebridge.html",
         "webdestroyer.html",
-        "webeditor.html"
+        "webeditor.html",
+        "zines.html"
     ],
     "data": [
-        "dna.txt",
-        "sensordata.txt"
+        "dna.txt"
     ],
     "javascript": [
         "trashmagic.js"

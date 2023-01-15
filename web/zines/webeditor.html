@@ -101,12 +101,6 @@ httpc8.onreadystatechange = function() {
                 var newscrollbutton = document.createElement("div");
                 newscrollbutton.classList.add("file");
                 newscrollbutton.classList.add("html");
-                if(scrolls[index].substring(scrolls[index].length-3,scrolls[index].length) == ".js"){
-                    newscrollbutton.style.borderColor = "red";
-                }
-                if(scrolls[index].substring(scrolls[index].length-4,scrolls[index].length) == ".css"){
-                    newscrollbutton.style.borderColor = "yellow";
-                }
                 newscrollbutton.innerHTML =  scrolls[index];
                 document.getElementById("filescroll").appendChild(newscrollbutton);
                 newscrollbutton.onclick = function(){
