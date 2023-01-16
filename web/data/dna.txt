@@ -1,19 +1,24 @@
 {
     "html": [
         "README.md",
+        "bipm.html",
         "board.html",
         "compostcube.html",
         "directory.html",
+        "distro.html",
         "fork.html",
         "forkdestroyer.html",
         "freepants.html",
         "index.html",
+        "measure.py",
         "newpage.html",
+        "plot.html",
         "qrcode-page.html",
         "qrcode.html",
         "readme.html",
         "readmeeditor.html",
         "replicators.html",
+        "temperature-circuitplayground.py",
         "trashmagic.css",
         "trashmagic.js",
         "trashrobot.html",
@@ -22,7 +27,9 @@
         "webeditor.html"
     ],
     "data": [
-        "dna.txt"
+        "dna.txt",
+        "plotlyjson.txt",
+        "sensordata.txt"
     ],
     "php": [
         "copy.txt",
