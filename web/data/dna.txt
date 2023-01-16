@@ -2,6 +2,7 @@
     "html": [
         "README.md",
         "board.html",
+        "compostcube.html",
         "directory.html",
         "fork.html",
         "forkdestroyer.html",
