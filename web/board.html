@@ -7,8 +7,7 @@
 
     <!--Stop Google:-->
     <META NAME="robots" CONTENT="noindex,nofollow">
-   <title>CARD BOARD</title>    
-   <script src = "../jscode/trashmagic.js"></script>
+   <title>BOARD</title>    
 </head>
 <body>    
 
@@ -18,13 +17,6 @@
 
 
 <script>
-
-titles = document.getElementsByTagName("H1");
-for(var index = 0;index < titles.length;index++){
-    rainbowstring(titles[index]);    
-}
-
-//rainbow(document.getElementsByTagName("A"));
 
 
 board = "";
@@ -37,16 +29,16 @@ httpc2.onreadystatechange = function() {
     }
 };
 
-httpc2.open("GET", "../fileloader.php?filename=web/board.txt", true);
+httpc2.open("GET", "fileloader.php?filename=board.txt", true);
 httpc2.send();
 
 document.getElementById("board").onkeyup = function() {
         wall = this.value;
         var httpc = new XMLHttpRequest();
-        var url = "../filesaver.php";        
+        var url = "filesaver.php";        
         httpc.open("POST", url, true);
         httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
-        httpc.send("data="+encodeURIComponent(wall)+"&filename=web/board.txt");//send text to filesaver.php        
+        httpc.send("data="+encodeURIComponent(wall)+"&filename=board.txt");//send text to filesaver.php        
 }
 
 </script>
