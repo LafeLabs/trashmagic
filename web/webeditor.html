@@ -98,6 +98,12 @@ httpc8.onreadystatechange = function() {
         for(var index = 0;index < scrolls.length;index++) {    
             if(scrolls[index].substring(scrolls[index].length-5,scrolls[index].length) == ".html" || scrolls[index].substring(scrolls[index].length-4,scrolls[index].length) == ".css" || scrolls[index].substring(scrolls[index].length-3,scrolls[index].length) == ".js"  || scrolls[index].substring(scrolls[index].length-3,scrolls[index].length) == ".py" || scrolls[index].substring(scrolls[index].length-4,scrolls[index].length) == ".txt" || scrolls[index].substring(scrolls[index].length-4,scrolls[index].length) == ".ino" || scrolls[index].substring(scrolls[index].length-5,scrolls[index].length) == ".json" || scrolls[index].substring(scrolls[index].length-4,scrolls[index].length) == ".tex" || scrolls[index].substring(scrolls[index].length - 3,scrolls[index].length) == ".md"){
              
+                if(scrolls[index].substring(scrolls[index].length-5,scrolls[index].length) == ".html"){
+                    var newa = document.createElement("A");
+                    newa.innerHTML = scrolls[index];
+                    newa.href = scrolls[index];
+                    document.getElementById("filescroll").appendChild(newa);
+                 }             
                 var newscrollbutton = document.createElement("div");
                 newscrollbutton.classList.add("file");
                 newscrollbutton.classList.add("html");
@@ -107,6 +113,7 @@ httpc8.onreadystatechange = function() {
                 if(scrolls[index].substring(scrolls[index].length-4,scrolls[index].length) == ".css"){
                     newscrollbutton.style.borderColor = "yellow";
                 }
+
                 newscrollbutton.innerHTML =  scrolls[index];
                 document.getElementById("filescroll").appendChild(newscrollbutton);
                 newscrollbutton.onclick = function(){

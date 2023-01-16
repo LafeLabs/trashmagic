@@ -48,7 +48,7 @@ httpcUpload.send();
 function loadimagefeed(){
 
     for(var index = 0;index < uploadImages.length;index++) {
-        if(uploadImages[index].includes(".") && uploadImages[index] != "index.html" && (uploadImages[index].substring(uploadImages[index].length - 5) == ".html") || (uploadImages[index].substring(uploadImages[index].length - 4) == ".css") || (uploadImages[index].substring(uploadImages[index].length - 3) == ".js")){
+        if(uploadImages[index].includes(".") && uploadImages[index] != "index.html" && (uploadImages[index].substring(uploadImages[index].length - 5) == ".html") || (uploadImages[index].substring(uploadImages[index].length - 4) == ".css") || (uploadImages[index].substring(uploadImages[index].length - 4) == ".txt")  || (uploadImages[index].substring(uploadImages[index].length - 3) == ".js")){
             var newuploadbox = document.createElement("DIV");
             newuploadbox.classList.add("imagebox");
     

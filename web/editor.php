@@ -69,6 +69,9 @@ EGO DEATH:
         if(substr($value,-4) == ".css"){
             echo "\n<div class = \"css file\">".$value."</div>\n";
         }
+        if(substr($value,-4) == ".txt"){
+            echo "\n<div class = \"txt file\">".$value."</div>\n";
+        }
         
     }
 
@@ -131,7 +134,11 @@ EGO DEATH:
             echo $newfile;
             echo "</div>\n";
         }
-
+        if(substr($newfile,-4) == ".txt"){
+            echo "<div class = \"txt file\">";
+            echo $newfile;
+            echo "</div>\n";
+        }
         if(substr($newfile,-3) == ".py"){
             echo "<div class = \"python file\">";
             echo $newfile;
@@ -338,6 +345,9 @@ body{
 }
 .css{
     color:yellow;
+}
+.txt{
+    background-color:#B0916E;
 }
 .php{
     color:#800080;
