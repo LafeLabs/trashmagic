@@ -2,6 +2,12 @@
 
 # [http://localhost](http://localhost)
 
+# [https://www.sloanslake.art](WWW DOT SLOANS LAKE DOT ART)
+
+# [https://www.southbroadway.net](WWW DOT SOUTH BROADWAY DOT NET)
+
+# [https://www.southplatte.net](WWW DOT SOUTH PLATTE DOT NET)
+
 # [TRASH MAGIC](https://github.com/LafeLabs/trashmagic/)
 
 # [TRASH MAGIC RECURSIVE WEB](https://github.com/LafeLabs/trashmagic/tree/main/web)
