@@ -1,6 +1,22 @@
 # [HOME](index.html)
 
+# [http://localhost](http://localhost)
+
+# [TRASH MAGIC](https://github.com/LafeLabs/trashmagic/)
+
+# [TRASH MAGIC RECURSIVE WEB](https://github.com/LafeLabs/trashmagic/tree/main/web)
+
+# [TRASH MAGIC ZINE DISTRO](https://github.com/LafeLabs/trashmagic/tree/main/web/distro)
+
+The purpose of Trash Magic is to create a civilization of free things entirely built from trash.  We will build things from trash, share them freely, and share how to build them with others so that they can replicate.  We call this replication from person to person of the knowhow and desire to make things "magic".  
+
+THE RECURSIVE WEB IS MADE OF WORLDS AND QUESTS. YOU CONSTRUCT, REPLICATE AND DESTROY WORLDS AND QUESTS TO BUILD TRASH MAGIC.
+
+
 # Recursive Web
+
+self-replicating web pages.
+
 
 Find any old computer that someone is getting rid of, it could be mac, pc or linux(but not Chromebook).  
 

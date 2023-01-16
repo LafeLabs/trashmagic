@@ -8,10 +8,6 @@
         "freepants.html",
         "index.html",
         "newpage.html",
-        "oscarthegrouch.html",
-        "place.html",
-        "places.html",
-        "platonic-solids.html",
         "qrcode-page.html",
         "qrcode.html",
         "readme.html",
@@ -21,7 +17,6 @@
         "trashmagic.js",
         "trashrobot.html",
         "tutorial.html",
-        "underthebridge.html",
         "webdestroyer.html",
         "webeditor.html"
     ],
