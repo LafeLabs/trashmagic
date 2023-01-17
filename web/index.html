@@ -47,7 +47,15 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 
 <p>THE RECURSIVE WEB IS MADE OF WORLDS AND QUESTS. YOU CONSTRUCT, REPLICATE AND DESTROY WORLDS AND QUESTS TO BUILD TRASH MAGIC.</p>
 
+<H1>QUESTS</H1>
+<div id = "quests">
+    
+</div>
+<h1>LINKs</h1>
+
 <a href = "webeditor.html">WEB PAGE EDITOR</a>
+<a href = "linkcreator.html">LINK CREATOR</a>
+<a href = "questcreator.html">QUEST CREATOR</a>
 <a href = "freepants.html">FREE PANTS</a>
 <a href = "compostcube.html">COMPOST CUBE</a>
 <a href = "../">UP A LEVEL</a>
@@ -62,6 +70,7 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 <a href = "bipm.html">BARTERTOWN INSTITUTE OF PRACTICAL METROLOGY</a>
 <a href = "qrcode.html">QRCODE</a> 
 
+    <div id = "links"></div>
 
 
 </div>
@@ -75,7 +84,28 @@ for(var index = 0;index < titles.length;index++){
 }
 
 
-rainbow(document.getElementsByTagName("A"));
+var httpc2 = new XMLHttpRequest();
+httpc2.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("quests").innerHTML = this.responseText;
+    }
+};
+
+httpc2.open("GET", "fileloader.php?filename=quests.html", true);
+httpc2.send();
+
+
+var httpc2 = new XMLHttpRequest();
+httpc2.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("links").innerHTML = this.responseText;
+        rainbow(document.getElementsByTagName("A"));
+
+    }
+};
+
+httpc2.open("GET", "fileloader.php?filename=links.html", true);
+httpc2.send();
 
 
 </script>
