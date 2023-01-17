@@ -40,6 +40,8 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 <div id = "mainscroll">
     
     <h1>TRASH MAGIC RECURSIVE WEB</h1>
+    
+    <a href = "webeditor.html">RECURSIVE WEB EDITOR</a>
 
 <p>
     The purpose of Trash Magic is to create a civilization of free things entirely built from trash.  We will build things from trash, share them freely, and share how to build them with others so that they can replicate.  We call this replication from person to person of the knowhow and desire to make things "magic".  
@@ -48,30 +50,24 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 <p>THE RECURSIVE WEB IS MADE OF WORLDS AND QUESTS. YOU CONSTRUCT, REPLICATE AND DESTROY WORLDS AND QUESTS TO BUILD TRASH MAGIC.</p>
 
 <H1>QUESTS</H1>
+<a href = "questcreator.html">QUEST CREATOR</a>
+
 <div id = "quests">
-    
 </div>
+
 <h1>LINKs</h1>
 
-<a href = "webeditor.html">WEB PAGE EDITOR</a>
 <a href = "linkcreator.html">LINK CREATOR</a>
-<a href = "questcreator.html">QUEST CREATOR</a>
-<a href = "freepants.html">FREE PANTS</a>
-<a href = "compostcube.html">COMPOST CUBE</a>
-<a href = "../">UP A LEVEL</a>
-<a href = "readme.html">README</a>
-<a href = "fork.html">FORK</a>
-<a href = "https://github.com/LafeLabs/trashmagic/tree/main/web">TRASH MAGIC RECURSIVE WEB REPLICATOR</a>
-<a href = "editor.php">SYSTEM CODE EDITOR</a>
-<a href = "dnagenerator.php">DNA GENERATOR</a>
-<a href = "directory.html">DIRECTORY</a>
-<a href = "board.html">BOARD</a>
-<a href = "trashrobot.html">TRASH ROBOT</a>
-<a href = "bipm.html">BARTERTOWN INSTITUTE OF PRACTICAL METROLOGY</a>
-<a href = "qrcode.html">QRCODE</a> 
 
-    <div id = "links"></div>
+    <div id = "links">
+    </div>
 
+<h1>IMAGES OF TRASH MAGIC AND GEOMETRON</h1>
+
+    <a href = "imagecreator.html">IMAGE CREATOR</a>
+
+    <div id = "images">
+    </div>
 
 </div>
 <script>
@@ -107,6 +103,17 @@ httpc2.onreadystatechange = function() {
 httpc2.open("GET", "fileloader.php?filename=links.html", true);
 httpc2.send();
 
+
+var httpc2 = new XMLHttpRequest();
+httpc2.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("images").innerHTML = this.responseText;
+
+    }
+};
+
+httpc2.open("GET", "fileloader.php?filename=images.html", true);
+httpc2.send();
 
 </script>
 </body>
