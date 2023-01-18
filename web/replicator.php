@@ -20,6 +20,7 @@ mkdir("books");
 mkdir("episodes");
 mkdir("songs");
 mkdir("trashmagic");
+mkdir("papers");
 
 
 

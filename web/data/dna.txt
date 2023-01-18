@@ -19,6 +19,7 @@
         "links.html",
         "measure.py",
         "music.html",
+        "papers.html",
         "plot.html",
         "podcast.html",
         "qrcode-page.html",
