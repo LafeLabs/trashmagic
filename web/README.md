@@ -4,6 +4,8 @@
 
 # [https://parisite.net/](https://parisite.net/)
 
+# [RECURSIVE WEB REPLICATOR ON GITHUB](https://github.com/LafeLabs/trashmagic/tree/main/web)
+
 # [WWW DOT SLOANS LAKE DOT ART](https://www.sloanslake.art)
 
 # [WWW DOT SOUTH BROADWAY DOT NET](https://www.southbroadway.net)
