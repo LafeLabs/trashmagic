@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <script src="mapfactory.js"></script>
+</head>
+<body>    
+<div id = "mainmap"></div>
+
+<script>
+
+mainmap = new Map(600,600,document.getElementById("mainmap"));
+
+mapjson = [
+    {
+        "x": 0.05,
+        "y": 0.05,
+        "w": 0.4,
+        "h": 0.4379474940334129,
+        "angle": 0,
+        "text": "trashrobot",
+        "href": "",
+        "src": "https://i.imgur.com/No1wukK.png",
+        "maplinkmode": false
+    },
+    {
+        "x": 0.5,
+        "y": 0.3,
+        "w": 0.2,
+        "h": 0.4379474940334129,
+        "angle": 180,
+        "text": "trashrobot",
+        "href": "",
+        "src": "https://i.imgur.com/No1wukK.png",
+        "maplinkmode": false
+    },
+    {
+        "x": 0.5,
+        "y": 0.8,
+        "w": 0.5,
+        "h": 0.4379474940334129,
+        "angle": -40,
+        "text": "trashrobot",
+        "href": "",
+        "src": "https://i.imgur.com/No1wukK.png",
+        "maplinkmode": false
+    },
+    {
+        "x": 0.27448609431680776,
+        "y": 0.15840386940749698,
+        "w": 0.46916565900846435,
+        "h": 0.056831922611850064,
+        "angle": 19,
+        "text": "home",
+        "href": "index.html",
+        "src": "",
+        "maplinkmode": false
+    },
+    {
+        "x": 0.6928657799274486,
+        "y": 0.5405078597339782,
+        "w": 0.46916565900846435,
+        "h": 0.056831922611850064,
+        "angle": -7,
+        "text": "up",
+        "href": "../",
+        "src": "",
+        "maplinkmode": false
+    }
+];
+
+mainmap.array = mapjson;
+mainmap.draw();
+
+</script>
+<style>
+#mainmap{
+    position:absolute;
+    left:0px;
+    top:0px;
+    background-color:#e0e0e0;
+    overflow:hidden;
+}
+
+</style>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body>
+    <h1><a href = "index.html">index.html</a></h1>
+<div id="maineditor" contenteditable="true" spellcheck="false"></div>
+<div style = "display:none" id = "codediv">
+print("hello python") # hello world for python
+# another comment line
+</div>
+<script>
+code = document.body.innerHTML;
+
+editor = ace.edit("maineditor");
+editor.setTheme("ace/theme/github");
+//editor.setTheme("ace/theme/vibrant_ink");
+editor.getSession().setMode("ace/mode/html");
+editor.getSession().setUseWrapMode(true);
+editor.$blockScrolling = Infinity;
+editor.setValue(code);
+
+//editor.getSession().setMode("ace/mode/css");
+//editor.getSession().setMode("ace/mode/html");
+//editor.getSession().setMode("ace/mode/html");
+//editor.getSession().setMode("ace/mode/javascript");
+//editor.getSession().setMode("ace/mode/text");
+//editor.getSession().setMode("ace/mode/php");
+//editor.getSession().setMode("ace/mode/python");
+//editor.getSession().setMode("ace/mode/json");
+//editor.getSession().setMode("ace/mode/markdown");
+//editor.getSession().setMode("ace/mode/sh");
+
+
+</script>
+<style>
+#maineditor{
+    position:absolute;
+    left:5em;
+    top:10em;
+    bottom:5em;
+    right:50%;
+    border:solid;
+}
+</style>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<title>table.html</title>
+</head>
+<body>
+    <h1>table.html</h1>
+    <a href = "index.html">index.html</a>
+</body>
+<script>
+newtable = document.createElement("TABLE");
+document.body.appendChild(newtable);
+
+for(var row = 0;row < 4;row++){
+    var newtr = document.createElement("TR");
+    for(var col = 0;col < 4;col++){
+        var newtd = document.createElement("TD");
+        newtd.innerHTML = "row = "  + row.toString() + ", col = " + col.toString();
+        newtr.appendChild(newtd);
+    }
+    newtable.appendChild(newtr);
+}
+
+</script>
+<style>
+td{
+    border:solid;
+}
+</style>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<title>doubler.html</title>
+</head>
+<body>
+    <h1>doubler.html</h1>
+    <a href = "index.html">index.html</a>
+    <input id = "maininput"/>
+</body>
+<script>
+
+    document.getElementById("maininput").onchange = function(){
+        x = parseFloat(this.value);
+        doublex = 2*x;
+        this.value = doublex;
+    }
+
+
+</script>
+<style>
+body{
+    font-size:5em;
+}
+</style>
+</html>

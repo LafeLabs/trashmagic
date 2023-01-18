@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<title>bitwise.html</title>
+</head>
+<body>
+    <h1>
+        <a href = "index.html">index.html</a>
+    </h1>
+    <textarea id = "textio"></textarea>
+    <script>
+        foo = 0b1101;
+        stringout = "";
+        stringout += "foo = 0b" + foo.toString(2)  + "\n";
+        stringout += "foo & 0b1000 = " + (foo & 0b1000).toString()  + "\n";
+        stringout += "foo & 0b0100 = " + (foo & 0b0100).toString()  + "\n";
+        stringout += "foo & 0b0010 = " + (foo & 0b0010).toString()  + "\n";
+        stringout += "foo & 0b0001 = " + (foo & 0b0001).toString()  + "\n";
+        
+        stringout += "0b11101 | 0b01101 = 0b" + (0b11101 | 0b01101).toString(2)  + "\n";
+        stringout += "0b11101 ^ 0b01101 = 0b" + (0b11101 ^ 0b01101).toString(2)  + " (xor)\n";        
+        
+        stringout += "-(123212233 + 1) = " + (-(123212233 + 1)).toString()  + " (not)\n";        
+        stringout += "~123212233 = " + (~123212233).toString()  + " (not)\n";        
+        document.getElementById("textio").value = stringout;
+    </script>
+    <style>
+        #textio{
+            width:50%;
+            height:20em;
+        }
+    </style>
+
+</body>
+</html>

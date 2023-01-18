@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<title>strings.html</title>
+</head>
+<body>
+    <h3>
+        <a href = "index.html">index.html</a>
+    </h3>
+    <table>
+        <tr>
+            <td>input:</td>
+            <td>
+                <input id = "inputinput"/>
+            </td>
+        </tr>
+        <tr>
+            <td>output:</td>
+            <td>
+                <input id = "outputinput"/>
+            </td>
+        </tr>
+    </table>
+    <script>
+        document.getElementById("inputinput").value = "";
+        document.getElementById("outputinput").value = "";
+        document.getElementById("inputinput").onchange = function(){
+            inputstring = this.value;
+            //do string things
+            outputstring = inputstring;
+            //more string things
+            document.getElementById("outputinput").value = outputstring;
+        }
+    </script>
+</body>
+</html>

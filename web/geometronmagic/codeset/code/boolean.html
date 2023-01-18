@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<title>boolean.html</title>
+</head>
+<body>
+    <h1>
+        <a href = "index.html">index.html</a>
+    </h1>
+    <p>
+        
+    </p>
+    <textarea id = "textio"></textarea>
+    <script>
+        b1 = true;
+        b2 = false;
+        boolstring = "";
+        boolstring += "b1 = " + b1.toString() + "\n";
+        boolstring += "b2 = " + b2.toString() + "\n";
+        boolstring += "b1 && b2 = " + (b1 && b2).toString() + "\n";
+        boolstring += "b1 || b2 = " + (b1 || b2).toString() + "\n";
+
+        document.getElementById("textio").value = boolstring;
+    </script>
+    <style>
+        #textio{
+            width:50%;
+            height:20em;
+        }
+    </style>
+</body>
+</html>

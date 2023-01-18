@@ -1,0 +1,12 @@
+#box{
+    font-size:8em;
+    font-family:courier;
+    color:#ff40c0;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:rotate(110deg);
+    border:solid;
+    border-color:#00ff00;
+    border-width:10px;
+}

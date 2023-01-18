@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+
+</head>
+<body>    
+    <a id = "homelink" href = "index.html">index.html</a>
+    <div id = "hammerxy">
+        <!--this covers the map exactly, sits at higher z index, and is turned off when NOT editing xy-->
+    </div>
+    <img id = "mainimage" src = "https://i.imgur.com/No1wukK.png"/>
+    <img src = "scale.svg" id = "scalebar"/>
+    <img src = "rotate.svg" id = "rotatebar"/>
+
+<script>
+
+
+mainimage = document.getElementById("mainimage");
+
+mc = new Hammer(document.getElementById("hammerxy"));
+mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc.on("panleft panright panup pandown tap press rotate", function(ev) {
+
+    mainimage.style.left = (ev.deltaX).toString() +  "px";
+    mainimage.style.top = (ev.deltaY).toString() +  "px";
+
+});    
+
+
+
+mczoom = new Hammer(document.getElementById("scalebar"));
+mczoom.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mczoom.on("panleft panright panup pandown tap press", function(ev) {
+
+        mainimage.style.width = (Math.abs(100 + 2*ev.deltaX)).toString() +  "px";
+        
+});
+
+mcrotate = new Hammer(document.getElementById("rotatebar"));
+mcrotate.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mcrotate.on("panleft panright panup pandown tap press", function(ev) {
+
+    mainimage.style.transform = "rotate(" + (ev.deltaX*Math.PI/5).toString() + "deg)";
+
+
+});    
+
+
+</script>
+<style>
+body{
+    overflow:hidden;
+}
+#homelink{
+    position:absolute;
+    z-index:1;
+    right:1em;
+    top:1em;
+    font-size:5em;
+}
+#mainimage{
+    position:absolute;
+    left:100px;
+    top:100px;
+    z-index:-1;
+}
+#hammerxy{
+    position:absolute;
+    left:100px;
+    right:100px;
+    top:100px;
+    bottom:100px;
+    z-index:0;
+}
+#scalebar{
+    position:absolute;
+    left:0px;
+    bottom:0px;
+    background-color:#ffa0a0;
+}
+#rotatebar{
+    position:absolute;
+    left:0px;
+    bottom:100px;
+    background-color:#a0ffa0;
+}
+</style>
+</body>
+</html>

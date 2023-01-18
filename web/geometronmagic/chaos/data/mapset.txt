@@ -1,0 +1,14 @@
+{
+    "server": "http://vineotron.net/chaos/",
+    "maps": [
+        "home",
+        "middlearth1"
+    ],
+    "images": [
+        "middleearth.png"
+    ],
+    "scrolls": [
+        "home",
+        "scrolls"
+    ]
+}

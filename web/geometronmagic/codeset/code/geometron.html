@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<title>geometron.html</title>
+    <script src = "geometron.js"></script>
+</head>
+<body>
+<h1>
+    <a href = "index.html">index.html</a>
+</h1>
+<div id = "geometronbox">
+    <canvas id = "maincanvas"></canvas>
+</div>
+<script>
+    
+    maincanvas = document.getElementById("maincanvas");
+    canvaswidth = 300;
+    canvasheight = 300;
+    var mainGVM = new GVM(maincanvas,canvaswidth,canvasheight);
+    mainGVM.drawGlyph("0321,0332,0337,0341,0340,0333,0341,0340,");
+
+</script>
+<style>
+    #maincanvas{
+        border:solid;
+    }
+</style>
+</body>
+</html>

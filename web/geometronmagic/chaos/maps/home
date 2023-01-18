@@ -1,0 +1,123 @@
+[
+    {
+        "x": -0.016,
+        "y": 0.3577142857142857,
+        "w": 0.6788571428571428,
+        "h": 0.6788571428571428,
+        "angle": 0,
+        "text": "editor.php",
+        "href": "",
+        "src": "https://i.imgur.com/qMRny0B.jpg",
+        "maplinkmode": false
+    },
+    {
+        "x": 0.7793103448275862,
+        "y": 0.9425287356321839,
+        "w": 0.4666666666666667,
+        "h": 0.05484247374562427,
+        "angle": 0,
+        "text": "editor.php",
+        "href": "editor.php",
+        "src": "",
+        "maplinkmode": false
+    },
+    {
+        "x": 0.7666666666666667,
+        "y": 0.23103448275862068,
+        "w": 0.46781609195402296,
+        "h": 0.05503512880562061,
+        "angle": 0,
+        "text": "fork.html",
+        "href": "fork.html",
+        "src": "",
+        "maplinkmode": false
+    },
+    {
+        "x": 0.7528735632183908,
+        "y": 0.48160919540229885,
+        "w": 0.46781609195402296,
+        "h": 0.05503512880562061,
+        "angle": 0,
+        "text": "home scroll",
+        "href": "scrolls/home",
+        "src": "",
+        "maplinkmode": true
+    },
+    {
+        "x": 0.014942528735632184,
+        "y": 0.006896551724137931,
+        "w": 0.46781609195402296,
+        "h": 0.05503512880562061,
+        "angle": 0,
+        "text": "up a level",
+        "href": "../",
+        "src": "",
+        "maplinkmode": false
+    },
+    {
+        "x": 0.2149425287356322,
+        "y": 0.23793103448275862,
+        "w": 0.46781609195402296,
+        "h": 0.054022988505747126,
+        "angle": 0,
+        "text": "CLICK ME>>",
+        "href": "",
+        "src": "",
+        "maplinkmode": false
+    },
+    {
+        "x": 0.24482758620689654,
+        "y": 0.5804597701149425,
+        "w": 0.1632183908045977,
+        "h": 0.19672131147540983,
+        "angle": 0,
+        "text": "editor.php",
+        "href": "",
+        "src": "https://i.imgur.com/No1wukK.png",
+        "maplinkmode": false
+    },
+    {
+        "x": 0.16457142857142856,
+        "y": 0.11428571428571428,
+        "w": 0.4662857142857143,
+        "h": 0.054906542056074766,
+        "angle": 0,
+        "text": "https://www.openstreetmap.org/",
+        "href": "https://www.openstreetmap.org/",
+        "src": "",
+        "maplinkmode": false
+    },
+    {
+        "x": 0.8194285714285714,
+        "y": 0.005714285714285714,
+        "w": 0.4674285714285714,
+        "h": 0.053714285714285714,
+        "angle": 0,
+        "text": "foo map",
+        "href": "maps/foo",
+        "src": "",
+        "maplinkmode": true
+    },
+    {
+        "x": 0.4868571428571429,
+        "y": 0.17485714285714285,
+        "w": 0.18857142857142858,
+        "h": 0.22628571428571428,
+        "angle": 0,
+        "text": "editor.php",
+        "href": "maps/middlearth1",
+        "src": "https://i.imgur.com/No1wukK.png",
+        "maplinkmode": true
+    },
+    {
+        "x": 0.6571428571428571,
+        "y": 0.5451428571428572,
+        "w": 0.3291428571428571,
+        "h": 0.3291428571428571,
+        "angle": 0,
+        "text": "editor.php",
+        "href": "",
+        "src": "uploadimages/hexagram.png",
+        "maplinkmode": false
+    }
+]

@@ -1,0 +1,10 @@
+{
+    "server": "https://raw.githubusercontent.com/LafeLabs/pibrary/main/fileset/",
+    "images": [
+        "example-jupyter.ipynb",
+        "unoshield-v5-bom.xlsx",
+        "unoshield-v5.brd",
+        "unoshield-v5.sch",
+        "unoshield.png"
+    ]
+}

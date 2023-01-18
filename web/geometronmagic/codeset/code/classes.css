@@ -1,0 +1,29 @@
+.button{
+    color:#00ff00;
+    font-family:courier;
+    font-size:1.5em;
+    border:solid;
+    border-color:#0000ff80;
+    width:10em;
+    height:3em;
+    background-color:#808080;
+    border-width:10px;
+    text-align:center;
+    cursor:pointer;
+}
+.data{
+    display:none;
+}
+.button:hover{
+    border-width:20px;
+    background-color:#8080ff;
+}
+.button:active{
+    background-color:yellow;
+}
+.textd{
+    color:#ffc040;
+    background-color:#404040;
+    padding-left:3em;
+    padding-top:3em;
+}

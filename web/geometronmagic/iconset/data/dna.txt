@@ -1,0 +1,67 @@
+{
+    "html": [
+        "README.md",
+        "alignimage.html",
+        "fork.html",
+        "globalimagefeed.html",
+        "icon3d.html",
+        "icon64.html",
+        "index.html",
+        "programarduino.html",
+        "programarduinoxyz.html",
+        "qrcode.html",
+        "readme.html",
+        "scrolleditor.html",
+        "set.html",
+        "three.html",
+        "threejs.html",
+        "threejsinvert.html",
+        "traceicon.html"
+    ],
+    "data": [
+        "alignimage.txt",
+        "arduinocode.txt",
+        "arduinocodexyz.txt",
+        "coin.txt",
+        "dna.txt",
+        "glyph3d.txt",
+        "hypercube.txt",
+        "imagefeed.txt",
+        "robotfeed.txt",
+        "set.txt"
+    ],
+    "php": [
+        "copy.txt",
+        "deletefile.txt",
+        "dir.txt",
+        "dnagenerator.txt",
+        "editor.txt",
+        "fileloader.txt",
+        "filesaver.txt",
+        "ipaddress.txt",
+        "mkdir.txt",
+        "rdelete.txt",
+        "removephp.txt",
+        "replicator.txt",
+        "setreplicator.txt",
+        "text2php.txt"
+    ],
+    "javascript": [
+        "geometron.js"
+    ],
+    "iconsymbols": [
+        "abcfont.svg",
+        "cursor.svg",
+        "delete.svg",
+        "expand.svg",
+        "expandsmall.svg",
+        "left.svg",
+        "leftsmall.svg",
+        "right.svg",
+        "rightsmall.svg",
+        "rotate.svg",
+        "scale.svg",
+        "shrink.svg",
+        "shrinksmall.svg"
+    ]
+}

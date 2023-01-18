@@ -1,0 +1,35 @@
+{
+    "server": "https://raw.githubusercontent.com/LafeLabs/pibrary/main/mapbook/",
+    "maps": [
+        "bigmap",
+        "foo",
+        "home",
+        "medmap",
+        "smallmap"
+    ],
+    "images": [
+        "arduino.png",
+        "balt-wash.png",
+        "chaos8.png",
+        "dcmain.png",
+        "earthbag.png",
+        "firebag.png",
+        "flag.png",
+        "foo.png",
+        "hexagram.png",
+        "kstreet.png",
+        "laurel.png",
+        "map1.png",
+        "maplelawn.png",
+        "maplelawncommercial.png",
+        "mapwh.png",
+        "raspberrypi.png",
+        "solarpanel.png",
+        "trashrobot.png",
+        "waterbag.png"
+    ],
+    "scrolls": [
+        "here",
+        "home"
+    ]
+}

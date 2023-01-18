@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<title>math.html</title>
+</head>
+<body>
+    <h1>
+        <a href = "index.html">index.html</a>
+    </h1>
+        <textarea id= "textio"></textarea>
+
+    <script>
+    // reference:
+    // https://www.w3schools.com/jsref/jsref_obj_math.asp
+
+        outstring = "";
+        outstring += "pi = " + Math.PI + "\n";
+        outstring += "e = " + Math.E + "\n";
+        outstring += "abs(-4) = "  + Math.abs(-4) + "\n";
+        outstring += "acosh(1) = "  + Math.acosh(1) + "\n";
+        outstring += "acos(1) = "  + Math.acos(1) + "\n";
+        outstring += "asin(1)/pi = "  + Math.asin(1)/Math.PI + "\n";
+        outstring += "atan2(1,-1)/pi = "  + Math.atan2(1,-1)/Math.PI + "\n";
+        outstring += "exp(-1) = "  + Math.exp(-1) + "\n";
+        outstring += "log(e) = "  + Math.log(Math.E) + "\n";
+        outstring += "log10(1000) = "  + Math.log10(1000) + "\n";
+        outstring += "log2(1024) = "  + Math.log2(1024) + "\n";
+        outstring += "round(7.2) = "  + Math.round(7.2) + "\n";
+        outstring += "sqrt(2) = "  + Math.sqrt(2) + "\n";
+
+
+        
+        document.getElementById("textio").value = outstring;
+        
+    </script>
+    <style>
+        #textio{
+            width:50%;
+            height:40em;
+            font-family:courier;
+            background-color:#f0f0f0;
+        }
+    </style>
+</body>
+</html>

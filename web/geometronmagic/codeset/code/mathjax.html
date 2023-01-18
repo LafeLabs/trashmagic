@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<title>mathjax.html</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<!--
+see https://www.mathjax.org/ for details
+-->
+    <script>
+        MathJax.Hub.Config({
+            tex2jax: {
+            inlineMath: [['$','$'], ['\\(','\\)']],
+            processEscapes: true,
+            processClass: "mathjax",
+            ignoreClass: "no-mathjax"
+            }
+        });//			MathJax.Hub.Typeset();//tell Mathjax to update the math
+    </script>
+</head>
+<body>
+    <a href = "index.html">index.html</a>
+    <table>
+        <tr>
+            <td>input $\LaTeX$ code(without dollar sign):</td>
+            <td>
+                <input id = "equationinput"/>
+            </td>
+        </tr>
+    </table>
+    <p id = "equationoutput"></p>
+<h1>
+    $\frac{\hbar^2}{2m}\nabla^2\psi$
+</h1>
+<script>
+document.getElementById("equationinput").value = "";
+    document.getElementById("equationinput").onchange = function(){
+        rawtext = "$$" + this.value + "$$";
+        document.getElementById("equationoutput").innerHTML = rawtext;
+        MathJax.Hub.Typeset();//tell Mathjax to update the math
+    }
+</script>
+</body>
+<style>
+    h1{
+        text-align:center;
+    }
+    a,body{
+        font-size:36px;
+    }
+</style>
+</html>

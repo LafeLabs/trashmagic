@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<title>wall.html</title>
+</head>
+<body>
+
+<h1>wall</h1>
+<ul>
+    <li>
+        <a href = "wall.html">wall.html</a>
+    </li>
+    <li>
+        <a href = "index.html">index.html</a>
+    </li>
+</ul>    
+    <textarea id = "wall"></textarea>
+    <script>
+    wall = "";
+
+    var httpc2 = new XMLHttpRequest();
+    httpc2.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            wall = this.responseText;
+            document.getElementById("wall").value = wall;
+        }
+    };
+
+    httpc2.open("GET", "fileloader.php?filename=wall.html", true);
+    httpc2.send();
+
+    document.getElementById("wall").onkeyup = function() {
+        wall = this.value;
+        var httpc = new XMLHttpRequest();
+        var url = "filesaver.php";        
+        httpc.open("POST", url, true);
+        httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+        httpc.send("data="+encodeURIComponent(wall)+"&filename=wall.html");//send text to filesaver.php        
+    }
+
+    </script>
+    <style>
+        #wall{
+            width:50%;
+            height:40em;
+        }
+    </style>
+</body>
+</html>
