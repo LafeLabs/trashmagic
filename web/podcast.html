@@ -32,17 +32,20 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 
        <!--Stop Google:-->
     <META NAME="robots" CONTENT="noindex,nofollow">
-   <title>TRASH MAGIC</title>    
-   <script src = "jscode/trashmagic.js"></script>
-   <link rel="stylesheet" href = "css/trashmagic.css"> 
-   
+   <title>TRASH MAGIC PODCAST</title>    
+   <script src = "trashmagic.js"></script>
+   <link rel="stylesheet" href="trashmagic.css">
 </head>
 <body>    
 <div id = "mainscroll">
     
+    <a href = "webeditor.html">WEB CODE EDITOR</a>
+    <a href=  "index.html">HOME</a>
+    
     <h1>TRASH MAGIC RECURSIVE WEB</h1>
 
-    <h1>TRASH MAGIC ZINE DISTRO</h1>
+    <h1>TRASH MAGIC PODCAST</h1>
+
 
 <p>
     The purpose of Trash Magic is to create a civilization of free things entirely built from trash.  We will build things from trash, share them freely, and share how to build them with others so that they can replicate.  We call this replication from person to person of the knowhow and desire to make things "magic".  
@@ -50,31 +53,20 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 
 <p>THE RECURSIVE WEB IS MADE OF WORLDS AND QUESTS. YOU CONSTRUCT, REPLICATE AND DESTROY WORLDS AND QUESTS TO BUILD TRASH MAGIC.</p>
 
-<p>in the zine distro you drop zines into a folder and share them on the web, take zines from the community and scan them in and share them, and print them out and distribute them physically in locations referenced in this document.</p>
 
-<h1>QUESTS</h1>
+<p>quest: ask people from the community to contribute podcasts, put them in the "podcast" folder and share them.  People can make podcasts about creating trash magic and the culture around it.</p>
 
-<p>
-    create a zine and publish it. get a zine from someone else and publish it.  Print a zine and distribute it in a physical space and map to that space with this document.  Point all zines back to the digital space which points back to the phsyical spaces, using domains and qr codes both.  
-</p>
+<h1>EPISODES</h1>
+<div id = "podcast">
+    
+</div>
 
-<h1>LINKS</h1>
-
-<a href = "zines.html">ZINES</a>
-<a href = "https://github.com/lafeLabs/trashmagic">TRASH MAGIC SERVER AND MAGIC DUMP REPLICATION</a> 
-<a href = "webeditor.html">WEB PAGE EDITOR</a>
-<a href = "editor.php">SYSTEM CODE EDITOR</a>
-<a href = "webdestroyer.html">WEB DESTROYER</a>
-<a href = "dnagenerator.php">DNA GENERATOR</a>
-<a href = "directory.html">DIRECTORY</a>
-<a href = "trashrobot.html">TRASH ROBOT</a>
-<a href = "qrcode.html">QRCODE</a> 
 
 
 </div>
 <script>
 
-//googleyeyes(8);
+googleyeyes(8);
 
 titles = document.getElementsByTagName("H1");
 for(var index = 0;index < titles.length;index++){
@@ -83,6 +75,8 @@ for(var index = 0;index < titles.length;index++){
 
 
 rainbow(document.getElementsByTagName("A"));
+
+listfiles(document.getElementById("podcast"),"episodes");
 
 
 </script>

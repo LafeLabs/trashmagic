@@ -32,24 +32,41 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 
        <!--Stop Google:-->
     <META NAME="robots" CONTENT="noindex,nofollow">
-   <title>TRASH MAGIC</title>    
-   <script src = "jscode/trashmagic.js"></script>
-   <link rel="stylesheet" href="css/trashmagic.css">
+   <title>TRASH MAGIC MUSIC LABEL</title>    
+   <script src = "trashmagic.js"></script>
+   <link rel="stylesheet" href="trashmagic.css">
 </head>
 <body>    
 <div id = "mainscroll">
     
-    <h1 id = "title">DIRECTORY</h1>
+    <a href = "webeditor.html">WEB CODE EDITOR</a>
+    <a href=  "index.html">HOME</a>
+    
+    <h1>TRASH MAGIC RECURSIVE WEB</h1>
+
+    <h1>TRASH MAGIC MUSIC LABEL</h1>
+
 
 <p>
-All the files in the Recursive Web.  
+    The purpose of Trash Magic is to create a civilization of free things entirely built from trash.  We will build things from trash, share them freely, and share how to build them with others so that they can replicate.  We call this replication from person to person of the knowhow and desire to make things "magic".  
 </p>
+
+<p>THE RECURSIVE WEB IS MADE OF WORLDS AND QUESTS. YOU CONSTRUCT, REPLICATE AND DESTROY WORLDS AND QUESTS TO BUILD TRASH MAGIC.</p>
+
+
+<p>quest: get songs released into public domain by artists to support trash magic.</p>
+
+<h1>SONGS</h1>
+<div id = "songs">
+    
+</div>
+
 
 
 </div>
 <script>
 
-//googleyeyes(8);
+googleyeyes(8);
 
 titles = document.getElementsByTagName("H1");
 for(var index = 0;index < titles.length;index++){
@@ -59,31 +76,10 @@ for(var index = 0;index < titles.length;index++){
 
 rainbow(document.getElementsByTagName("A"));
 
+listfiles(document.getElementById("songs"),"songs");
 
-mainscroll = document.getElementById("mainscroll");
-files = [];
-var httpcimages = new XMLHttpRequest();
-httpcimages.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        files = JSON.parse(this.responseText);
-        var locallinks = [];
-        for(var index = 0;index < files.length;index++){
-            if(files[index].substring(files[index].length-5) == ".html"){
-                var newa = document.createElement("A");
-                newa.href = files[index];
-                newa.innerHTML = files[index];
-                mainscroll.appendChild(newa);
-                locallinks.push(newa);
-                
-            }
-        }
-        rainbow(locallinks);
-    }
-};
-httpcimages.open("GET", "rdir.php", true);
-httpcimages.send();
+
 </script>
-
 </body>
 </html>
 

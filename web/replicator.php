@@ -15,6 +15,12 @@ mkdir("data");
 mkdir("php");
 //mkdir("jscode");
 //mkdir("css");
+mkdir("zines");
+mkdir("books");
+mkdir("episodes");
+mkdir("songs");
+mkdir("trashmagic");
+
 
 
 
