@@ -1,8 +1,11 @@
-
 ## [HOME](scrolls/home)
 
-# Magic Books
+# 4. Magic Books
+
+## [TRASH MAGIC RECURSIVE WEB SCROLL](scrolls/recursiveweb)
  
+## [PIBRARY SCROLL](scrolls/pibrary)
+
 The media which drives this network is the Magic Book.  The Magic Book is a format for electronic books which lends itself to easy replication across the Internet and easy editing.  We use the term "magic" as in all other places in this work to mean that people replicate them themselves.   That is, with simply copy/pasting links and clicking on them in browsers anyone on a network can copy any book from any server to any other server.  
 
 This is not like Google Docs where documents are attached to "users" who log into a cloud server controlled by Google.  We use cloud hosting for public-facing web pages, but they are all able to be read by anyone anywhere in the world freely without any log ins or passwords.  And all these books are created, edited, and shared on the local Pibrary networks hosted on physical Raspberry Pi based web servers which are shared freely in our local physical community.
@@ -32,3 +35,4 @@ Consider any "technology" company today which makes its money on creating links 
 A final note on what books we choose to replicate on any given Pibrary.  In a traditional library, more is always considered to be better.  The more resources a library has the more books they buy, and it is assumed that readers use search and browsing to find what they need with no core specific purpose.  This is not the case of the Pibrary.  The Pibrary has a purpose, our purpose is to create self-replicating media which can transmit self-replicating technology made from trash which can provide for all human needs for free.  We therefore are very specifically *not* trying to just add more and more books.  We want the selection of books to be very aggressively curated by the caretakers of the Network to specifically carry out whatever the next task is in any given community to bring all of humanity closer to full Trash Magic.   In some cases, this might mean an individual person carries an individual Raspberry Pi with just one or two books, specifically fro the exactly actions of mutual aid and direct action in which we are engaged.
 
 
+## [people of the network scroll](scrolls/people)
