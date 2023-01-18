@@ -2,6 +2,8 @@
 
 # [http://localhost](http://localhost)
 
+# [https://parisite.net/](https://parisite.net/)
+
 # [WWW DOT SLOANS LAKE DOT ART](https://www.sloanslake.art)
 
 # [WWW DOT SOUTH BROADWAY DOT NET](https://www.southbroadway.net)
