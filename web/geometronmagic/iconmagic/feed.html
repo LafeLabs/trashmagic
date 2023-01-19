@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+        <!--
+
+TRASH MAGIC MEDIA NETWORK
+
+EVERYTHING IS PHYSICAL
+EVERYTHING IS FRACTAL
+EVERYTHING IS RECURSIVE
+
+NO MONEY
+NO MINING
+NO PROPERTY
+
+LOOK AT THE FUNGI
+LOOK AT THE INSECTS
+LANGUAGE IS HOW THE MIND PARSES REALITY
+
+
+
+    All Code, text, art, media, technology, and ideas CC0 PUBLIC DOMAIN
+
+
+
+    -->
+    
+<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA/wAAAAD//wAA/wAAAAD/AP8A/wAApv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFUAAARGAAIxFVUABEYAAjMRFQAARGYiIjMRAABERmZiIzEAAARERGZiMwAAAARERGYiAAAAAABERiL4PwAA+78AAPu/AAD33wAA9V8AAPVfAAD1XwAA998AAOADAADhAAAA4AAAAPAAAADwAAAA+AAAAP4AAAD/wAAA" rel="icon" type="image/x-icon" />
+
+   <title>TRASH MAGIC MEDIA</title>    
+   <script src="jscode/geometron.js"></script>
+</head>
+<body>    
+
+<a id = "homelink" href = "index.html">HOME</a>
+<a id = "operatorlink" href = "operator.html">OPERATOR</a>
+        
+<div id = "feed"></div>
+
+
+<script>
+
+feedlinkwidth  = 0.11*innerWidth;
+
+feedwidth=400;
+
+gvmArray = [];
+
+robotfeed = [];
+var httpcHypercube = new XMLHttpRequest();
+httpcHypercube.onreadystatechange = function(){
+    if (this.readyState == 4 && this.status == 200) {
+        hypercube = JSON.parse(this.responseText);
+
+
+        var httpcFeed = new XMLHttpRequest();
+        httpcFeed.onreadystatechange = function(){
+            if (this.readyState == 4 && this.status == 200) {
+                robotfeed = JSON.parse(this.responseText);
+
+                loadfeed();
+            }
+        };
+        httpcFeed.open("GET", "fileloader.php?filename=data/robotfeed.txt", true);
+        httpcFeed.send();
+
+    }
+};
+httpcHypercube.open("GET", "fileloader.php?filename=data/hypercube.txt", true);
+httpcHypercube.send();
+
+
+
+function loadfeed(){
+    gvmArray = [];
+    document.getElementById("feed").innerHTML = "";
+    for(var index = 0;index < robotfeed.length;index++){
+        var newdiv = document.createElement("span");
+        var newcan = document.createElement("CANVAS");
+        newcan.className = "feedcan";
+        newdiv.style.marginTop = 0.05*feedwidth + "px";
+        newdiv.style.marginBottom = 0.05*feedwidth + "px";
+        newdiv.appendChild(newcan);
+        newdiv.className = "feedelement";
+        newcan.classList.add("button");
+        document.getElementById("feed").appendChild(newdiv);
+
+        var newGVM = new GVM(newcan,feedlinkwidth,feedlinkwidth);
+        newGVM.importbytecode(hypercube);
+        gvmArray.push(newGVM);
+        newGVM.drawGlyph(robotfeed[index]);    
+        
+        
+    }    
+}
+
+
+</script>
+<style>
+body{
+}
+a{
+}
+#feed{
+    position:absolute;
+    right:0px;
+    left:0px;
+    bottom:0px;
+    top:100px;
+    overflow:scroll;
+    z-index:-1;
+}
+@media only screen and (orientation: portrait) {
+}
+@media only screen and (orientation: landscape) {
+}
+</style>
+</body>
+</html>
+
+

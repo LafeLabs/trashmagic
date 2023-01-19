@@ -24,7 +24,7 @@ mkdir("symbolfeed");
 
 
 
-copy("https://raw.githubusercontent.com/LafeLabs/trashmagic/main/geometronmagic/iconmagic/php/replicator.txt","replicator.php");
+copy("https://raw.githubusercontent.com/LafeLabs/trashmagic/main/web/geometronmagic/iconmagic/php/replicator.txt","replicator.php");
 
 
 foreach($dna->html as $value){
