@@ -1,6 +1,6 @@
 <?php
 
-$dnaurl = "https://raw.githubusercontent.com/LafeLabs/trashmagic/main/data/dna.txt";
+$dnaurl = "https://raw.githubusercontent.com/LafeLabs/trashmagic/main/web/geometronmagic/symbolmagic/data/dna.txt";
 
 if(isset($_GET["dna"])){
     $dnaurl = $_GET["dna"];
@@ -22,22 +22,8 @@ mkdir("iconsymbols");
 mkdir("maps");
 mkdir("symbolfeed");
 
-mkdir("media/zines");
-mkdir("media/books");
-mkdir("media/music");
-mkdir("media/fashion");
-mkdir("media/market");
-mkdir("media/trashmagic");
-mkdir("media/cardboard");
-mkdir("media/arduino");
-mkdir("media/jupyter");
-mkdir("media/videos");
-mkdir("media/measurement");
+copy("https://raw.githubusercontent.com/LafeLabs/trashmagic/main/geometronmagic/symbolmagic/php/replicator.txt","replicator.php");
 
-
-copy("https://raw.githubusercontent.com/LafeLabs/trashmagic/main/php/replicator.txt","replicator.php");
-
-copy("https://raw.githubusercontent.com/LafeLabs/trashmagic/main/web/php/replicator.txt","web/replicator.php");
 
 foreach($dna->html as $value){
     
