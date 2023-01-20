@@ -22,7 +22,7 @@ mkdir("iconsymbols");
 mkdir("maps");
 mkdir("symbolfeed");
 
-copy("https://raw.githubusercontent.com/LafeLabs/trashmagic/main/geometronmagic/symbolmagic/php/replicator.txt","replicator.php");
+copy("https://raw.githubusercontent.com/LafeLabs/trashmagic/main/web/geometronmagic/symbolmagic/php/replicator.txt","replicator.php");
 
 
 foreach($dna->html as $value){
