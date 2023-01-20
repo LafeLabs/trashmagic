@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>  
+    <meta charset="utf-8">
+
+        <!--
+
+TRASH MAGIC 
+
+EVERYTHING IS PHYSICAL
+EVERYTHING IS FRACTAL 
+EVERYTHING IS RECURSIVE
+
+NO MONEY
+NO MINING
+NO PROPERTY
+
+LOOK AT THE FUNGI
+LOOK AT THE INSECTS
+LANGUAGE IS HOW THE MIND PARSES REALITY
+
+
+
+    All Code, text, art, media, technology, and ideas CC0 PUBLIC DOMAIN
+
+
+
+    -->
+    
+<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA4A8AAO/vAADqrwAA6q8AAOqvAADqrwAA6q8AAOqvAADqrwAA7+8AAMAHAADf9wAAwAcAAPu/AAD4PwAA" rel="icon" type="image/x-icon" />
+
+
+       <!--Stop Google:-->
+    <META NAME="robots" CONTENT="noindex,nofollow">
+   <title>TRASH MAGIC ADVENTURE</title>    
+   <script src = "trashmagic.js"></script>
+   <link rel="stylesheet" href="trashmagic.css">
+</head>
+<body>    
+<div id = "mainscroll">
+    
+    <h1>TRASH MAGIC ADVENTURE</h1>
+
+<P>
+    you are in a maze of twisty passages, all alike. if no portals exist open one.  
+</P>
+
+<a href = "../">UP A LEVEL</a>
+<a href = "webeditor.html">WEB EDITOR</a>
+
+<table>
+    <tr>
+        <td>NEW PORTAL DOWN:</td>
+        <td>
+            <input id = "newportalinput"/>
+        </td>
+    </tr>
+</table>
+
+<h1>PORTALS</h1>
+    
+
+    
+<script>
+
+googleyeyes(8);
+
+titles = document.getElementsByTagName("H1");
+for(var index = 0;index < titles.length;index++){
+    rainbowstring(titles[index]);    
+}
+
+newportalinput = document.getElementById("newportalinput");
+
+directories = [];
+var httpc2 = new XMLHttpRequest();
+    httpc2.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        directories = JSON.parse(this.responseText);
+        for(var index = 0;index < directories.length;index++) {
+            var newa = document.createElement("A");
+            newa.innerHTML = directories[index] + "/";
+            newa.href = directories[index] + "/";
+            newa.className = "dirlink";
+            document.getElementById("mainscroll").appendChild(newa);
+        }
+
+        rainbow(document.getElementsByTagName("A"));
+
+    }
+};
+
+httpc2.open("GET", "dir.php?type=dir", true);
+httpc2.send();
+
+newportalinput = document.getElementById("newportalinput");
+
+newportalinput.onchange = function() {
+    var newa = document.getElementById("dirlink");
+    newa.innerHTML = "mkdir.php?dir=" + this.value;
+    newa.href = "mkdir.php?dir=" + this.value;
+    newa.style.color = "#ff2cb4";
+    newa.style.backgroundColor = "black";
+}
+
+dirlink = document.getElementById("dirlink");
+
+replicator = "https://raw.githubusercontent.com/LafeLabs/trashmagic/main/web/adventure/php/replicator.txt";
+
+
+
+</script>
+</body>
+</html>
+
+

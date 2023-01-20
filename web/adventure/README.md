@@ -144,22 +144,6 @@ sudo systemctl reload apache2
 
 add subdomains, add more domains, point any domain or subdomain to any dump and any trash server.  Go find more laptops people are willing to donate and make more trash servers and dump directors.  Use this system to create full trash magic globally.
 
-
-To make a folder on the desktop in Ubuntu which maps to the html folder use
-
-```
-ln -s /var/www/html ~/Desktop
-```
-and/or add subfolders for specific pages and functions for example
-
-```
-ln -s /var/www/html/southplattedotnet/zines ~/Desktop/southplattezines
-ln -s /var/www/html/southplattedotnet/episodes ~/Desktop/southplattepodcast
-ln -s /var/www/html/southplattedotnet/books ~/Desktop/freelibrary
-
-```
-
-
 To install science and arduino run:
 
 ```

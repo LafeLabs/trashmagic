@@ -150,6 +150,7 @@
                                          
                 </tr>
             </table>
+            <input id = "spellinput2"/>
             <textarea id = "textio"></textarea>
         
         </div>
@@ -243,6 +244,8 @@ else{
 }
 
 
+document.getElementById("spellinput").value = "";
+document.getElementById("spellinput2").value = "";
 
 
 maincanvas = document.getElementById("maincanvas");
@@ -596,6 +599,8 @@ function drawmain(){
     
     spellGVM.spellGlyph(mainGVM.glyph);
     document.getElementById("spellinput").value = mainGVM.cleanGlyph;
+   // document.getElementById("spellinput2").value = mainGVM.cleanGlyph;
+
 }
 
 
@@ -639,6 +644,7 @@ function loadcontroltable(){
                     mainGVM.clean();
                     spellGVM.spellGlyph(mainGVM.glyph);
                     document.getElementById("spellinput").value = mainGVM.cleanGlyph;
+                    document.getElementById("spellinput2").value = mainGVM.cleanGlyph;
                     coin = mainGVM.cleanGlyph;
                     savecoin();
                     mainGVM.actionSequence("0300,0337,0337,0342,0334,0342,0334,343,0334,0342,0341,"); 
@@ -689,6 +695,7 @@ function loadfeed(){
             spellGVM.spellGlyph(mainGVM.glyph);    
             mainGVM.clean();
             document.getElementById("spellinput").value = mainGVM.cleanGlyph;
+            document.getElementById("spellinput2").value = mainGVM.cleanGlyph;    
             coin = mainGVM.cleanGlyph;
             savecoin();
             
@@ -752,6 +759,8 @@ document.getElementById("actioninput").onkeypress = function(a) {
         this.value = "";
         mainGVM.clean();
         document.getElementById("spellinput").value = mainGVM.cleanGlyph;
+        document.getElementById("spellinput2").value = mainGVM.cleanGlyph;
+        
         coin = mainGVM.cleanGlyph;
         savecoin();
     }
@@ -792,6 +801,8 @@ document.getElementById("actioninput").onkeydown = function(a) {
 
     spellGVM.spellGlyph(mainGVM.glyph);
     document.getElementById("spellinput").value = mainGVM.cleanGlyph;
+    document.getElementById("spellinput2").value = mainGVM.cleanGlyph;
+    
     mainGVM.clean();
         mainGVM.actionSequence("0300,0337,0337,0342,0334,0342,0334,343,0334,0342,0341,");    
     coin = mainGVM.cleanGlyph;
@@ -827,6 +838,15 @@ document.getElementById("spellinput").onchange = function(){
     savecoin();
     drawmain();
 }
+document.getElementById("spellinput2").onchange = function(){
+    robotfeed.unshift(this.value);
+    loadfeed();
+    saverobotfeed();
+    coin = this.value;
+    savecoin();
+    drawmain();
+}
+
 
 
 
@@ -934,12 +954,25 @@ document.getElementById("sharebutton").onclick = function(){
 
 }
 
-document.getElementById("imagesbox").style.display = "none";
-document.getElementById("alignbox").style.display = "none";
-document.getElementById("tracebox").style.display = "block";
-document.getElementById("sharebox").style.display = "none";
-selectorbuttons[2].style.backgroundColor = "green";
-selectorbuttons[2].style.borderColor = "black";
+
+    for(var index = 0;index < 4;index++){
+
+        if(index == 3){
+            selectorbuttons[index].style.backgroundColor = "green";
+            selectorbuttons[index].style.borderColor = "black";
+        }
+        else{
+            selectorbuttons[index].style.backgroundColor = "#00000000";
+            selectorbuttons[index].style.borderColor = "white";
+        }
+    }
+
+    document.getElementById("imagesbox").style.display = "none";
+    document.getElementById("alignbox").style.display = "none";
+    document.getElementById("tracebox").style.display = "none";
+    document.getElementById("sharebox").style.display = "block";
+    document.getElementById("hammerxy").style.display = "none";
+
 
 if(innerWidth> innerHeight){
     document.getElementById("actioninput").select();
@@ -1048,6 +1081,21 @@ body{
     border-width:5px;
     border-color:orange;
     position:absolute;
+}
+#spellinput2{
+    background-color:black;
+    color:#00ff00;
+    font-family:courier;
+    border:solid;
+    border-width:5px;
+    border-color:orange;
+    position:absolute;
+    z-index:2;
+    bottom:120px;
+    height:16px;
+    left:0px;
+    width:50%;
+    
 }
 
 #zoomrotatebox{
@@ -1170,6 +1218,9 @@ body{
         left:0px;
         right:0px;
         width:95%;
+    }
+    #spellinput2{
+        bottom:200px;
     }
 
 }
