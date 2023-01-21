@@ -21,8 +21,10 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 
 
 
+
     All Code, text, art, media, technology, and ideas CC0 PUBLIC DOMAIN
 
+ADVENTURE!
 
 
     -->
@@ -42,11 +44,14 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
     <h1>TRASH MAGIC ADVENTURE</h1>
 
 <P>
-    you are in a maze of twisty passages, all alike. if no portals exist open one.  
+    you are in a maze of twisty passages, all alike.   
 </P>
 
 <a href = "../">UP A LEVEL</a>
 <a href = "webeditor.html">WEB EDITOR</a>
+
+
+<h1>PORTALS</h1>
 
 <table>
     <tr>
@@ -57,9 +62,7 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
     </tr>
 </table>
 
-<h1>PORTALS</h1>
-    
-
+<div id = "mkdirbox"></div>
     
 <script>
 
@@ -71,6 +74,7 @@ for(var index = 0;index < titles.length;index++){
 }
 
 newportalinput = document.getElementById("newportalinput");
+newportalinput.value = "";
 
 directories = [];
 var httpc2 = new XMLHttpRequest();
@@ -96,20 +100,50 @@ httpc2.send();
 newportalinput = document.getElementById("newportalinput");
 
 newportalinput.onchange = function() {
-    var newa = document.getElementById("dirlink");
-    newa.innerHTML = "mkdir.php?dir=" + this.value;
-    newa.href = "mkdir.php?dir=" + this.value;
-    newa.style.color = "#ff2cb4";
-    newa.style.backgroundColor = "black";
+    dirlink = document.createElement("A");
+    document.getElementById("mkdirbox").appendChild(dirlink);
+    dirlink.innerHTML = "mkdir.php?dir=" + this.value;
+    dirlink.href = "mkdir.php?dir=" + this.value;
+    rainbow(document.getElementsByTagName("A"));
+    
 }
 
-dirlink = document.getElementById("dirlink");
 
 replicator = "https://raw.githubusercontent.com/LafeLabs/trashmagic/main/web/adventure/php/replicator.txt";
 
-
-
 </script>
+<style>
+table{
+    font-size:1.5em;
+    background-color:#0000ff;
+    color:white;
+    display:block;
+    margin:auto;
+    width:80%;
+    padding:1em 1em 1em 1em;
+}
+input{
+    font-family:courier;
+    color:#00ff00;
+    background-color:black;
+}
+a{
+    text-align:center;
+    font-family:helvetica;
+    font-size:3em;
+    width:80%;
+    margin:auto;
+    display:block;
+    border:solid;
+    border-radius:0.5em;
+    border-width:0.5em;
+    color:black;
+    margin-top:1em;
+    margin-bottom:0.5em;
+    overflow-x:scroll;
+}
+
+</style>
 </body>
 </html>
 
