@@ -12,6 +12,8 @@
         "fork.html",
         "forkdestroyer.html",
         "freepants.html",
+        "geometron.js",
+        "icon.html",
         "imagecreator.html",
         "images.html",
         "index.html",
@@ -37,6 +39,7 @@
         "webeditor.html"
     ],
     "data": [
+        "currentjson.txt",
         "dna.txt",
         "plotlyjson.txt",
         "sensordata.txt"
