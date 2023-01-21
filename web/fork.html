@@ -34,6 +34,7 @@ LANGUGE IS HOW THE MIND PARSES REALITY
         <a id = "thingbutton" class=  "button">LOAD GEOMETRON THING REPLICATOR</a>
         <a id = "iconmagicbutton" class=  "button">LOAD ICON MAGIC REPLICATOR</a>
         <a id = "symbolmagicbutton" class=  "button">LOAD SYMBOL MAGIC REPLICATOR</a>
+        <a id = "adventurereplicator" class = "button">LOAD TRASH MAGIC WEB ADVENTURE REPLICATOR</a>
 
         
 </div>
@@ -157,6 +158,12 @@ document.getElementById("symbolmagicbutton").onclick  = function(){
 }
 
 
+document.getElementById("adventurereplicator").onclick  = function(){
+    rewebreplicator = "https://raw.githubusercontent.com/LafeLabs/trashmagic/main/web/adventure/php/replicator.txt";
+    inputs[1].value = rewebreplicator;
+    dirlink.innerHTML += "&replicator=" + rewebreplicator; 
+    dirlink.href += "&replicator=" + rewebreplicator; 
+}
 
 
 
