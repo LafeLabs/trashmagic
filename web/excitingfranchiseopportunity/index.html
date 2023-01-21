@@ -72,6 +72,8 @@ EXCITING FRANCHISE OPPORTUNITY!
 
 <div id = "mkdirbox"></div>
     
+<ul id = "linklist"></ul>    
+    
 <script>
 
 
@@ -89,7 +91,9 @@ var httpc2 = new XMLHttpRequest();
             newa.innerHTML = directories[index] + "/";
             newa.href = directories[index] + "/";
             newa.className = "dirlink";
-            document.getElementById("mainscroll").appendChild(newa);
+            var newli = document.createElement("LI");
+            newli.appendChild(newa);
+            document.getElementById("linklist").appendChild(newli);
         }
 
 
