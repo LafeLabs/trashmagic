@@ -1,8 +1,7 @@
 {
     "html": [
         "README.md",
-        "bipm.html",
-        "directory.html",
+        "business.css",
         "fork.html",
         "forkdestroyer.html",
         "index.html",
@@ -17,9 +16,7 @@
         "webeditor.html"
     ],
     "data": [
-        "dna.txt",
-        "plotlyjson.txt",
-        "sensordata.txt"
+        "dna.txt"
     ],
     "php": [
         "copy.txt",
