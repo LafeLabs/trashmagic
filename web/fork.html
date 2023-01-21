@@ -35,6 +35,8 @@ LANGUGE IS HOW THE MIND PARSES REALITY
         <a id = "iconmagicbutton" class=  "button">LOAD ICON MAGIC REPLICATOR</a>
         <a id = "symbolmagicbutton" class=  "button">LOAD SYMBOL MAGIC REPLICATOR</a>
         <a id = "adventurereplicator" class = "button">LOAD TRASH MAGIC WEB ADVENTURE REPLICATOR</a>
+        <a id = "businessreplicator" class = "button">LOAD EXCITING FRANCHISE OPPORTUNITY GAME REPLICATOR</a>
+
 
         
 </div>
@@ -164,6 +166,15 @@ document.getElementById("adventurereplicator").onclick  = function(){
     dirlink.innerHTML += "&replicator=" + rewebreplicator; 
     dirlink.href += "&replicator=" + rewebreplicator; 
 }
+
+
+document.getElementById("businessreplicator").onclick  = function(){
+    rewebreplicator = "https://raw.githubusercontent.com/LafeLabs/trashmagic/main/web/excitingfranchiseopportunity/php/replicator.txt";
+    inputs[1].value = rewebreplicator;
+    dirlink.innerHTML += "&replicator=" + rewebreplicator; 
+    dirlink.href += "&replicator=" + rewebreplicator; 
+}
+
 
 
 
