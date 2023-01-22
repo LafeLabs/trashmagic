@@ -4,7 +4,7 @@
 
 # [https://parisite.net/](https://parisite.net/)
 
-# [RECURSIVE WEB REPLICATOR ON GITHUB](https://github.com/LafeLabs/trashmagic/tree/main/web)
+# [TRASH WEB REPLICATOR ON GITHUB](https://github.com/LafeLabs/trashmagic/tree/main/web)
 
 # [WWW DOT SLOANS LAKE DOT ART](https://www.sloanslake.art)
 
@@ -14,16 +14,13 @@
 
 # [TRASH MAGIC](https://github.com/LafeLabs/trashmagic/)
 
-# [TRASH MAGIC RECURSIVE WEB](https://github.com/LafeLabs/trashmagic/tree/main/web)
-
-# [TRASH MAGIC ZINE DISTRO](https://github.com/LafeLabs/trashmagic/tree/main/web/distro)
 
 The purpose of Trash Magic is to create a civilization of free things entirely built from trash.  We will build things from trash, share them freely, and share how to build them with others so that they can replicate.  We call this replication from person to person of the knowhow and desire to make things "magic".  
 
-THE RECURSIVE WEB IS MADE OF WORLDS AND QUESTS. YOU CONSTRUCT, REPLICATE AND DESTROY WORLDS AND QUESTS TO BUILD TRASH MAGIC.
+The network of web pages built on servers from the trash is called the TRASH WEB. We use the TRASH WEB to build web pages representing places, people and trash.  We use these to create TRASH MAGIC QUESTS, which are actions people can take to build towards full TRASH MAGIC.  We go out into public spaces and connect physical trash with the TRASH MAGIC WEB, and create QUESTS for people to follow to transform all of the trash in the world into self-replicating free things.
 
 
-# Recursive Web
+# The Web of Trash
 
 self-replicating web pages.
 
@@ -51,11 +48,11 @@ php replicator.php
 sudo chmod -R 0777 *
 ```
 
-This will clone the trash magic recursive web to your server. 
+This will clone the trash web to your server. 
 
 Now go into the DNS records of a domain you have access to or ask someone else to it for a domain they have access to and add an "A record" with entries "@" and "www" for that domain to the home IP address of wherever the server is located.  Set up port forwarding on ports 80 and 443 on the router for that local network.  To add subdomains, use virtual hosts on apache(check [top level trash magic readme](https://github.com/LafeLabs/trashmagic/blob/main/README.md) or ask for help).
 
-To point multiple domains or subdomains to a server, we want to set up a DUMP DIRECTOR using [nginx proxy manager](https://nginxproxymanager.com/).  We will start with a trash magic recursivew web server from the above instructions(not the general trash magic server, but the recursive web one).
+To point multiple domains or subdomains to a server, we want to set up a DUMP DIRECTOR using [nginx proxy manager](https://nginxproxymanager.com/).  We will start with a trash web server from the above instructions(not the general trash magic server, but the web one).
 
 first stop apache to start nginx on port 80 so they don't conflict:
 
